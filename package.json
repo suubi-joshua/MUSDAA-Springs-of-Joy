@@ -10,10 +10,6 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
-    "carbon-components": "^10.58.12",
-    "carbon-components-react": "^8.47.0",
-    "carbon-icons": "^7.0.7",
-    "carbon-react": "^124.6.0",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",

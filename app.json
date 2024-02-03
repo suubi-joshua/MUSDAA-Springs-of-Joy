@@ -4,10 +4,10 @@
     "slug": "MUSDAA_Connect",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Logo-Components-7.png",
+    "icon": "./assets/StartupImage.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Logo-Components-7.png",
+      "image": "./assets/StartupImage.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Logo-Components-7.png",
+        "foregroundImage": "./assets/StartupImage.png",
         "backgroundColor": "#ffffff"
       }
     },
