@@ -10,6 +10,7 @@ import {
 function StartupPage() {
 
   const [typedText, setTypedText] = useState("");
+  //const [loading, setLoading] = useState(true);
   
   useEffect(() => {
    
@@ -21,6 +22,7 @@ function StartupPage() {
 
       if (index === targetText.length) {
         clearInterval(typingInterval);
+        //setLoading(false);
       }
     }, 200); 
 
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain"
   },
   title: {
-    marginTop: 14,
+    marginTop: -50,
   },
   titleText: {
     fontSize: 40,
@@ -80,7 +82,6 @@ const styles = StyleSheet.create({
     color: "#FFF"
   }
 });
-
 export default StartupPage;
 
 
