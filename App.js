@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import StartupPage from './src/components/startUpPage';
+import LoginPage from './src/screens/LoginPage';
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="dark-content" />
-      <StartupPage />
+      <LoginPage />
     </View>
   );
 }
