@@ -6,7 +6,7 @@ const LoginPage = (props) => {
     return (
       <View style={styles.logoContainer}>
         <Image
-          source={require("/home/suubi7/Apps/MUSDAA/MUSDAA_Connect/assets/Logo-Components.png")}
+          source={require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/Logo-Components.png")}
           resizeMode={"stretch"}
           style={styles.logo}
         />
@@ -62,7 +62,7 @@ const LoginPage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={ require('/home/suubi7/Apps/MUSDAA/MUSDAA_Connect/assets/Blurbackground.jpg')}
+        source={ require('/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/Blurbackground.jpg')}
         resizeMode={'stretch'}
         style={styles.background}
       >

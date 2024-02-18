@@ -18,7 +18,7 @@ const GetStarted = (props) => {
     return (
       <View style={styles.bodyContainer}>
         <Image
-          source={ require("/home/suubi7/Apps/MUSDAA/MUSDAA_Connect/assets/Logo-Components-5.png" )}
+          source={ require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/Logo-Components-5.png" )}
           resizeMode={"stretch"}
           style={styles.logo}
         />
@@ -32,7 +32,7 @@ const GetStarted = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={ require('/home/suubi7/Apps/MUSDAA/MUSDAA_Connect/assets/FingerPrint.jpg')}
+        source={ require('/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/FingerPrint.jpg')}
         resizeMode={'stretch'}
         style={styles.background}
       >

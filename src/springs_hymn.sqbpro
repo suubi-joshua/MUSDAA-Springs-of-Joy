@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/src/springs_hymns" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1287"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainhymns"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="hymns" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="28"/><column index="2" value="62"/><column index="3" value="35"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Hymns">INSERT INTO hymns (number, title) VALUES (1, 'Praise to the Lord');
+
+-- Insert stanzas for the hymn
+INSERT INTO stanzas (hymn_id, stanza_number, stanza_lyrics) VALUES
+(1, 1, 'Praise to the Lord, the Almighty,
+The King of creation
+O my soul praise Him, for He is
+Thy health and salvation!
+All ye who hear, now to my temple draw
+near;
+Join ye in glad adoration!'),
+(1, 2, 'Praise to the Lord, who o’er all things
+So wondrously reigneth,
+Shieldeth thee under his wings,
+Yea so gently sustaineth!
+Hast thou not seen how thy desire e’er have
+been
+Granted in what he ordaineth?'),
+(1, 3, 'Praise to the Lord, who doth prosper
+Thy work and defend thee;
+Surely His goodness and mercy
+Here daily attend thee.
+Ponder anew what the almighty can do,
+If with His love He befriend thee.');
+
+INSERT INTO hymns (number, title) VALUES (2, 'O worship the King');
+
+-- Insert stanzas for the hymn
+INSERT INTO stanzas (hymn_id, stanza_number, stanza_lyrics) VALUES
+(2, 1, 'O worship the King, all glorious above,
+O gratefully sing His wonderful love;
+Our Shield and Defender, the Ancient of
+Days,
+Pavilioned in splendor, and girded with
+praise.'),
+(2, 2, 'O tell of His might, O sing of His grace,
+Whose robe is the light, whose canopy
+space,
+His chariots of wrath the deep
+thunderclouds form,
+And dark is His path on the wings of the
+storm.'),
+(2, 3, 'Thy bountiful care, what tongue can
+recite?
+It breathes in the air, it shines in the light;
+It streams from the hills, it descends to the
+plain,
+And sweetly distills in the dew and the rain.'),
+(2, 4, 'Frail children of dust, and feeble as frail,
+In Thee do we trust, nor find Thee to fail;
+Thy mercies how tender, how firm to the
+end!
+Our Maker, Defender, Redeemer, and
+Friend.');
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

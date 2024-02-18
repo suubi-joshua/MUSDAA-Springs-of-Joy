@@ -33,7 +33,7 @@ function StartupPage() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image 
-          source={require("/home/suubi7/Apps/MUSDAA/MUSDAA_Connect/assets/StartupImage.png")} 
+          source={require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/StartupImage.png")} 
           style={styles.image}
           loading="lazy"
           accessibilityLabel="Main Image"
