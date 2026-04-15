@@ -23,18 +23,6 @@ A modern, offline-first React Native hymnal application for MUSDAA (Makerere Uni
 
 ---
 
-## 📱 Screenshots & Functionality
-
-| Feature | Details |
-|---------|---------|
-| **Home Tab** | Browse all hymns with infinite scroll |
-| **Search Tab** | Real-time search across titles & lyrics |
-| **Bookmarks Tab** | View and manage saved hymns |
-| **Hymn Detail** | Full lyrics with font controls & share |
-| **Settings Tab** | Preferences, about, and help information |
-
----
-
 ## 🛠️ Technology Stack
 
 | Component | Technology | Version |
@@ -261,19 +249,6 @@ Before releasing or distributing:
 
 ---
 
-## 📊 Performance Metrics
-
-| Operation | Expected Time |
-|-----------|---|
-| App startup | ~2.5s (with splash) |
-| Hymn list load | <1s |
-| Search response | <300ms |
-| Font size change | Instant |
-| Bookmark toggle | <100ms |
-| Memory usage | 40-50 MB |
-
----
-
 ## 💡 Usage Examples
 
 ### Search for a hymn
@@ -302,11 +277,7 @@ Before releasing or distributing:
 
 ### Updating Hymn Data
 If hymns need to be updated from the Java source:
-
-1. Update `SpringsOfJoy/app/src/main/java/.../MyList.java`
-2. Run extraction script: `python3 extract-hymns-v3.py` (if in backup folder)
-3. Regenerated hymns will be in `src/data/hymns.ts`
-4. Rebuild app
+Send through any changes you would like to see in SPrings of Joy, or hymns you would like to see in the springs of Joy
 
 ### Version Updates
 1. Update `version` field in `app.json`
@@ -346,21 +317,6 @@ npm install
 eas build --platform android --profile production --clear
 ```
 
-### Bookmarks not saving
-- Check device storage permissions
-- Verify AsyncStorage setup
-- Clear app data and restart
-
----
-
-## 📖 Additional Documentation
-
-- [GETTING_STARTED.md](./GETTING_STARTED.md) - Quick start guide
-- [BUILD_INSTRUCTIONS.md](./BUILD_INSTRUCTIONS.md) - Detailed build guide
-- [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) - Technical summary
-
----
-
 ## 👥 Contributing
 
 This project is open to MUSDAA developers. To contribute:
@@ -382,7 +338,7 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 For issues, questions, or feature requests:
 
-- **Email**: musdaa@example.com
+- **Email**: ssebaanajoshua@gmail.com
 - **Organization**: MUSDAA (Makerere University Seventh-day Adventist Association)
 
 ---
