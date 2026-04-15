@@ -46,7 +46,6 @@ const SearchBar: React.FC<Props> = ({
         onChangeText={onChangeText}
         clearButtonMode="never"
         autoCapitalize="none"
-        autoCorrect={false}
       />
 
       {value !== '' && (
