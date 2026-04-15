@@ -1,27 +1,34 @@
 {
   "expo": {
-    "name": "MUSDAA_Connect",
-    "slug": "MUSDAA_Connect",
+    "name": "Springs of Joy",
+    "slug": "springs-of-joy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/StartupImage.png",
+    "icon": "./assets/Logo-Components.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/StartupImage.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#005F3A"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-sqlite"
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.musdaa.springsoffoy"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/StartupImage.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/Logo-Components.png",
+        "backgroundColor": "#005F3A"
+      },
+      "package": "com.musdaa.springsofjoyhymnal"
     },
     "web": {
       "favicon": "./assets/Logo-Components.png"
