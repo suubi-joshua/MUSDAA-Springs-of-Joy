@@ -35,7 +35,6 @@ function StartupPage() {
         <Image 
           source={require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/StartupImage.png")} 
           style={styles.image}
-          loading="lazy"
           accessibilityLabel="Main Image"
           accessibilityRole="image"
         />
