@@ -4,10 +4,10 @@
  */
 
 export const colors = {
-  // Primary SDA green
-  primary: '#005F3A',
-  primaryDark: '#003D24',
-  primaryLight: '#007F52',
+  // Primary SDA green (brand green)
+  primary: '#53B175',
+  primaryDark: '#3d9c5e',
+  primaryLight: '#6fbf89',
 
   // Secondary and neutral colors
   secondary: '#F4A460', // Sandy brown

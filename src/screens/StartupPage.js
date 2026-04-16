@@ -1,19 +1,14 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
-  StyleSheet,
   Image,
   Text
 } from "react-native";
 
 function StartupPage() {
-
   const [typedText, setTypedText] = useState("");
-  //const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-   
     const targetText = "MUSDAA";
     let index = 0;
     const typingInterval = setInterval(() => {
@@ -22,7 +17,6 @@ function StartupPage() {
 
       if (index === targetText.length) {
         clearInterval(typingInterval);
-        //setLoading(false);
       }
     }, 200); 
 
@@ -30,57 +24,25 @@ function StartupPage() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <View style={styles.imageContainer}>
+    <View className="flex-1 flex-col items-center pb-1 mx-auto w-full bg-emerald-400 max-w-lg">
+      <View className="flex-1 justify-center items-center mt-16 w-full">
         <Image 
-          source={require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/StartupImage.png")} 
-          style={styles.image}
+          source={require("../../assets/StartupImage.png")}
+          className="w-full rounded-full"
+          resizeMode="contain"
           accessibilityLabel="Main Image"
           accessibilityRole="image"
         />
       </View>
-      <View style={styles.title}>
-          <Text style={styles.titleText}>{typedText}</Text>
+      <View className="-mt-12">
+        <Text className="text-4xl font-bold leading-11 text-center text-white">
+          {typedText}
+        </Text>
       </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: "column",
-    alignItems: "center",
-    paddingBottom: 2,
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "100%",
-    backgroundColor: "#34D399",
-    maxWidth: 480
-  },
-  imageContainer: {
-    flex: 1,
-    justifyContent: "center", // Center the image vertically
-    alignItems: "center", // Center the image horizontally
-    marginTop: 64,
-    width: "100%",
-  },
-  image: {
-    width: "100%", // Adjust the width as needed
-    borderRadius: 100,
-    resizeMode: "contain"
-  },
-  title: {
-    marginTop: -50,
-  },
-  titleText: {
-    fontSize: 40,
-    fontWeight: "bold",
-    lineHeight: 44,
-    textAlign: "center",
-    color: "#FFF"
-  }
-});
 export default StartupPage;
 
 

@@ -1,99 +1,39 @@
 import React from "react";
-import { SafeAreaView, View, ImageBackground, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { SafeAreaView, View, ImageBackground, Image, Text, TouchableOpacity } from "react-native";
 
-const GetStarted = (props) => {
-  const renderSpace = () => {
-    return <View style={styles.space}></View>;
-  };
-
-  const renderButton = () => {
-    return (
-      <TouchableOpacity style={styles.buttonContainer}>
-        <Text style={styles.buttonText}>{"Get Started"}</Text>
-      </TouchableOpacity>
-    );
-  };
-
-  const renderBody = () => {
-    return (
-      <View style={styles.bodyContainer}>
-        <Image
-          source={ require("/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/Logo-Components-5.png" )}
-          resizeMode={"stretch"}
-          style={styles.logo}
-        />
-        <Text style={styles.welcomeText}>{"Welcome"}</Text>
-        <Text style={styles.descriptionText}>{"We are His Hands"}</Text>
-        {renderButton()}
-      </View>
-    );
+const GetStarted = ({ navigation }) => {
+  const handleGetStarted = () => {
+    navigation?.replace('MainTabs');
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView className="flex-1 bg-white">
       <ImageBackground
-        source={ require('/home/suubi7/MUSDAA/MUSDAA-Springs-of-Joy/assets/FingerPrint.jpg')}
+        source={require('../../assets/FingerPrint.jpg')}
         resizeMode={'stretch'}
-        style={styles.background}
+        className="flex-1 justify-center w-full h-full"
       >
-        {renderSpace()}
-        {renderBody()}
+        <View className="h-56" />
+        
+        <View className="flex-1 items-center">
+          <Image
+            source={require("../../assets/Logo-Components.png")}
+            resizeMode={"stretch"}
+            className="w-52 h-32 -mt-24"
+          />
+          <Text className="text-white text-5xl font-bold m-5">Welcome</Text>
+          <Text className="text-gray-100 text-base mb-5">We are His Hands</Text>
+          
+          <TouchableOpacity 
+            onPress={handleGetStarted}
+            className="h-16 self-stretch justify-center items-center bg-brand-green rounded-3xl mx-4"
+          >
+            <Text className="text-white text-lg font-bold">Get Started</Text>
+          </TouchableOpacity>
+        </View>
       </ImageBackground>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFFFFF",
-	position: "relative",
-	width: "100%",
-  },
-  background: {
-    flex: 1,
-	resizeMode: "cover",
-	justifyContent: "center",
-	width: "100%",
-	height: "100%",
-  },
-  space: {
-    height: 450,
-  },
-  buttonContainer: {
-    height: 65,
-    alignSelf: "stretch",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#53B175",
-    borderRadius: 20,
-    margin: 16,
-  },
-  buttonText: {
-    color: "#FFF9FF",
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  bodyContainer: {
-    flex: 1,
-    alignItems: "center",
-  },
-  logo: {
-	width: 200,
-    height: 120,
-	marginTop: -100,
-  },
-  welcomeText: {
-    color: "#ffffff",
-    fontSize: 50,
-    fontWeight: "bold",
-    margin: 20,
-  },
-  descriptionText: {
-    color: "#FCFCFC",
-    fontSize: 15,
-    marginBottom: 20,
-  },
-});
 
 export default GetStarted;

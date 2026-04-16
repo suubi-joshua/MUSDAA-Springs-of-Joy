@@ -205,7 +205,7 @@ Built for MUSDAA © 2024
 ## Support
 
 For issues, questions, or feature requests:
-- Email: musdaa@example.com
+- Email: ssebaanajoshua@gmail.com
 - Contact: MUSDAA Administration
 
 ---

@@ -6,7 +6,6 @@
 import React, { useState, useEffect } from 'react';
 import {
   View,
-  StyleSheet,
   Text,
   Switch,
   ScrollView,
@@ -14,9 +13,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { colors, spacing, typography } from '../theme';
+import { colors } from '../theme';
+import { useThemeMode } from '../theme/ThemeContext';
 
 const SettingsScreen = ({ navigation }: any) => {
+  const { mode, toggleDarkMode } = useThemeMode();
   const [darkMode, setDarkMode] = useState(false);
   const [largeText, setLargeText] = useState(false);
 
@@ -65,6 +66,7 @@ const SettingsScreen = ({ navigation }: any) => {
   const handleDarkModeToggle = () => {
     const newValue = !darkMode;
     setDarkMode(newValue);
+    toggleDarkMode();
     saveSettings(newValue, largeText);
   };
 
@@ -75,20 +77,15 @@ const SettingsScreen = ({ navigation }: any) => {
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={styles.content}
-    >
+    <ScrollView className="flex-1 bg-gray-50" contentContainerStyle={{ paddingBottom: 48, paddingHorizontal: 20, paddingTop: 24 }}>
       {/* Display Settings */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Display</Text>
+      <View className="bg-white rounded-3xl px-5 py-6 mb-6 shadow-sm">
+        <Text className="text-xl font-extrabold text-brand-green mb-4">Display</Text>
 
-        <View style={styles.settingRow}>
-          <View style={styles.settingLabel}>
-            <Text style={styles.settingName}>Dark Mode</Text>
-            <Text style={styles.settingDescription}>
-              Use dark theme for easier reading
-            </Text>
+        <View className="flex-row justify-between items-center py-4">
+          <View className="flex-1 mr-6">
+            <Text className="text-lg font-semibold text-black mb-1">Dark Mode</Text>
+            <Text className="text-base text-gray-600">Use dark theme for easier reading</Text>
           </View>
           <Switch
             value={darkMode}
@@ -98,14 +95,12 @@ const SettingsScreen = ({ navigation }: any) => {
           />
         </View>
 
-        <View style={styles.divider} />
+        <View className="h-px bg-gray-200 my-3" />
 
-        <View style={styles.settingRow}>
-          <View style={styles.settingLabel}>
-            <Text style={styles.settingName}>Large Text</Text>
-            <Text style={styles.settingDescription}>
-              Increase default font size
-            </Text>
+        <View className="flex-row justify-between items-center py-4">
+          <View className="flex-1 mr-6">
+            <Text className="text-lg font-semibold text-black mb-1">Large Text</Text>
+            <Text className="text-base text-gray-600">Increase default font size</Text>
           </View>
           <Switch
             value={largeText}
@@ -117,35 +112,35 @@ const SettingsScreen = ({ navigation }: any) => {
       </View>
 
       {/* About Section */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>About</Text>
+      <View className="bg-white rounded-3xl px-5 py-6 mb-6 shadow-sm">
+        <Text className="text-xl font-extrabold text-brand-green mb-4">About</Text>
 
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>App Version</Text>
-          <Text style={styles.infoValue}>1.0.0</Text>
+        <View className="flex-row justify-between items-center py-3">
+          <Text className="text-lg text-black font-semibold">App Version</Text>
+          <Text className="text-lg text-gray-600">1.0.0</Text>
         </View>
 
-        <View style={styles.divider} />
+        <View className="h-px bg-gray-200 my-3" />
 
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>Hymns Available</Text>
-          <Text style={styles.infoValue}>462</Text>
+        <View className="flex-row justify-between items-center py-3">
+          <Text className="text-lg text-black font-semibold">Hymns Available</Text>
+          <Text className="text-lg text-gray-600">462</Text>
         </View>
 
-        <View style={styles.divider} />
+        <View className="h-px bg-gray-200 my-3" />
 
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>Organization</Text>
-          <Text style={styles.infoValue}>MUSDAA</Text>
+        <View className="flex-row justify-between items-center py-3">
+          <Text className="text-lg text-black font-semibold">Organization</Text>
+          <Text className="text-lg text-gray-600">MUSDAA</Text>
         </View>
       </View>
 
       {/* Help Section */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Help</Text>
+      <View className="bg-white rounded-3xl px-5 py-6 mb-6 shadow-sm">
+        <Text className="text-xl font-extrabold text-brand-green mb-4">Help</Text>
 
         <TouchableOpacity
-          style={styles.actionButton}
+          className="py-3 px-0"
           onPress={() => {
             Alert.alert(
               'Tips',
@@ -153,112 +148,30 @@ const SettingsScreen = ({ navigation }: any) => {
             );
           }}
         >
-          <Text style={styles.actionButtonText}>Tips & Tricks</Text>
+          <Text className="text-lg text-brand-green font-bold">Tips & Tricks</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={styles.actionButton}
+          className="py-3 px-0"
           onPress={() => {
             Alert.alert(
               'Contact',
-              'For issues or feedback, please contact MUSDAA\n\nEmail: musdaa@example.com'
+              'For issues or feedback, please contact\n\nEmail: ssebaanajoshua@gmail.com'
             );
           }}
         >
-          <Text style={styles.actionButtonText}>Contact & Feedback</Text>
+          <Text className="text-lg text-brand-green font-bold">Contact & Feedback</Text>
         </TouchableOpacity>
       </View>
 
       {/* Privacy Section */}
-      <View style={[styles.section, styles.lastSection]}>
-        <Text style={styles.privacyText}>
+      <View className="bg-white rounded-3xl px-5 py-5 mb-10 shadow-sm">
+        <Text className="text-base text-gray-600 text-center leading-relaxed">
           Songs of Joy is locally stored on your device. No data is sent to external servers.
         </Text>
       </View>
     </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.veryLightGrey,
-  },
-  content: {
-    paddingBottom: spacing.xl,
-  },
-  section: {
-    backgroundColor: colors.white,
-    marginTop: spacing.md,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
-    borderBottomColor: colors.lightGrey,
-    borderBottomWidth: 1,
-  },
-  lastSection: {
-    marginBottom: spacing.lg,
-  },
-  sectionTitle: {
-    fontSize: typography.fontSize.lg,
-    fontWeight: 'bold' as any,
-    color: colors.primary,
-    marginBottom: spacing.md,
-  },
-  settingRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: spacing.md,
-  },
-  settingLabel: {
-    flex: 1,
-    marginRight: spacing.lg,
-  },
-  settingName: {
-    fontSize: typography.fontSize.base,
-    fontWeight: '600' as any,
-    color: colors.darkGrey,
-    marginBottom: spacing.xs,
-  },
-  settingDescription: {
-    fontSize: typography.fontSize.sm,
-    color: colors.grey,
-  },
-  divider: {
-    height: 1,
-    backgroundColor: colors.lightGrey,
-    marginVertical: spacing.sm,
-  },
-  infoRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: spacing.md,
-  },
-  infoLabel: {
-    fontSize: typography.fontSize.base,
-    color: colors.darkGrey,
-    fontWeight: '600' as any,
-  },
-  infoValue: {
-    fontSize: typography.fontSize.base,
-    color: colors.grey,
-  },
-  actionButton: {
-    paddingVertical: spacing.md,
-    paddingHorizontal: 0,
-  },
-  actionButtonText: {
-    fontSize: typography.fontSize.base,
-    color: colors.primary,
-    fontWeight: 'bold' as any,
-  },
-  privacyText: {
-    fontSize: typography.fontSize.sm,
-    color: colors.grey,
-    lineHeight: 20,
-    textAlign: 'center',
-  },
-});
 
 export default SettingsScreen;

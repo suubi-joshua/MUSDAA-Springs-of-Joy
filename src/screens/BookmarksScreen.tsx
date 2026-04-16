@@ -3,17 +3,16 @@
  * Display user's bookmarked hymns
  */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   View,
   FlatList,
-  StyleSheet,
   Text,
   ActivityIndicator,
   RefreshControl,
 } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { colors, spacing } from '../theme';
+import { colors } from '../theme';
 import { useBookmarks } from '../hooks/useBookmarks';
 import HymnListItem from '../components/HymnListItem';
 import { Hymn } from '../types';
@@ -45,7 +44,7 @@ const BookmarksScreen = ({ navigation }: any) => {
 
   if (loading && bookmarkedHymns.length === 0) {
     return (
-      <View style={styles.centerContainer}>
+      <View className="flex-1 justify-center items-center bg-gray-50">
         <ActivityIndicator
           size="large"
           color={colors.primary}
@@ -56,12 +55,12 @@ const BookmarksScreen = ({ navigation }: any) => {
 
   if (bookmarkedHymns.length === 0) {
     return (
-      <View style={styles.container}>
-        <View style={styles.emptyContainer}>
-          <Text style={styles.emptyText}>
+      <View className="flex-1 bg-gray-50">
+        <View className="flex-1 justify-center items-center px-8">
+          <Text className="text-xl font-extrabold text-gray-900 text-center mb-2">
             You haven't bookmarked any hymns yet
           </Text>
-          <Text style={styles.emptySubtext}>
+          <Text className="text-base text-gray-600 text-center leading-6">
             Tap the bookmark icon while viewing a hymn to save it here
           </Text>
         </View>
@@ -70,7 +69,7 @@ const BookmarksScreen = ({ navigation }: any) => {
   }
 
   return (
-    <View style={styles.container}>
+    <View className="flex-1 bg-gray-50">
       <FlatList
         data={bookmarkedHymns}
         renderItem={({ item }) => (
@@ -80,7 +79,7 @@ const BookmarksScreen = ({ navigation }: any) => {
           />
         )}
         keyExtractor={item => item.id.toString()}
-        contentContainerStyle={styles.listContent}
+        contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 }}
         scrollIndicatorInsets={{ right: 1 }}
         refreshControl={
           <RefreshControl
@@ -93,41 +92,5 @@ const BookmarksScreen = ({ navigation }: any) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  centerContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.white,
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: spacing.lg,
-  },
-  emptyText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: colors.darkGrey,
-    textAlign: 'center',
-    marginBottom: spacing.md,
-  },
-  emptySubtext: {
-    fontSize: 14,
-    color: colors.grey,
-    textAlign: 'center',
-  },
-  listContent: {
-    paddingHorizontal: spacing.md,
-    paddingTop: spacing.md,
-    paddingBottom: spacing.lg,
-  },
-});
 
 export default BookmarksScreen;
