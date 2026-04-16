@@ -156,7 +156,7 @@ const SettingsScreen = ({ navigation }: any) => {
           onPress={() => {
             Alert.alert(
               'Contact',
-              'For issues or feedback, please contact MUSDAA\n\nEmail: musdaa@example.com'
+              'For issues or feedback, please contact\n\nEmail: ssebaanajoshua@gmail.com'
             );
           }}
         >

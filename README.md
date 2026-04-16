@@ -15,7 +15,7 @@ A modern, offline-first React Native hymnal application for MUSDAA (Makerere Uni
 - ✅ **Offline First** - No internet required, everything stored locally
 - ✅ **Fast Search** - Real-time search by title and lyrics (300ms debounce)
 - ✅ **Bookmarks** - Save favorite hymns, persists across sessions
-- ✅ **Customizable Display** - Adjustable font sizes
+- ✅ **Customizable Display** - Adjustable font sizes with slider control
 - ✅ **Share Hymns** - Built-in share via SMS, email, etc.
 - ✅ **Professional Design** - MUSDAA branding with SDA green theme
 - ✅ **Responsive UI** - Works on all Android device sizes
@@ -27,11 +27,11 @@ A modern, offline-first React Native hymnal application for MUSDAA (Makerere Uni
 
 | Component | Technology | Version |
 |-----------|-----------|---------|
-| **Framework** | React Native / Expo | 49.x |
-| **Language** | TypeScript | Latest |
+| **Framework** | React Native / Expo | 54.x |
+| **Language** | TypeScript | 5.9.x |
 | **Navigation** | React Navigation | 7.x |
-| **Database** | expo-sqlite | 55.x |
-| **Storage** | AsyncStorage | 3.x |
+| **Database** | expo-sqlite | 16.x |
+| **Storage** | AsyncStorage | 2.x |
 | **Build System** | Expo EAS | Latest |
 | **Target Platform** | Android | API 21+ |
 
@@ -132,14 +132,17 @@ MUSDAA-Springs-of-Joy/
 │   │
 │   ├── screens/                 # Screen components
 │   │   ├── BookmarksScreen.tsx
+│   │   ├── GetStarted.js         # Welcome/onboarding screen
 │   │   ├── HymnDetailScreen.tsx
 │   │   ├── HomeScreen.tsx
 │   │   ├── SearchScreen.tsx
 │   │   ├── SettingsScreen.tsx
-│   │   └── SplashScreen.tsx
+│   │   ├── SplashScreen.tsx
+│   │   └── StartupPage.js        # Startup screen
 │   │
 │   ├── theme/
-│   │   └── index.ts             # Design system (colors, typography)
+│   │   ├── index.ts             # Design system (colors, typography)
+│   │   └── ThemeContext.tsx     # Theme provider & dark mode
 │   │
 │   └── types.ts                 # TypeScript type definitions
 │
@@ -190,7 +193,7 @@ MUSDAA-Springs-of-Joy/
 ### Hymn Detail View
 - Full formatted lyrics with verse breaks
 - Scrollable for long hymns
-- **Font Controls**: Adjust text size with +/- buttons
+- **Font Controls**: Adjust text size with slider control
 - **Bookmark**: Save/unsave hymns
 - **Share**: Share via available apps
 - **Header**: Shows hymn title
@@ -240,8 +243,9 @@ Before releasing or distributing:
 
 ### Adjust font size
 1. Open hymn detail view
-2. Use **+** to increase or **-** to decrease
-3. Changes apply immediately
+2. Tap the **"Aa"** icon to open font size controls
+3. Use the slider to adjust text size
+4. Changes apply immediately
 
 ### Share a hymn
 1. Open hymn detail view
@@ -331,9 +335,8 @@ For issues, questions, or feature requests:
 ## 📈 Project Statistics
 
 - **Hymns**: 462
-- **TypeScript Files**: 16
-- **Lines of Code**: ~14,500
-- **Build Size**: ~40 MB (APK)
+- **TypeScript Files**: 17
+- **JavaScript Files**: 2
 - **Minimum Android**: API 21+
 - **App Version**: 1.0.0
 
