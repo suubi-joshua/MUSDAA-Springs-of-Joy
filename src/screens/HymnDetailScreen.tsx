@@ -3,7 +3,7 @@
  * Shows full hymn lyrics with title in header
  */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import {
   Animated,
   Easing,
@@ -14,47 +14,47 @@ import {
   TouchableOpacity,
   Share,
   Alert,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialIcons } from '@expo/vector-icons';
-import Slider from '@react-native-community/slider';
-import { useBookmarks } from '../hooks/useBookmarks';
-import { colors } from '../theme';
-import { useThemeMode } from '../theme/ThemeContext';
-import { Hymn } from '../types';
+} from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
+import { MaterialIcons } from '@expo/vector-icons'
+import Slider from '@react-native-community/slider'
+import { useBookmarks } from '../hooks/useBookmarks'
+import { colors } from '../theme'
+import { useThemeMode } from '../theme/ThemeContext'
+import { Hymn } from '../types'
 
 const HymnDetailScreen = ({ route, navigation }: any) => {
-  const { id, title, body } = route.params as Hymn;
-  const { isBookmarked, toggleBookmark } = useBookmarks();
-  const { mode } = useThemeMode();
-  const [bookmarked, setBookmarked] = useState(false);
-  const [fontSize, setFontSize] = useState(16);
-  const [showTypeScale, setShowTypeScale] = useState(false);
-  const [scaleAnimation] = useState(new Animated.Value(0));
+  const { id, title, body } = route.params as Hymn
+  const { isBookmarked, toggleBookmark } = useBookmarks()
+  const { mode } = useThemeMode()
+  const [bookmarked, setBookmarked] = useState(false)
+  const [fontSize, setFontSize] = useState(16)
+  const [showTypeScale, setShowTypeScale] = useState(false)
+  const [scaleAnimation] = useState(new Animated.Value(0))
 
-  const isDark = mode === 'dark';
-  const screenBg = isDark ? colors.darkBg : colors.white;
-  const bodyTextColor = isDark ? colors.darkText : colors.black;
-  const popoverBg = isDark ? '#202020' : colors.white;
-  const popoverBorder = isDark ? '#3A3A3A' : '#E5E7EB';
+  const isDark = mode === 'dark'
+  const screenBg = isDark ? colors.darkBg : colors.white
+  const bodyTextColor = isDark ? colors.darkText : colors.black
+  const popoverBg = isDark ? '#202020' : colors.white
+  const popoverBorder = isDark ? '#3A3A3A' : '#E5E7EB'
 
   useEffect(() => {
     const checkBookmark = async () => {
-      const marked = isBookmarked(id);
-      setBookmarked(marked);
-    };
-    checkBookmark();
-  }, [id, isBookmarked]);
+      const marked = isBookmarked(id)
+      setBookmarked(marked)
+    }
+    checkBookmark()
+  }, [id, isBookmarked])
 
   const openTypeScale = () => {
-    setShowTypeScale(true);
+    setShowTypeScale(true)
     Animated.timing(scaleAnimation, {
       toValue: 1,
       duration: 220,
       easing: Easing.out(Easing.cubic),
       useNativeDriver: true,
-    }).start();
-  };
+    }).start()
+  }
 
   const closeTypeScale = () => {
     Animated.timing(scaleAnimation, {
@@ -62,16 +62,16 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
       duration: 180,
       easing: Easing.in(Easing.cubic),
       useNativeDriver: true,
-    }).start(() => setShowTypeScale(false));
-  };
+    }).start(() => setShowTypeScale(false))
+  }
 
   const handleToggleTypeScale = () => {
     if (showTypeScale) {
-      closeTypeScale();
-      return;
+      closeTypeScale()
+      return
     }
-    openTypeScale();
-  };
+    openTypeScale()
+  }
 
   useEffect(() => {
     // Header layout with protected, wrapping title and action icons.
@@ -91,7 +91,12 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
         <View style={{ flex: 1, marginHorizontal: 16, justifyContent: 'center' }}>
           <Text
             numberOfLines={2}
-            style={{ color: colors.white, fontWeight: '700', fontSize: 20, textAlignVertical: 'center' }}
+            style={{
+              color: colors.white,
+              fontWeight: '700',
+              fontSize: 20,
+              textAlignVertical: 'center',
+            }}
           >
             {title}
           </Text>
@@ -99,59 +104,43 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
       ),
       headerRight: () => (
         <View className="flex-row items-center">
-          <TouchableOpacity
-            className="mr-3"
-            onPress={handleToggleTypeScale}
-          >
-            <MaterialIcons
-              name="format-size"
-              size={24}
-              color={colors.white}
-            />
+          <TouchableOpacity className="mr-3" onPress={handleToggleTypeScale}>
+            <MaterialIcons name="format-size" size={24} color={colors.white} />
           </TouchableOpacity>
-          <TouchableOpacity
-            className="mr-3"
-            onPress={handleToggleBookmark}
-          >
+          <TouchableOpacity className="mr-3" onPress={handleToggleBookmark}>
             <Ionicons
               name={bookmarked ? 'bookmark' : 'bookmark-outline'}
               size={24}
               color={colors.white}
             />
           </TouchableOpacity>
-          <TouchableOpacity
-            onPress={handleShare}
-          >
-            <Ionicons
-              name="share-social"
-              size={24}
-              color={colors.white}
-            />
+          <TouchableOpacity onPress={handleShare}>
+            <Ionicons name="share-social" size={24} color={colors.white} />
           </TouchableOpacity>
         </View>
       ),
-    });
-  }, [navigation, bookmarked, title, showTypeScale]);
+    })
+  }, [navigation, bookmarked, title, showTypeScale])
 
   const handleToggleBookmark = async () => {
     try {
-      await toggleBookmark({ id, title, body });
-      setBookmarked(!bookmarked);
-    } catch (err) {
-      Alert.alert('Error', 'Failed to update bookmark');
+      await toggleBookmark({ id, title, body })
+      setBookmarked(!bookmarked)
+    } catch {
+      Alert.alert('Error', 'Failed to update bookmark')
     }
-  };
+  }
 
   const handleShare = async () => {
     try {
       await Share.share({
         message: `${title}\n\n${body}\n\nShared from Springs of Joy Hymnal`,
         title: title,
-      });
+      })
     } catch (err) {
-      console.error('Share error:', err);
+      console.error('Share error:', err)
     }
-  };
+  }
 
   return (
     <View style={{ flex: 1, backgroundColor: screenBg }}>
@@ -160,10 +149,7 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
         contentContainerStyle={{ padding: 24, paddingBottom: 64 }}
         showsVerticalScrollIndicator={true}
       >
-        <Text
-          style={{ fontSize }}
-          className="text-brand-green font-extrabold mb-5 text-center"
-        >
+        <Text style={{ fontSize }} className="text-brand-green font-extrabold mb-5 text-center">
           {title}
         </Text>
         <Text
@@ -211,13 +197,17 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
                 maximumTrackTintColor={isDark ? '#5A5A5A' : '#D1D5DB'}
                 thumbTintColor={colors.primary}
               />
-              <Text style={{ color: bodyTextColor, fontSize: 24, fontWeight: '800', marginLeft: 10 }}>A</Text>
+              <Text
+                style={{ color: bodyTextColor, fontSize: 24, fontWeight: '800', marginLeft: 10 }}
+              >
+                A
+              </Text>
             </View>
           </Animated.View>
         </View>
       )}
     </View>
-  );
-};
+  )
+}
 
-export default HymnDetailScreen;
+export default HymnDetailScreen
