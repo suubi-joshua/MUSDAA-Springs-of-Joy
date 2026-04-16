@@ -10,6 +10,7 @@ export interface Hymn {
 
 export type RootStackParamList = {
   Splash: undefined;
+  GetStarted: undefined;
   MainTabs: undefined;
   Home: undefined;
   HymnDetail: {

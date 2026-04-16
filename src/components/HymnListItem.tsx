@@ -7,12 +7,10 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   TouchableOpacity,
-  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, typography, shadows } from '../theme';
+import { colors } from '../theme';
 import { Hymn } from '../types';
 
 interface Props {
@@ -26,23 +24,25 @@ const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
 
   return (
     <TouchableOpacity
-      style={[styles.container, shadows.sm]}
+      className="flex-row items-center bg-white rounded-3xl mb-5 px-5 py-5 shadow-lg"
       onPress={onPress}
       activeOpacity={0.7}
     >
-      <View style={styles.badge}>
-        <Text style={styles.badgeText}>{hymnetNumber}</Text>
+      <View className="w-14 h-14 rounded-full bg-brand-green justify-center items-center mr-5">
+        <Text className="text-xl font-extrabold text-white">
+          {hymnetNumber}
+        </Text>
       </View>
 
-      <View style={styles.content}>
+      <View className="flex-1 pr-4">
         <Text
-          style={styles.title}
+          className="text-xl font-extrabold text-gray-900 mb-1"
           numberOfLines={2}
         >
           {hymn.title}
         </Text>
         <Text
-          style={styles.preview}
+          className="text-base text-gray-700"
           numberOfLines={1}
         >
           {hymn.body.split('\n')[0]}
@@ -51,54 +51,12 @@ const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
 
       <Ionicons
         name="chevron-forward"
-        size={20}
+        size={22}
         color={colors.grey}
-        style={styles.chevron}
+        style={{ marginLeft: 8 }}
       />
     </TouchableOpacity>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    backgroundColor: colors.white,
-    borderRadius: 8,
-    marginBottom: spacing.md,
-    padding: spacing.md,
-    alignItems: 'center',
-  },
-  badge: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
-    backgroundColor: colors.primary,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: spacing.md,
-  },
-  badgeText: {
-    fontSize: typography.fontSize.lg,
-    fontWeight: 'bold' as any,
-    color: colors.white,
-  },
-  content: {
-    flex: 1,
-    marginRight: spacing.md,
-  },
-  title: {
-    fontSize: typography.fontSize.base,
-    fontWeight: '600' as any,
-    color: colors.darkGrey,
-    marginBottom: 4,
-  },
-  preview: {
-    fontSize: typography.fontSize.sm,
-    color: colors.grey,
-  },
-  chevron: {
-    marginLeft: spacing.sm,
-  },
-});
 
 export default HymnListItem;

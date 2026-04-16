@@ -8,21 +8,20 @@ import {
   View,
   ScrollView,
   Text,
-  StyleSheet,
   TouchableOpacity,
   Share,
   Alert,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useBookmarks } from '../hooks/useBookmarks';
-import { colors, typography, spacing } from '../theme';
+import { colors } from '../theme';
 import { Hymn } from '../types';
 
 const HymnDetailScreen = ({ route, navigation }: any) => {
   const { id, title, body } = route.params as Hymn;
   const { isBookmarked, toggleBookmark } = useBookmarks();
   const [bookmarked, setBookmarked] = useState(false);
-  const [fontSize, setFontSize] = useState(typography.fontSize.base);
+  const [fontSize, setFontSize] = useState(16);
 
   useEffect(() => {
     const checkBookmark = async () => {
@@ -36,9 +35,9 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
     // Set up header right button for bookmark
     navigation.setOptions({
       headerRight: () => (
-        <View style={styles.headerButtons}>
+        <View className="flex-row gap-md mr-md">
           <TouchableOpacity
-            style={styles.headerButton}
+            className="p-sm"
             onPress={handleToggleBookmark}
           >
             <Ionicons
@@ -48,7 +47,7 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
             />
           </TouchableOpacity>
           <TouchableOpacity
-            style={styles.headerButton}
+            className="p-sm"
             onPress={handleShare}
           >
             <Ionicons
@@ -83,28 +82,38 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
   };
 
   const increaseFontSize = () => {
-    setFontSize(prev => Math.min(prev + 2, typography.fontSize['3xl']));
+    setFontSize(prev => Math.min(prev + 2, 32));
   };
 
   const decreaseFontSize = () => {
-    setFontSize(prev => Math.max(prev - 2, typography.fontSize.sm));
+    setFontSize(prev => Math.max(prev - 2, 12));
   };
 
   return (
-    <View style={styles.container}>
+    <View className="flex-1 bg-white">
       <ScrollView
-        style={styles.scrollView}
-        contentContainerStyle={styles.content}
+        className="flex-1"
+        contentContainerStyle={{ padding: 24, paddingBottom: 48 }}
         showsVerticalScrollIndicator={true}
       >
-        <Text style={[styles.title, { fontSize }]}>{title}</Text>
-        <Text style={[styles.body, { fontSize }]}>{body}</Text>
+        <Text 
+          style={{ fontSize }}
+          className="text-brand-green font-bold mb-lg text-center"
+        >
+          {title}
+        </Text>
+        <Text 
+          style={{ fontSize, lineHeight: 28 }}
+          className="text-black text-left mt-md"
+        >
+          {body}
+        </Text>
       </ScrollView>
 
       {/* Font Size Controls */}
-      <View style={styles.controls}>
+      <View className="flex-row justify-center items-center px-lg py-md bg-gray-100 border-t border-gray-300 gap-lg">
         <TouchableOpacity
-          style={styles.controlButton}
+          className="p-sm"
           onPress={decreaseFontSize}
         >
           <Ionicons
@@ -114,12 +123,12 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
           />
         </TouchableOpacity>
 
-        <Text style={styles.fontSizeLabel}>
+        <Text className="text-sm text-gray-500 min-w-10 text-center">
           {Math.round(fontSize)}
         </Text>
 
         <TouchableOpacity
-          style={styles.controlButton}
+          className="p-sm"
           onPress={increaseFontSize}
         >
           <Ionicons
@@ -132,61 +141,5 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  scrollView: {
-    flex: 1,
-  },
-  content: {
-    padding: spacing.lg,
-    paddingBottom: spacing.xl,
-  },
-  title: {
-    fontSize: typography.fontSize['2xl'],
-    fontWeight: 'bold' as any,
-    color: colors.primary,
-    marginBottom: spacing.lg,
-    textAlign: 'center',
-  },
-  body: {
-    fontSize: typography.fontSize.base,
-    lineHeight: 28,
-    color: colors.darkGrey,
-    textAlign: 'left',
-    marginTop: spacing.md,
-  },
-  controls: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    backgroundColor: colors.veryLightGrey,
-    borderTopWidth: 1,
-    borderTopColor: colors.lightGrey,
-    gap: spacing.lg,
-  },
-  controlButton: {
-    padding: spacing.sm,
-  },
-  fontSizeLabel: {
-    fontSize: typography.fontSize.sm,
-    color: colors.grey,
-    minWidth: 40,
-    textAlign: 'center',
-  },
-  headerButtons: {
-    flexDirection: 'row',
-    gap: spacing.md,
-    marginRight: spacing.md,
-  },
-  headerButton: {
-    padding: spacing.sm,
-  },
-});
 
 export default HymnDetailScreen;

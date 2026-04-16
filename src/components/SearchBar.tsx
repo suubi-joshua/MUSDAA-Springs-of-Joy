@@ -7,14 +7,10 @@ import React from 'react';
 import {
   View,
   TextInput,
-  StyleSheet,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, shadows } from '../theme';
-
-const { width } = Dimensions.get('window');
+import { colors } from '../theme';
 
 interface Props {
   placeholder?: string;
@@ -30,16 +26,16 @@ const SearchBar: React.FC<Props> = ({
   onClear,
 }) => {
   return (
-    <View style={[styles.container, shadows.sm]}>
+    <View className="flex-row items-center bg-white rounded-2xl mx-4 mt-4 mb-3 px-4 h-12 shadow-md">
       <Ionicons
         name="search"
-        size={20}
+        size={22}
         color={colors.grey}
-        style={styles.icon}
+        style={{ marginRight: 8 }}
       />
 
       <TextInput
-        style={styles.input}
+        className="flex-1 text-base text-gray-900"
         placeholder={placeholder}
         placeholderTextColor={colors.grey}
         value={value}
@@ -50,12 +46,12 @@ const SearchBar: React.FC<Props> = ({
 
       {value !== '' && (
         <TouchableOpacity
-          style={styles.clearButton}
+          className="p-2 ml-2"
           onPress={onClear}
         >
           <Ionicons
             name="close-circle"
-            size={20}
+            size={22}
             color={colors.grey}
           />
         </TouchableOpacity>
@@ -63,31 +59,5 @@ const SearchBar: React.FC<Props> = ({
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: colors.white,
-    borderRadius: 8,
-    marginHorizontal: spacing.md,
-    marginVertical: spacing.md,
-    paddingHorizontal: spacing.md,
-    height: 44,
-  },
-  icon: {
-    marginRight: spacing.sm,
-  },
-  input: {
-    flex: 1,
-    fontSize: 16,
-    color: colors.black,
-    paddingVertical: spacing.sm,
-  },
-  clearButton: {
-    padding: spacing.sm,
-    marginLeft: spacing.sm,
-  },
-});
 
 export default SearchBar;

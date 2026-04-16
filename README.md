@@ -173,29 +173,6 @@ MUSDAA-Springs-of-Joy/
 
 ---
 
-## 💾 Database Schema
-
-### Hymns Table
-```sql
-CREATE TABLE hymns (
-  id INTEGER PRIMARY KEY NOT NULL,
-  title TEXT NOT NULL,
-  body TEXT NOT NULL
-);
-```
-
-### Bookmarks Table
-```sql
-CREATE TABLE bookmarks (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  hymn_id INTEGER NOT NULL UNIQUE,
-  created_at TEXT NOT NULL,
-  FOREIGN KEY(hymn_id) REFERENCES hymns(id)
-);
-```
-
----
-
 ## 🔍 Key Functionality
 
 ### Home Screen
@@ -363,4 +340,3 @@ For issues, questions, or feature requests:
 ---
 
 **Built with ❤️ for MUSDAA**  
-*Last Updated: April 2024*

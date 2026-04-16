@@ -7,17 +7,13 @@ import React, { useState, useEffect } from 'react';
 import {
   View,
   FlatList,
-  StyleSheet,
   ActivityIndicator,
   Alert,
-  Dimensions,
 } from 'react-native';
-import { colors, spacing } from '../theme';
 import { useHymns } from '../hooks/useHymns';
 import HymnListItem from '../components/HymnListItem';
 import { Hymn } from '../types';
-
-const { width } = Dimensions.get('window');
+import { colors } from '../theme';
 
 const HomeScreen = ({ navigation }: any) => {
   const { hymns, totalCount, loading, error, loadMore } = useHymns();
@@ -51,7 +47,7 @@ const HomeScreen = ({ navigation }: any) => {
   const renderFooter = () => {
     if (!isLoadingMore) return null;
     return (
-      <View style={styles.footer}>
+      <View className="py-lg justify-center items-center">
         <ActivityIndicator
           size="large"
           color={colors.primary}
@@ -62,7 +58,7 @@ const HomeScreen = ({ navigation }: any) => {
 
   if (loading) {
     return (
-      <View style={styles.centerContainer}>
+      <View className="flex-1 justify-center items-center bg-white">
         <ActivityIndicator
           size="large"
           color={colors.primary}
@@ -72,7 +68,7 @@ const HomeScreen = ({ navigation }: any) => {
   }
 
   return (
-    <View style={styles.container}>
+    <View className="flex-1 bg-gray-50">
       <FlatList
         data={hymns}
         renderItem={({ item }) => (
@@ -82,7 +78,7 @@ const HomeScreen = ({ navigation }: any) => {
           />
         )}
         keyExtractor={item => item.id.toString()}
-        contentContainerStyle={styles.listContent}
+        contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 }}
         scrollIndicatorInsets={{ right: 1 }}
         onEndReached={handleLoadMore}
         onEndReachedThreshold={0.5}
@@ -91,28 +87,5 @@ const HomeScreen = ({ navigation }: any) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  centerContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.white,
-  },
-  listContent: {
-    paddingHorizontal: spacing.md,
-    paddingTop: spacing.md,
-    paddingBottom: spacing.lg,
-  },
-  footer: {
-    paddingVertical: spacing.lg,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default HomeScreen;

@@ -3,7 +3,7 @@
  * Using React Navigation with Stack + Bottom Tabs
  */
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -11,9 +11,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { RootStackParamList, HomeStackParamList, SearchStackParamList, BookmarksStackParamList } from '../types';
 import { colors } from '../theme';
+import { navigationThemes, useThemeMode } from '../theme/ThemeContext';
 
 // Screens
 import SplashScreen from '../screens/SplashScreen';
+import GetStarted from '../screens/GetStarted';
 import HomeScreen from '../screens/HomeScreen';
 import HymnDetailScreen from '../screens/HymnDetailScreen';
 import SearchScreen from '../screens/SearchScreen';
@@ -213,6 +215,10 @@ export function RootNavigator() {
         component={SplashScreen}
       />
       <RootStack.Screen
+        name="GetStarted"
+        component={GetStarted}
+      />
+      <RootStack.Screen
         name="MainTabs"
         component={MainTabsNavigator}
       />
@@ -224,27 +230,11 @@ export function RootNavigator() {
  * Navigation Container with theme
  */
 export function AppNavigator() {
+  const { mode } = useThemeMode();
+
   return (
     <NavigationContainer
-      theme={
-        {
-          dark: false,
-          colors: {
-            primary: colors.primary,
-            background: colors.white,
-            card: colors.white,
-            text: colors.black,
-            border: colors.lightGrey,
-            notification: colors.error,
-          },
-          fonts: {
-            regular: { fontFamily: 'System', fontWeight: '400' },
-            medium: { fontFamily: 'System', fontWeight: '500' },
-            light: { fontFamily: 'System', fontWeight: '300' },
-            thin: { fontFamily: 'System', fontWeight: '100' },
-          },
-        } as any
-      }
+      theme={navigationThemes[mode] as any}
     >
       <RootNavigator />
     </NavigationContainer>
