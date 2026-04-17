@@ -3,29 +3,24 @@
  * Search hymns by title and body text
  */
 
-import React from 'react';
-import {
-  View,
-  FlatList,
-  Text,
-  ActivityIndicator,
-} from 'react-native';
-import { colors } from '../theme';
-import { useSearch } from '../hooks/useSearch';
-import SearchBar from '../components/SearchBar';
-import HymnListItem from '../components/HymnListItem';
-import { Hymn } from '../types';
+import React from 'react'
+import { View, FlatList, Text, ActivityIndicator } from 'react-native'
+import { colors } from '../theme'
+import { useSearch } from '../hooks/useSearch'
+import SearchBar from '../components/SearchBar'
+import HymnListItem from '../components/HymnListItem'
+import { Hymn } from '../types'
 
 const SearchScreen = ({ navigation }: any) => {
-  const { query, results, loading, handleSearch, clearSearch } = useSearch();
+  const { query, results, loading, handleSearch, clearSearch } = useSearch()
 
   const handleSelectHymn = (hymn: Hymn) => {
     navigation.navigate('HymnDetail', {
       id: hymn.id,
       title: hymn.title,
       body: hymn.body,
-    });
-  };
+    })
+  }
 
   return (
     <View className="flex-1 bg-gray-50">
@@ -38,10 +33,7 @@ const SearchScreen = ({ navigation }: any) => {
 
       {loading && (
         <View className="flex-1 justify-center items-center">
-          <ActivityIndicator
-            size="large"
-            color={colors.primary}
-          />
+          <ActivityIndicator size="large" color={colors.primary} />
         </View>
       )}
 
@@ -65,18 +57,16 @@ const SearchScreen = ({ navigation }: any) => {
         <FlatList
           data={results}
           renderItem={({ item }) => (
-            <HymnListItem
-              hymn={item}
-              onPress={() => handleSelectHymn(item)}
-            />
+            <HymnListItem hymn={item} onPress={() => handleSelectHymn(item)} />
           )}
           keyExtractor={item => item.id.toString()}
           contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 40 }}
           scrollIndicatorInsets={{ right: 1 }}
+          testID="search-results"
         />
       )}
     </View>
-  );
-};
+  )
+}
 
-export default SearchScreen;
+export default SearchScreen

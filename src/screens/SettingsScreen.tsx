@@ -3,26 +3,19 @@
  * User preferences: theme, font size
  */
 
-import React, { useState, useEffect } from 'react';
-import {
-  View,
-  Text,
-  Switch,
-  ScrollView,
-  Alert,
-  TouchableOpacity,
-} from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { colors } from '../theme';
-import { useThemeMode } from '../theme/ThemeContext';
+import React, { useState, useEffect } from 'react'
+import { View, Text, Switch, ScrollView, Alert, TouchableOpacity } from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { colors } from '../theme'
+import { useThemeMode } from '../theme/ThemeContext'
 
 const SettingsScreen = ({ navigation }: any) => {
-  const { mode, toggleDarkMode } = useThemeMode();
-  const [darkMode, setDarkMode] = useState(false);
-  const [largeText, setLargeText] = useState(false);
+  const { toggleDarkMode } = useThemeMode()
+  const [darkMode, setDarkMode] = useState(false)
+  const [largeText, setLargeText] = useState(false)
 
   useEffect(() => {
-    loadSettings();
+    loadSettings()
 
     navigation.setOptions({
       title: 'Settings',
@@ -33,21 +26,21 @@ const SettingsScreen = ({ navigation }: any) => {
       headerTitleStyle: {
         fontWeight: 'bold',
       },
-    });
-  }, [navigation]);
+    })
+  }, [navigation])
 
   const loadSettings = async () => {
     try {
-      const saved = await AsyncStorage.getItem('appSettings');
+      const saved = await AsyncStorage.getItem('appSettings')
       if (saved) {
-        const settings = JSON.parse(saved);
-        setDarkMode(settings.darkMode || false);
-        setLargeText(settings.largeText || false);
+        const settings = JSON.parse(saved)
+        setDarkMode(settings.darkMode || false)
+        setLargeText(settings.largeText || false)
       }
     } catch (err) {
-      console.error('Error loading settings:', err);
+      console.error('Error loading settings:', err)
     }
-  };
+  }
 
   const saveSettings = async (darkModeValue: boolean, largeTextValue: boolean) => {
     try {
@@ -55,29 +48,32 @@ const SettingsScreen = ({ navigation }: any) => {
         darkMode: darkModeValue,
         largeText: largeTextValue,
         savedAt: new Date().toISOString(),
-      };
-      await AsyncStorage.setItem('appSettings', JSON.stringify(settings));
+      }
+      await AsyncStorage.setItem('appSettings', JSON.stringify(settings))
     } catch (err) {
-      console.error('Error saving settings:', err);
-      Alert.alert('Error', 'Failed to save settings');
+      console.error('Error saving settings:', err)
+      Alert.alert('Error', 'Failed to save settings')
     }
-  };
+  }
 
   const handleDarkModeToggle = () => {
-    const newValue = !darkMode;
-    setDarkMode(newValue);
-    toggleDarkMode();
-    saveSettings(newValue, largeText);
-  };
+    const newValue = !darkMode
+    setDarkMode(newValue)
+    toggleDarkMode()
+    saveSettings(newValue, largeText)
+  }
 
   const handleLargeTextToggle = () => {
-    const newValue = !largeText;
-    setLargeText(newValue);
-    saveSettings(darkMode, newValue);
-  };
+    const newValue = !largeText
+    setLargeText(newValue)
+    saveSettings(darkMode, newValue)
+  }
 
   return (
-    <ScrollView className="flex-1 bg-gray-50" contentContainerStyle={{ paddingBottom: 48, paddingHorizontal: 20, paddingTop: 24 }}>
+    <ScrollView
+      className="flex-1 bg-gray-50"
+      contentContainerStyle={{ paddingBottom: 48, paddingHorizontal: 20, paddingTop: 24 }}
+    >
       {/* Display Settings */}
       <View className="bg-white rounded-3xl px-5 py-6 mb-6 shadow-sm">
         <Text className="text-xl font-extrabold text-brand-green mb-4">Display</Text>
@@ -144,8 +140,8 @@ const SettingsScreen = ({ navigation }: any) => {
           onPress={() => {
             Alert.alert(
               'Tips',
-              '• Tap any hymn to view full lyrics\n• Use the search tab to find specific hymns\n• Bookmark hymns by tapping the bookmark icon\n• Adjust font size using +/- buttons in detail view\n• Swipe back or use phone\'s back button to return'
-            );
+              "• Tap any hymn to view full lyrics\n• Use the search tab to find specific hymns\n• Bookmark hymns by tapping the bookmark icon\n• Adjust font size using +/- buttons in detail view\n• Swipe back or use phone's back button to return"
+            )
           }}
         >
           <Text className="text-lg text-brand-green font-bold">Tips & Tricks</Text>
@@ -157,7 +153,7 @@ const SettingsScreen = ({ navigation }: any) => {
             Alert.alert(
               'Contact',
               'For issues or feedback, please contact\n\nEmail: ssebaanajoshua@gmail.com'
-            );
+            )
           }}
         >
           <Text className="text-lg text-brand-green font-bold">Contact & Feedback</Text>
@@ -171,7 +167,7 @@ const SettingsScreen = ({ navigation }: any) => {
         </Text>
       </View>
     </ScrollView>
-  );
-};
+  )
+}
 
-export default SettingsScreen;
+export default SettingsScreen

@@ -25,15 +25,15 @@ A modern, offline-first React Native hymnal application for MUSDAA (Makerere Uni
 
 ## 🛠️ Technology Stack
 
-| Component | Technology | Version |
-|-----------|-----------|---------|
-| **Framework** | React Native / Expo | 54.x |
-| **Language** | TypeScript | 5.9.x |
-| **Navigation** | React Navigation | 7.x |
-| **Database** | expo-sqlite | 16.x |
-| **Storage** | AsyncStorage | 2.x |
-| **Build System** | Expo EAS | Latest |
-| **Target Platform** | Android | API 21+ |
+| Component           | Technology          | Version |
+| ------------------- | ------------------- | ------- |
+| **Framework**       | React Native / Expo | 54.x    |
+| **Language**        | TypeScript          | 5.9.x   |
+| **Navigation**      | React Navigation    | 7.x     |
+| **Database**        | expo-sqlite         | 16.x    |
+| **Storage**         | AsyncStorage        | 2.x     |
+| **Build System**    | Expo EAS            | Latest  |
+| **Target Platform** | Android             | API 21+ |
 
 ---
 
@@ -84,17 +84,20 @@ npm run web
 ### Generate APK (Android)
 
 **Step 1: Authenticate with Expo**
+
 ```bash
 npm install -g eas-cli
 eas login  # Use your Expo credentials
 ```
 
 **Step 2: Build APK**
+
 ```bash
 npm run build:android
 ```
 
 **Step 3: Download & Install**
+
 - Download `.apk` from Expo dashboard
 - Install on Android device:
   ```bash
@@ -159,17 +162,20 @@ MUSDAA-Springs-of-Joy/
 ## 🎨 Design & Branding
 
 ### Color Palette
+
 - **Primary**: SDA Green (`#005F3A`) - MUSDAA institutional color
 - **Secondary**: Sandy Brown (`#F4A460`)
 - **Background**: White (`#FFFFFF`)
 - **Text**: Dark Grey (`#2C3E50`)
 
 ### Typography
+
 - **Regular**: 16px (default)
 - **Large**: 18px-20px (adjustable)
 - **Small**: 12px-14px
 
 ### Responsive Design
+
 - Optimized for all Android screen sizes
 - Proper padding and spacing throughout
 - Touch-friendly button sizes (minimum 44dp)
@@ -179,18 +185,21 @@ MUSDAA-Springs-of-Joy/
 ## 🔍 Key Functionality
 
 ### Home Screen
+
 - Displays hymns 1-50 initially
 - Infinite scroll to load more
 - Each hymn shows number badge and title preview
 - Tap to view full lyrics
 
 ### Search
+
 - Live search as you type
 - Searches both title and body text
 - 300ms debounce to optimize performance
 - Shows result count
 
 ### Hymn Detail View
+
 - Full formatted lyrics with verse breaks
 - Scrollable for long hymns
 - **Font Controls**: Adjust text size with slider control
@@ -199,12 +208,14 @@ MUSDAA-Springs-of-Joy/
 - **Header**: Shows hymn title
 
 ### Bookmarks
+
 - View all saved hymns
 - Sorted by date added (newest first)
 - Pull-to-refresh to reload
 - Tap hymn to view full text
 
 ### Settings
+
 - **Display Options**: Dark mode, large text
 - **About**: App version, hymn count, organization
 - **Help**: Tips, tricks, contact info
@@ -212,7 +223,64 @@ MUSDAA-Springs-of-Joy/
 
 ---
 
-## 🧪 Testing Checklist
+## 🧪 Testing
+
+### Unit Tests (Jest)
+
+The project includes 36 unit tests covering core functionality:
+
+```bash
+# Run all unit tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+**What's Tested:**
+
+- `useSearch` hook - Search by number, title, empty state, error handling
+- `database.ts` - CRUD operations, empty state handling
+- `ThemeContext` - Theme switching, light/dark modes
+
+### End-to-End Tests (Maestro)
+
+Since this is a React Native app using `expo-sqlite` (native database), web-based E2E testing is not supported. Use **Maestro** for native E2E testing on Android/iOS.
+
+**Setup:**
+
+```bash
+# Install Maestro
+curl -s "https://get.maestro.mobile.dev" | bash
+
+# Run E2E tests on connected device/emulator
+maestro test e2e/flows.yaml
+
+# Or use the npm script
+npm run test:e2e
+```
+
+**E2E Flows Available:**
+
+- `discovery` - Open app, view hymn list, tap hymn, view detail
+- `search` - Search for hymns by title
+- `bookmark` - Bookmark a hymn, view in bookmarks tab
+- `fontSize` - Adjust font size in hymn detail
+
+### CI/CD Testing
+
+The GitHub Actions workflow runs on every push:
+
+- ✅ Lint & Type Check
+- ✅ Unit Tests (Jest)
+- ✅ Expo Doctor
+- ✅ Build Verification (Android bundle)
+- ⏭️ E2E Tests (run manually with Maestro)
+
+### Test Checklist
 
 Before releasing or distributing:
 
@@ -232,22 +300,26 @@ Before releasing or distributing:
 ## 💡 Usage Examples
 
 ### Search for a hymn
+
 1. Go to **Search tab**
 2. Type hymn title or lyrics
 3. Tap result to view full hymn
 
 ### Save a hymn
+
 1. Open hymn detail view
 2. Tap **bookmark icon** in header
 3. Hymn saved to bookmarks
 
 ### Adjust font size
+
 1. Open hymn detail view
 2. Tap the **"Aa"** icon to open font size controls
 3. Use the slider to adjust text size
 4. Changes apply immediately
 
 ### Share a hymn
+
 1. Open hymn detail view
 2. Tap **share icon** in header
 3. Select app to share via
@@ -257,10 +329,12 @@ Before releasing or distributing:
 ## 🔧 Maintenance
 
 ### Updating Hymn Data
+
 If hymns need to be updated from the Java source:
 Send through any changes you would like to see in SPrings of Joy, or hymns you would like to see in the springs of Joy
 
 ### Version Updates
+
 1. Update `version` field in `app.json`
 2. Rebuild APK: `npm run build:android`
 3. Distribute new `.apk` file
@@ -280,6 +354,7 @@ Send through any changes you would like to see in SPrings of Joy, or hymns you w
 ## 🐛 Troubleshooting
 
 ### App won't start
+
 ```bash
 # Clear cache and reinstall dependencies
 npm start --clear
@@ -288,11 +363,13 @@ npm install
 ```
 
 ### Search not working
+
 - Verify database initialized on first launch
 - Check browser console for errors
 - Ensure `src/data/hymns.ts` exists
 
 ### APK build fails
+
 ```bash
 # Clear build cache and retry
 eas build --platform android --profile production --clear
@@ -342,4 +419,4 @@ For issues, questions, or feature requests:
 
 ---
 
-**Built with ❤️ for MUSDAA**  
+**Built with ❤️ for MUSDAA**

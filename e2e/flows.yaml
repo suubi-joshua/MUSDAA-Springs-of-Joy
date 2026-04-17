@@ -1,0 +1,89 @@
+appId: com.musdaa.springsofjoyhymnal
+name: Springs of Joy E2E Tests
+tags:
+  - e2e
+  - happy-path
+modules:
+  - json: {}
+
+env:
+  SCREENSHOT_PATH: './test-results/screenshots'
+
+flows:
+  # Flow 1: Discovery - Navigate through app and view hymn detail
+  discovery:
+    - openLink: springs-of-joy://
+    - waitForAnimationToEnd: 3000
+    - tapOn: 'Get Started'
+    - waitForAnimationToEnd: 1000
+    - scrollUntilVisible:
+        element:
+          id: hymn-item
+        direction: DOWN
+    - tapOn:
+        id: hymn-item
+        index: 0
+    - waitForAnimationToEnd: 1000
+    - assertVisible:
+        id: hymn-detail
+
+  # Flow 2: Search for a hymn
+  search:
+    - openLink: springs-of-joy://
+    - waitForAnimationToEnd: 3000
+    - tapOn: 'Get Started'
+    - waitForAnimationToEnd: 1000
+    - tapOn: 'Search'
+    - waitForAnimationToEnd: 500
+    - inputText: 'His'
+    - waitForAnimationToEnd: 1000
+    - assertVisible:
+        id: search-results
+
+  # Flow 3: Bookmark a hymn
+  bookmark:
+    - openLink: springs-of-joy://
+    - waitForAnimationToEnd: 3000
+    - tapOn: 'Get Started'
+    - waitForAnimationToEnd: 1000
+    - scrollUntilVisible:
+        element:
+          id: hymn-item
+        direction: DOWN
+    - tapOn:
+        id: hymn-item
+        index: 0
+    - waitForAnimationToEnd: 1000
+    - tapOn:
+        id: bookmark-button
+    - waitForAnimationToEnd: 500
+    - tapOn:
+        id: back-button
+    - waitForAnimationToEnd: 1000
+    - tapOn: 'Bookmarks'
+    - waitForAnimationToEnd: 1000
+    - assertVisible:
+        id: bookmark-list
+
+  # Flow 4: Adjust font size
+  fontSize:
+    - openLink: springs-of-joy://
+    - waitForAnimationToEnd: 3000
+    - tapOn: 'Get Started'
+    - waitForAnimationToEnd: 1000
+    - scrollUntilVisible:
+        element:
+          id: hymn-item
+        direction: DOWN
+    - tapOn:
+        id: hymn-item
+        index: 0
+    - waitForAnimationToEnd: 1000
+    - tapOn:
+        id: type-scale-button
+    - waitForAnimationToEnd: 500
+    - assertVisible:
+        id: type-scale-control
+    - tapOn:
+        id: close-type-scale
+    - waitForAnimationToEnd: 500

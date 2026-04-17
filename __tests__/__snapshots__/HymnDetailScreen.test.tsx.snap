@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HymnDetailScreen Snapshot matches snapshot for header alignment 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+  testID="hymn-detail"
+>
+  <RCTScrollView
+    className="flex-1"
+    contentContainerStyle={
+      {
+        "padding": 24,
+        "paddingBottom": 64,
+      }
+    }
+    showsVerticalScrollIndicator={true}
+    testID="hymn-scroll"
+  >
+    <View>
+      <Text
+        className="text-brand-green font-extrabold mb-5 text-center"
+        style={
+          {
+            "fontSize": 16,
+          }
+        }
+        testID="hymn-title"
+      >
+        Test Hymn Title
+      </Text>
+      <Text
+        className="text-left mt-3"
+        style={
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "lineHeight": 28,
+          }
+        }
+        testID="hymn-body"
+      >
+        Test hymn body content
+      </Text>
+    </View>
+  </RCTScrollView>
+</View>
+`;
