@@ -33,10 +33,11 @@ const SearchBar: React.FC<Props> = ({
         onChangeText={onChangeText}
         clearButtonMode="never"
         autoCapitalize="none"
+        testID="search-input"
       />
 
       {value !== '' && (
-        <TouchableOpacity className="p-2 ml-2" onPress={onClear}>
+        <TouchableOpacity className="p-2 ml-2" onPress={onClear} testID="clear-search">
           <Ionicons name="close-circle" size={22} color={colors.grey} />
         </TouchableOpacity>
       )}

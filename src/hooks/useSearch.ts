@@ -62,5 +62,6 @@ export function useSearch() {
     error,
     handleSearch,
     clearSearch,
+    performSearch,
   }
 }

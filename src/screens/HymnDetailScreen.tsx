@@ -143,25 +143,52 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: screenBg }}>
+    <View style={{ flex: 1, backgroundColor: screenBg }} testID="hymn-detail">
       <ScrollView
         className="flex-1"
         contentContainerStyle={{ padding: 24, paddingBottom: 64 }}
         showsVerticalScrollIndicator={true}
+        testID="hymn-scroll"
       >
-        <Text style={{ fontSize }} className="text-brand-green font-extrabold mb-5 text-center">
+        <Text
+          style={{ fontSize }}
+          className="text-brand-green font-extrabold mb-5 text-center"
+          testID="hymn-title"
+        >
           {title}
         </Text>
         <Text
           style={{ fontSize, lineHeight: Math.round(fontSize * 1.75), color: bodyTextColor }}
           className="text-left mt-3"
+          testID="hymn-body"
         >
           {body}
         </Text>
       </ScrollView>
 
+      <TouchableOpacity
+        className="absolute top-4 right-4"
+        onPress={handleToggleTypeScale}
+        testID="type-scale-button"
+      >
+        <MaterialIcons name="format-size" size={24} color={screenBg} />
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        className="absolute top-4 right-16"
+        onPress={handleToggleBookmark}
+        testID="bookmark-button"
+        aria-pressed={bookmarked}
+      >
+        <Ionicons
+          name={bookmarked ? 'bookmark' : 'bookmark-outline'}
+          size={24}
+          color={colors.white}
+        />
+      </TouchableOpacity>
+
       {showTypeScale && (
-        <View className="absolute inset-0 justify-end">
+        <View className="absolute inset-0 justify-end" testID="type-scale-control">
           <Pressable className="absolute inset-0 bg-black/30" onPress={closeTypeScale} />
           <Animated.View
             style={{
@@ -184,10 +211,22 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
               ],
             }}
           >
-            <View className="flex-row items-center">
-              <Text style={{ color: bodyTextColor, fontSize: 14, marginRight: 10 }}>A</Text>
+            <TouchableOpacity
+              onPress={closeTypeScale}
+              testID="close-type-scale"
+              className="absolute top-2 right-2"
+            >
+              <Ionicons name="close" size={20} color={bodyTextColor} />
+            </TouchableOpacity>
+            <View className="flex-row items-center mt-2">
+              <TouchableOpacity
+                onPress={() => setFontSize(Math.max(14, fontSize - 2))}
+                testID="decrease-font"
+              >
+                <Text style={{ color: bodyTextColor, fontSize: 14, fontWeight: 'bold' }}>A-</Text>
+              </TouchableOpacity>
               <Slider
-                style={{ flex: 1, height: 40 }}
+                style={{ flex: 1, height: 40, marginHorizontal: 10 }}
                 value={fontSize}
                 minimumValue={14}
                 maximumValue={34}
@@ -197,11 +236,12 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
                 maximumTrackTintColor={isDark ? '#5A5A5A' : '#D1D5DB'}
                 thumbTintColor={colors.primary}
               />
-              <Text
-                style={{ color: bodyTextColor, fontSize: 24, fontWeight: '800', marginLeft: 10 }}
+              <TouchableOpacity
+                onPress={() => setFontSize(Math.min(34, fontSize + 2))}
+                testID="increase-font"
               >
-                A
-              </Text>
+                <Text style={{ color: bodyTextColor, fontSize: 18, fontWeight: 'bold' }}>A+</Text>
+              </TouchableOpacity>
             </View>
           </Animated.View>
         </View>

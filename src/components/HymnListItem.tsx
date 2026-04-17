@@ -23,16 +23,23 @@ const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
       className="flex-row items-center bg-white rounded-3xl mb-5 px-5 py-5 shadow-lg"
       onPress={onPress}
       activeOpacity={0.7}
+      testID="hymn-item"
     >
       <View className="w-14 h-14 rounded-full bg-brand-green justify-center items-center mr-5">
-        <Text className="text-xl font-extrabold text-white">{hymnetNumber}</Text>
+        <Text className="text-xl font-extrabold text-white" testID="hymn-number">
+          {hymnetNumber}
+        </Text>
       </View>
 
       <View className="flex-1 pr-4">
-        <Text className="text-xl font-extrabold text-gray-900 mb-1" numberOfLines={2}>
+        <Text
+          className="text-xl font-extrabold text-gray-900 mb-1"
+          numberOfLines={2}
+          testID="hymn-title"
+        >
           {hymn.title}
         </Text>
-        <Text className="text-base text-gray-700" numberOfLines={1}>
+        <Text className="text-base text-gray-700" numberOfLines={1} testID="hymn-preview">
           {hymn.body.split('\n')[0]}
         </Text>
       </View>

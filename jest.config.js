@@ -6,7 +6,7 @@ module.exports = {
   setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect', '<rootDir>/jest.setup.js'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts', '!src/**/index.{ts,tsx}'],
-  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/'],
+  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/', '/e2e/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
