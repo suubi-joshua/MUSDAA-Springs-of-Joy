@@ -223,7 +223,64 @@ MUSDAA-Springs-of-Joy/
 
 ---
 
-## 🧪 Testing Checklist
+## 🧪 Testing
+
+### Unit Tests (Jest)
+
+The project includes 36 unit tests covering core functionality:
+
+```bash
+# Run all unit tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+**What's Tested:**
+
+- `useSearch` hook - Search by number, title, empty state, error handling
+- `database.ts` - CRUD operations, empty state handling
+- `ThemeContext` - Theme switching, light/dark modes
+
+### End-to-End Tests (Maestro)
+
+Since this is a React Native app using `expo-sqlite` (native database), web-based E2E testing is not supported. Use **Maestro** for native E2E testing on Android/iOS.
+
+**Setup:**
+
+```bash
+# Install Maestro
+curl -s "https://get.maestro.mobile.dev" | bash
+
+# Run E2E tests on connected device/emulator
+maestro test e2e/flows.yaml
+
+# Or use the npm script
+npm run test:e2e
+```
+
+**E2E Flows Available:**
+
+- `discovery` - Open app, view hymn list, tap hymn, view detail
+- `search` - Search for hymns by title
+- `bookmark` - Bookmark a hymn, view in bookmarks tab
+- `fontSize` - Adjust font size in hymn detail
+
+### CI/CD Testing
+
+The GitHub Actions workflow runs on every push:
+
+- ✅ Lint & Type Check
+- ✅ Unit Tests (Jest)
+- ✅ Expo Doctor
+- ✅ Build Verification (Android bundle)
+- ⏭️ E2E Tests (run manually with Maestro)
+
+### Test Checklist
 
 Before releasing or distributing:
 
