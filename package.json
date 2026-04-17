@@ -13,14 +13,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:e2e": "playwright test",
-    "test:all": "npm run lint && npm run typecheck && npm test && npm run test:e2e",
+    "test:e2e": "maestro test e2e/flows.yaml",
+    "test:all": "npm run lint && npm run typecheck && npm test",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@expo/webpack-config": "^18.0.0",
     "@react-native-async-storage/async-storage": "~2.2.0",
     "@react-native-community/slider": "5.0.1",
     "@react-navigation/bottom-tabs": "^7.15.9",
@@ -63,6 +62,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "react-test-renderer": "19.1.0",
+    "serve": "^14.2.6",
     "typescript": "~5.9.2"
   },
   "lint-staged": {

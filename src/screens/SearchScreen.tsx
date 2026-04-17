@@ -62,6 +62,7 @@ const SearchScreen = ({ navigation }: any) => {
           keyExtractor={item => item.id.toString()}
           contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 40 }}
           scrollIndicatorInsets={{ right: 1 }}
+          testID="search-results"
         />
       )}
     </View>

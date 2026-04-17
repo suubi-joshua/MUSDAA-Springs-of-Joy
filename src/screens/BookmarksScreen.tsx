@@ -60,11 +60,13 @@ const BookmarksScreen = ({ navigation }: any) => {
   }
 
   return (
-    <View className="flex-1 bg-gray-50">
+    <View className="flex-1 bg-gray-50" testID="bookmark-list">
       <FlatList
         data={bookmarkedHymns}
         renderItem={({ item }) => (
-          <HymnListItem hymn={item} onPress={() => handleSelectHymn(item)} />
+          <View testID="bookmark-item">
+            <HymnListItem hymn={item} onPress={() => handleSelectHymn(item)} />
+          </View>
         )}
         keyExtractor={item => item.id.toString()}
         contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 }}

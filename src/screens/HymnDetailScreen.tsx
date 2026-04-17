@@ -104,10 +104,18 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
       ),
       headerRight: () => (
         <View className="flex-row items-center">
-          <TouchableOpacity className="mr-3" onPress={handleToggleTypeScale}>
+          <TouchableOpacity
+            className="mr-3"
+            onPress={handleToggleTypeScale}
+            testID="type-scale-button"
+          >
             <MaterialIcons name="format-size" size={24} color={colors.white} />
           </TouchableOpacity>
-          <TouchableOpacity className="mr-3" onPress={handleToggleBookmark}>
+          <TouchableOpacity
+            className="mr-3"
+            onPress={handleToggleBookmark}
+            testID="bookmark-button"
+          >
             <Ionicons
               name={bookmarked ? 'bookmark' : 'bookmark-outline'}
               size={24}
@@ -118,6 +126,11 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
             <Ionicons name="share-social" size={24} color={colors.white} />
           </TouchableOpacity>
         </View>
+      ),
+      headerLeft: () => (
+        <TouchableOpacity onPress={() => navigation.goBack()} testID="back-button" className="ml-3">
+          <Ionicons name="arrow-back" size={24} color={colors.white} />
+        </TouchableOpacity>
       ),
     })
   }, [navigation, bookmarked, title, showTypeScale])
@@ -165,27 +178,6 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
           {body}
         </Text>
       </ScrollView>
-
-      <TouchableOpacity
-        className="absolute top-4 right-4"
-        onPress={handleToggleTypeScale}
-        testID="type-scale-button"
-      >
-        <MaterialIcons name="format-size" size={24} color={screenBg} />
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        className="absolute top-4 right-16"
-        onPress={handleToggleBookmark}
-        testID="bookmark-button"
-        aria-pressed={bookmarked}
-      >
-        <Ionicons
-          name={bookmarked ? 'bookmark' : 'bookmark-outline'}
-          size={24}
-          color={colors.white}
-        />
-      </TouchableOpacity>
 
       {showTypeScale && (
         <View className="absolute inset-0 justify-end" testID="type-scale-control">
