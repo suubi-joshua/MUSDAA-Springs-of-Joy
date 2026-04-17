@@ -3,54 +3,45 @@
  * Display user's bookmarked hymns
  */
 
-import React from 'react';
-import {
-  View,
-  FlatList,
-  Text,
-  ActivityIndicator,
-  RefreshControl,
-} from 'react-native';
-import { useFocusEffect } from '@react-navigation/native';
-import { colors } from '../theme';
-import { useBookmarks } from '../hooks/useBookmarks';
-import HymnListItem from '../components/HymnListItem';
-import { Hymn } from '../types';
+import React from 'react'
+import { View, FlatList, Text, ActivityIndicator, RefreshControl } from 'react-native'
+import { useFocusEffect } from '@react-navigation/native'
+import { colors } from '../theme'
+import { useBookmarks } from '../hooks/useBookmarks'
+import HymnListItem from '../components/HymnListItem'
+import { Hymn } from '../types'
 
 const BookmarksScreen = ({ navigation }: any) => {
-  const { bookmarkedHymns, loading, loadBookmarks } = useBookmarks();
-  const [refreshing, setRefreshing] = React.useState(false);
+  const { bookmarkedHymns, loading, loadBookmarks } = useBookmarks()
+  const [refreshing, setRefreshing] = React.useState(false)
 
   // Reload bookmarks when screen comes into focus
   useFocusEffect(
     React.useCallback(() => {
-      loadBookmarks();
+      loadBookmarks()
     }, [loadBookmarks])
-  );
+  )
 
   const handleRefresh = async () => {
-    setRefreshing(true);
-    await loadBookmarks();
-    setRefreshing(false);
-  };
+    setRefreshing(true)
+    await loadBookmarks()
+    setRefreshing(false)
+  }
 
   const handleSelectHymn = (hymn: Hymn) => {
     navigation.navigate('HymnDetail', {
       id: hymn.id,
       title: hymn.title,
       body: hymn.body,
-    });
-  };
+    })
+  }
 
   if (loading && bookmarkedHymns.length === 0) {
     return (
       <View className="flex-1 justify-center items-center bg-gray-50">
-        <ActivityIndicator
-          size="large"
-          color={colors.primary}
-        />
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
-    );
+    )
   }
 
   if (bookmarkedHymns.length === 0) {
@@ -65,7 +56,7 @@ const BookmarksScreen = ({ navigation }: any) => {
           </Text>
         </View>
       </View>
-    );
+    )
   }
 
   return (
@@ -73,10 +64,7 @@ const BookmarksScreen = ({ navigation }: any) => {
       <FlatList
         data={bookmarkedHymns}
         renderItem={({ item }) => (
-          <HymnListItem
-            hymn={item}
-            onPress={() => handleSelectHymn(item)}
-          />
+          <HymnListItem hymn={item} onPress={() => handleSelectHymn(item)} />
         )}
         keyExtractor={item => item.id.toString()}
         contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 }}
@@ -90,7 +78,7 @@ const BookmarksScreen = ({ navigation }: any) => {
         }
       />
     </View>
-  );
-};
+  )
+}
 
-export default BookmarksScreen;
+export default BookmarksScreen

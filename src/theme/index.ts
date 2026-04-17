@@ -31,7 +31,7 @@ export const colors = {
   darkBg: '#1A1A1A',
   darkText: '#ECECEC',
   darkSecondaryBg: '#2D2D2D',
-};
+}
 
 export const typography = {
   // Font sizes
@@ -63,7 +63,7 @@ export const typography = {
     relaxed: 1.625,
     loose: 2,
   },
-};
+}
 
 export const spacing = {
   xs: 4,
@@ -74,7 +74,7 @@ export const spacing = {
   xl: 24,
   '2xl': 32,
   '3xl': 40,
-};
+}
 
 export const borderRadius = {
   none: 0,
@@ -83,7 +83,7 @@ export const borderRadius = {
   lg: 12,
   xl: 16,
   full: 9999,
-};
+}
 
 export const shadows = {
   sm: {
@@ -107,7 +107,7 @@ export const shadows = {
     shadowRadius: 6.68,
     elevation: 12,
   },
-};
+}
 
 export default {
   colors,
@@ -115,4 +115,4 @@ export default {
   spacing,
   borderRadius,
   shadows,
-};
+}

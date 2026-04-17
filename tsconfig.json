@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "jsx": "react-native",
     "declaration": true,
     "declarationMap": true,
@@ -21,20 +17,10 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*",
-    "App.tsx",
-    "nativewind-env.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "lib"
-  ],
+  "include": ["src/**/*", "App.tsx", "nativewind-env.d.ts"],
+  "exclude": ["node_modules", "dist", "lib"],
   "extends": "expo/tsconfig.base"
 }

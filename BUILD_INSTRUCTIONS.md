@@ -66,12 +66,14 @@ npm install
 ### 3. Development
 
 **Run on local machine (Expo Go):**
+
 ```bash
 npm start
 # Then press 'a' for Android or 'i' for iOS
 ```
 
 **Run on physical device:**
+
 ```bash
 npm run android  # Android device
 npm run ios      # iOS device
@@ -105,23 +107,27 @@ eas build --platform android --profile production
 ## Features in Detail
 
 ### Home Screen
+
 - Browse all 462 hymns
 - View hymn titles and first line preview
 - Infinite scroll with pagination
 - Tap to open full lyrics
 
 ### Search
+
 - Real-time search by title or lyrics (300ms debounce)
 - Displays all matching results instantly
 - Clear search with one tap
 
 ### Bookmarks
+
 - Save hymns as favorites
 - Persists across app restarts
 - Pull-to-refresh to reload
 - Tap to view full hymn
 
 ### Detail View
+
 - Full hymn lyrics with preserved formatting
 - Hymn title in header
 - **Font Size Controls** - Adjust font size with +/- buttons
@@ -130,6 +136,7 @@ eas build --platform android --profile production
 - Scrollable for long hymns
 
 ### Settings
+
 - **Dark Mode** - Toggle dark theme (feature-ready)
 - **Large Text** - Default large font option
 - **About** - Version and hymn count info
@@ -139,6 +146,7 @@ eas build --platform android --profile production
 ## Data
 
 All hymn data is:
+
 - **Extracted from** Java source: `SpringsOfJoy/app/src/main/java/.../MyList.java`
 - **Stored locally** in SQLite database for offline access
 - **Seeded automatically** on first app launch
@@ -147,12 +155,14 @@ All hymn data is:
 ## Configuration
 
 ### app.json
+
 - App name, version, and package IDs
 - Android and iOS settings
 - Splash screen configuration
 - EAS build integration
 
 ### eas.json
+
 - Build profiles (production, development)
 - Android APK settings
 - Expo Cloud build targets
@@ -160,16 +170,19 @@ All hymn data is:
 ## Troubleshooting
 
 ### App won't start
+
 1. Clear cache: `npm start --clear`
 2. Delete node_modules: `rm -rf node_modules && npm install`
 3. Check Expo version: `expo --version`
 
 ### Search not working
+
 - Ensure database is seeded on first launch
 - Check browser console for errors
 - Verify hymn data in `src/data/hymns.ts`
 
 ### APK build fails
+
 - Verify in `eas.json` build profile
 - Check internet connection
 - Ensure EAS authentication: `eas login`
@@ -178,6 +191,7 @@ All hymn data is:
 ## Maintenance
 
 ### Updating hymns
+
 1. Modify `SpringsOfJoy/app/src/main/java/.../MyList.java`
 2. Run hymn extraction:
    ```bash
@@ -186,6 +200,7 @@ All hymn data is:
 3. Verify new `src/data/hymns.ts`
 
 ### Version updates
+
 1. Update `version` in `app.json`
 2. Rebuild APK with `eas build`
 3. Distribute new `.apk` file
@@ -205,6 +220,7 @@ Built for MUSDAA © 2024
 ## Support
 
 For issues, questions, or feature requests:
+
 - Email: ssebaanajoshua@gmail.com
 - Contact: MUSDAA Administration
 

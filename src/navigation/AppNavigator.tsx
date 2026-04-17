@@ -3,30 +3,35 @@
  * Using React Navigation with Stack + Bottom Tabs
  */
 
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Ionicons } from '@expo/vector-icons'
 
-import { RootStackParamList, HomeStackParamList, SearchStackParamList, BookmarksStackParamList } from '../types';
-import { colors } from '../theme';
-import { navigationThemes, useThemeMode } from '../theme/ThemeContext';
+import {
+  RootStackParamList,
+  HomeStackParamList,
+  SearchStackParamList,
+  BookmarksStackParamList,
+} from '../types'
+import { colors } from '../theme'
+import { navigationThemes, useThemeMode } from '../theme/ThemeContext'
 
 // Screens
-import SplashScreen from '../screens/SplashScreen';
-import GetStarted from '../screens/GetStarted';
-import HomeScreen from '../screens/HomeScreen';
-import HymnDetailScreen from '../screens/HymnDetailScreen';
-import SearchScreen from '../screens/SearchScreen';
-import BookmarksScreen from '../screens/BookmarksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import SplashScreen from '../screens/SplashScreen'
+import GetStarted from '../screens/GetStarted'
+import HomeScreen from '../screens/HomeScreen'
+import HymnDetailScreen from '../screens/HymnDetailScreen'
+import SearchScreen from '../screens/SearchScreen'
+import BookmarksScreen from '../screens/BookmarksScreen'
+import SettingsScreen from '../screens/SettingsScreen'
 
-const RootStack = createStackNavigator<RootStackParamList>();
-const HomeStack = createStackNavigator<HomeStackParamList>();
-const SearchStack = createStackNavigator<SearchStackParamList>();
-const BookmarksStack = createStackNavigator<BookmarksStackParamList>();
-const Tab = createBottomTabNavigator();
+const RootStack = createStackNavigator<RootStackParamList>()
+const HomeStack = createStackNavigator<HomeStackParamList>()
+const SearchStack = createStackNavigator<SearchStackParamList>()
+const BookmarksStack = createStackNavigator<BookmarksStackParamList>()
+const Tab = createBottomTabNavigator()
 
 /**
  * Home Stack Navigator
@@ -59,7 +64,7 @@ function HomeStackNavigator() {
         })}
       />
     </HomeStack.Navigator>
-  );
+  )
 }
 
 /**
@@ -93,7 +98,7 @@ function SearchStackNavigator() {
         })}
       />
     </SearchStack.Navigator>
-  );
+  )
 }
 
 /**
@@ -127,7 +132,7 @@ function BookmarksStackNavigator() {
         })}
       />
     </BookmarksStack.Navigator>
-  );
+  )
 }
 
 /**
@@ -139,25 +144,19 @@ function MainTabsNavigator() {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
-          let iconName;
+          let iconName
 
           if (route.name === 'HomeTab') {
-            iconName = focused ? 'home' : 'home-outline';
+            iconName = focused ? 'home' : 'home-outline'
           } else if (route.name === 'SearchTab') {
-            iconName = focused ? 'search' : 'search-outline';
+            iconName = focused ? 'search' : 'search-outline'
           } else if (route.name === 'BookmarksTab') {
-            iconName = focused ? 'bookmark' : 'bookmark-outline';
+            iconName = focused ? 'bookmark' : 'bookmark-outline'
           } else if (route.name === 'SettingsTab') {
-            iconName = focused ? 'settings' : 'settings-outline';
+            iconName = focused ? 'settings' : 'settings-outline'
           }
 
-          return (
-            <Ionicons
-              name={iconName as any}
-              size={size}
-              color={color}
-            />
-          );
+          return <Ionicons name={iconName as any} size={size} color={color} />
         },
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.grey,
@@ -197,7 +196,7 @@ function MainTabsNavigator() {
         }}
       />
     </Tab.Navigator>
-  );
+  )
 }
 
 /**
@@ -210,35 +209,24 @@ export function RootNavigator() {
         headerShown: false,
       }}
     >
-      <RootStack.Screen
-        name="Splash"
-        component={SplashScreen}
-      />
-      <RootStack.Screen
-        name="GetStarted"
-        component={GetStarted}
-      />
-      <RootStack.Screen
-        name="MainTabs"
-        component={MainTabsNavigator}
-      />
+      <RootStack.Screen name="Splash" component={SplashScreen} />
+      <RootStack.Screen name="GetStarted" component={GetStarted} />
+      <RootStack.Screen name="MainTabs" component={MainTabsNavigator} />
     </RootStack.Navigator>
-  );
+  )
 }
 
 /**
  * Navigation Container with theme
  */
 export function AppNavigator() {
-  const { mode } = useThemeMode();
+  const { mode } = useThemeMode()
 
   return (
-    <NavigationContainer
-      theme={navigationThemes[mode] as any}
-    >
+    <NavigationContainer theme={navigationThemes[mode] as any}>
       <RootNavigator />
     </NavigationContainer>
-  );
+  )
 }
 
-export default AppNavigator;
+export default AppNavigator

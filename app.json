@@ -10,9 +10,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#53B175"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.musdaa.springsoffoy"

@@ -2,13 +2,16 @@
 // Do not edit manually
 
 export interface Hymn {
-  id: number;
-  title: string;
-  body: string;
+  id: number
+  title: string
+  body: string
 }
 
 export const HYMNS: Hymn[] = [
-  { id: 1, title: `1 Praise to the Lord`, body: `1. Praise to the Lord, the Almighty, the King of creation! 
+  {
+    id: 1,
+    title: `1 Praise to the Lord`,
+    body: `1. Praise to the Lord, the Almighty, the King of creation! 
 O my soul, praise Him, for He is thy health and salvation! 
 All ye who hear, 
 Now to His temple draw near; 
@@ -30,8 +33,12 @@ Surely His goodness and mercy here daily attend
 thee. 
 Ponder anew 
 What the Almighty can do, 
-If with His love He befriend thee.` },
-  { id: 2, title: `2 O Worship the King`, body: `1. O worship the King, all glorious above, 
+If with His love He befriend thee.`,
+  },
+  {
+    id: 2,
+    title: `2 O Worship the King`,
+    body: `1. O worship the King, all glorious above, 
 O gratefully sing His wonderful love; 
 Our Shield and Defender, the Ancient of Days, 
 Pavilioned in splendour, and girded with praise. 
@@ -53,8 +60,12 @@ And sweetly distills in the dew and the rain.
 4. Frail children of dust, and feeble as frail,
 In Thee do we trust, nor find Thee to fail; 
 Thy mercies how tender! How firm to the end! 
-Our Maker, Defender, Redeemer, and Friend.` },
-  { id: 3, title: `3. Shall We Gather at the River`, body: `1. Shall we gather at the river, 
+Our Maker, Defender, Redeemer, and Friend.`,
+  },
+  {
+    id: 3,
+    title: `3. Shall We Gather at the River`,
+    body: `1. Shall we gather at the river, 
 Where bright angel feet have trod, 
 With its crystal tide forever 
 Flowing by the throne of God? 
@@ -82,8 +93,12 @@ And provide a robe and crown.
 4. Soon we'll reach the shining river, 
 Soon our pilgrimage will cease;
 Soon our happy hearts will quiver 
-With the melody of peace. ` },
-  { id: 4, title: `4. Jesus Is All the World to Me`, body: `1. Jesus is all the world to me, 
+With the melody of peace. `,
+  },
+  {
+    id: 4,
+    title: `4. Jesus Is All the World to Me`,
+    body: `1. Jesus is all the world to me, 
 My life, my joy, my all; 
 He is my strength from day to day, 
 With-out Him I would fall. 
@@ -120,8 +135,12 @@ Life's fleeting days shall end.
 Beautiful life with such a Friend, 
 Beautiful life that has no end; 
 Eternal life, eternal joy, 
-He's my Friend.` },
-  { id: 5, title: `5. He Lives `, body: `1. I serve a risen Saviour, 
+He's my Friend.`,
+  },
+  {
+    id: 5,
+    title: `5. He Lives `,
+    body: `1. I serve a risen Saviour, 
 He's in the world today;
 I know that He is living, 
 whatever men may say; 
@@ -162,8 +181,12 @@ to Jesus Christ the King!
 The hope of all who seek Him, 
 the help of all who find,
 None other is so loving, 
-so good and kind.` },
-  { id: 6, title: `6. My Maker and My King `, body: `1. My Maker and my King, 
+so good and kind.`,
+  },
+  {
+    id: 6,
+    title: `6. My Maker and My King `,
+    body: `1. My Maker and my King, 
 To Thee my all I owe; 
 Thy sovereign bounty is the spring 
 Whence all my blessings flow; 
@@ -192,8 +215,12 @@ My soul with strength divine;
 Let every word and each desire 
 And all my days be Thine. 
 Let every word each desire 
-And all my days be Thine.` },
-  { id: 7, title: `7. Rejoice, Ye Pure In Heart `, body: `1. Rejoice ye pure in heart! 
+And all my days be Thine.`,
+  },
+  {
+    id: 7,
+    title: `7. Rejoice, Ye Pure In Heart `,
+    body: `1. Rejoice ye pure in heart! 
 Rejoice, give thanks, and sing; 
 Your festal banner wave on high, 
 The cross of Christ your King. 
@@ -225,8 +252,12 @@ In gladness and in woe.
 5. Praise Him who reigns on high, 
 The Lord whom we adore, 
 The Father, Son and Holy Ghost, 
-One God forever more.` },
-  { id: 8, title: `8. Glorious Things of Thee Are Spoken`, body: `1. Glorious things of thee are spoken, 
+One God forever more.`,
+  },
+  {
+    id: 8,
+    title: `8. Glorious Things of Thee Are Spoken`,
+    body: `1. Glorious things of thee are spoken, 
 Zion, city of our God;
 He whose word cannot be broken
 Formed thee for His own abode;
@@ -262,8 +293,12 @@ I will glo-ry in Thy name;
 Fad-ing is the world-ling’s pleasure,
 All his boast-ed pomp and show;
 Sol-id joys and last-ing trea-sure
-None but Zi-on’s children know.` },
-  { id: 9, title: `9. Come, My Way`, body: `1. Come, my Way, my Truth, my Life;
+None but Zi-on’s children know.`,
+  },
+  {
+    id: 9,
+    title: `9. Come, My Way`,
+    body: `1. Come, my Way, my Truth, my Life;
 Such a Way, as gives us breath;
 Such a Truth as ends all strife;
 Such a Life as kill-eth death.
@@ -278,8 +313,12 @@ Such a Strength, as makes His guest.
 3. Come, my Joy, my Love, my Heart;
 Such a Joy, as none can move; 
 Such a Love as none can part;
-Such a Heart, as joys in love.` },
-  { id: 10, title: `10. More About Jesus`, body: `1. More about Jesus, I would know, 
+Such a Heart, as joys in love.`,
+  },
+  {
+    id: 10,
+    title: `10. More About Jesus`,
+    body: `1. More about Jesus, I would know, 
 More of His grace to others show; 
 More of His saving fullness see, 
 More of His love who died for me. 
@@ -307,8 +346,12 @@ Making each faithful saying mine.
 4. More about Jesus, on His throne, 
 Riches in glory all His own; 
 More of His kingdom's sure increase, 
-More of His coming, Prince of Peace.` },
-  { id: 11, title: `11. There’s No Other Name Like Jesus`, body: `1. There’s no oth-er name like Je-sus,
+More of His coming, Prince of Peace.`,
+  },
+  {
+    id: 11,
+    title: `11. There’s No Other Name Like Jesus`,
+    body: `1. There’s no oth-er name like Je-sus,
 ‘Tis the dear-est name we know,
 ‘Tis the angel’s joy in heav-en, 
 ‘Tis the Christ-ian’s joy be-low.
@@ -344,8 +387,12 @@ Bless-es all I do or say.
 5. If He wills that death’s cold fin-ger
 Touch my fee-ble , mor-tal clay,
 Then ‘tis well if on-ly Je-sus 
-Is my dy-ing trust and stay` },
-  { id: 12, title: `12. I Sing the Mighty Power of God`, body: `1. I sing the mighty power of God, 
+Is my dy-ing trust and stay`,
+  },
+  {
+    id: 12,
+    title: `12. I Sing the Mighty Power of God`,
+    body: `1. I sing the mighty power of God, 
 That made the mountains rise,
 That spread the flowing seas abroad, 
 And built the lofty skies. 
@@ -372,8 +419,12 @@ By order from Thy thrown;
 Creatures that borrows life from Thee 
 Are subject to Thy care; 
 There’s not a place where we can flee 
-But God is present there.` },
-  { id: 13, title: `13. The Spacious Firmament `, body: `1. The spa-cious firm-a-ment on high, 
+But God is present there.`,
+  },
+  {
+    id: 13,
+    title: `13. The Spacious Firmament `,
+    body: `1. The spa-cious firm-a-ment on high, 
 With all the blue, e-the-real sky, 
 And span-gled heavens, a shin-ing frame, 
 Their great O-rig-i-nal pro-claim. 
@@ -400,8 +451,12 @@ Amid their ra-diant orbs be found?
 In rea-son's ear they all re-joice 
 And ut-ter forth a glo-rious voice, 
 For-ev-er sing-ing as they shine, 
-"The hand that made us is divine."` },
-  { id: 14, title: `14. Before Jehovah's Awful Throne `, body: `1. Before Jehovah's awful throne,
+"The hand that made us is divine."`,
+  },
+  {
+    id: 14,
+    title: `14. Before Jehovah's Awful Throne `,
+    body: `1. Before Jehovah's awful throne,
 Ye nations, bow with sacred joy; 
 Know that the Lord is God alone; 
 He can create, and He destroy. 
@@ -422,8 +477,12 @@ Shall fill His courts with sounding praise.
 4. Wide as the world is His command, 
 Vast as Eternity His love; 
 Firm as a rock His truth shall stand, 
-When rolling years shall cease to move.` },
-  { id: 15, title: `15. Can You Count the Stars?`, body: `1. Can you count the star that brightly 
+When rolling years shall cease to move.`,
+  },
+  {
+    id: 15,
+    title: `15. Can You Count the Stars?`,
+    body: `1. Can you count the star that brightly 
 Twinkle in the midnight sky? 
 Can you count the clouds, so lightly
 O’er the meadows floating by? 
@@ -450,8 +509,12 @@ Singing sweetly day by day?
 God hears all the happy voices, 
 In their merry songs rejoices; 
 And He loves them, everyone 
-And He loves them, everyone ` },
-  { id: 16, title: `16. I Gave My Life for Thee`, body: `1. I gave My life for thee
+And He loves them, everyone `,
+  },
+  {
+    id: 16,
+    title: `16. I Gave My Life for Thee`,
+    body: `1. I gave My life for thee
 My precious blood I shed
 That thou might’st ransomed be,
 And quickened from the dead;
@@ -478,8 +541,12 @@ To rescue thee from hell;
 I’ve borne, I’ve borne it all for thee,
 What hast thou borne for Me?
 I’ve borne, I’ve borne it all for thee,
-What hast thou borne for Me?` },
-  { id: 17, title: `17. Does Jesus Care? `, body: `1. Does Jesus care when my heart is pained
+What hast thou borne for Me?`,
+  },
+  {
+    id: 17,
+    title: `17. Does Jesus Care? `,
+    body: `1. Does Jesus care when my heart is pained
 Too deeply for mirth and song;
 As the burdens press, and the cares distress,
 And the way grows weary and long?
@@ -503,8 +570,12 @@ Does He care enough to be near?
 3. Does Jesus care when I’ve said good-bye
 To the dearest on earth to me,
 And my sad heart aches till it nearly breaks-
-Is it aught to Him? Does He see?` },
-  { id: 18, title: `18. Worthy, Worthy Is the Lamb`, body: `1. Worthy, worthy is the Lamb,
+Is it aught to Him? Does He see?`,
+  },
+  {
+    id: 18,
+    title: `18. Worthy, Worthy Is the Lamb`,
+    body: `1. Worthy, worthy is the Lamb,
 Worthy, worthy is the Lamb;
 Worthy, worthy is the Lamb
 That was slain.
@@ -525,8 +596,12 @@ Holy Lamb.
 3. Thus may we each moment feel,
 Love Him, serve Him, praise Him still,
 Till we all on Zion’s hill
-See the Lamb.` },
-  { id: 19, title: `19. The Lord in Zion Reigneth `, body: `1. The Lord in Zion reigneth, 
+See the Lamb.`,
+  },
+  {
+    id: 19,
+    title: `19. The Lord in Zion Reigneth `,
+    body: `1. The Lord in Zion reigneth, 
 Let all the world rejoice, 
 And come before His throne of grace 
 With tuneful heart and voice; 
@@ -553,8 +628,12 @@ And fill His courts with song;
 Beneath His royal banner
 Let every creature fall, 
 Exalt the King of heaven and earth, 
-And crown Him Lord of all.` },
-  { id: 20, title: `20. Love Divine`, body: `1. Love divine, all loves excelling, 
+And crown Him Lord of all.`,
+  },
+  {
+    id: 20,
+    title: `20. Love Divine`,
+    body: `1. Love divine, all loves excelling, 
 Joy of heaven, to earth come down; 
 Fix in us Thy humble dwelling; 
 All Thy faithful mercies crown! 
@@ -591,8 +670,12 @@ Perfectly restored in Thee;
 Changed from glory into glory, 
 Till in heaven we take our place, 
 Till we cast our crowns before Thee, 
-Lost in wonder, love, and praise.` },
-  { id: 21, title: `21. I Will Sing of Jesus’ Love`, body: `I will sing of Jesus love, 
+Lost in wonder, love, and praise.`,
+  },
+  {
+    id: 21,
+    title: `21. I Will Sing of Jesus’ Love`,
+    body: `I will sing of Jesus love, 
 Sing of Him, who first loved me; 
 For He left bright worlds above, 
 And died on Calvary. 
@@ -614,8 +697,12 @@ Can be made as white as snow.
 3. Nothing good for Him I've done; 
 How could He such love bestow? 
 Lord, I own my heart is won, 
-Help me now my love to show.` },
-  { id: 22, title: `22. Jesus Paid It All`, body: `1. I hear the Saviour say, 
+Help me now my love to show.`,
+  },
+  {
+    id: 22,
+    title: `22. Jesus Paid It All`,
+    body: `1. I hear the Saviour say, 
 "Thy strength indeed is small; 
 Child of weakness, watch and pray, 
 Find in Me thine all in all." 
@@ -643,8 +730,12 @@ In the blood of Calvary's Lamb.
 4. And when before the throne 
 I stand in Him complete, 
 I'll lay my trophies down, 
-All down at Jesus' feet.` },
-  { id: 23, title: `23. Tell Me the Old, Old Story`, body: `1. Tell me the old, old story 
+All down at Jesus' feet.`,
+  },
+  {
+    id: 23,
+    title: `23. Tell Me the Old, Old Story`,
+    body: `1. Tell me the old, old story 
 Of unseen things above,
 Of Jesus and His glory, 
 Of Jesus and His love.
@@ -678,8 +769,12 @@ Is costing me too dear.
 Yes, and when that world's glory 
 Is dawning on my soul,
 Tell me the old, old story:
-"Christ Jesus makes thee whole."` },
-  { id: 24, title: `24. Wake The Song`, body: `1. Wake the song of joy and gladness; 
+"Christ Jesus makes thee whole."`,
+  },
+  {
+    id: 24,
+    title: `24. Wake The Song`,
+    body: `1. Wake the song of joy and gladness; 
 Hither bring your noblest lays; 
 Banish every thought of sadness, 
 Pouring forth your highest praise. 
@@ -713,8 +808,12 @@ Swell with gratitude sincere,
 Thanks to Thee, O loving Saviour, 
 For redemption through Thy blood. 
 Breathe upon us, Holy Spirit, 
-Sweetly draw us near to God.` },
-  { id: 25, title: `25. Wonderful Love of Jesus`, body: `1. In joyful high and holy lays 
+Sweetly draw us near to God.`,
+  },
+  {
+    id: 25,
+    title: `25. Wonderful Love of Jesus`,
+    body: `1. In joyful high and holy lays 
 My soul her grateful voice would raise;
 But who can sing the worthy praise
 Of the wonderful love of Jesus?
@@ -736,8 +835,12 @@ Is the wonderful love of Jesus.
 3. My hope for pardon when I call,
 My trust for lifting when I fall,
 In life, in death, my all in all,
-Is the wonderful love of Jesus.` },
-  { id: 26, title: `26. Amazing Grace`, body: `1. Amazing grace! How sweet the sound,
+Is the wonderful love of Jesus.`,
+  },
+  {
+    id: 26,
+    title: `26. Amazing Grace`,
+    body: `1. Amazing grace! How sweet the sound,
 That saved a wretch like me! 
 I once was lost, but now am found;
 Was blind, but now I see.
@@ -764,8 +867,12 @@ And grace will lead me home.
 5. When we've been there ten thousand years, 
 Bright shining as the sun, 
 We've no less days to sing God's praise 
-Than when we first begun.` },
-  { id: 27, title: `27. Rescue the Perishing`, body: `1. Rescue the perishing, 
+Than when we first begun.`,
+  },
+  {
+    id: 27,
+    title: `27. Rescue the Perishing`,
+    body: `1. Rescue the perishing, 
 Care for the dying, 
 Snatch them in pity from sin and the grave; 
 Weep o'er the erring one, 
@@ -792,8 +899,12 @@ Strength for thy labour the Lord will provide;
 Back to the narrow way 
 Patiently win them;
 Tell the poor wanderer a Saviour has died.
-` },
-  { id: 28, title: `28. The God of Abraham Praise`, body: `1. The God of Abraham praise,
+`,
+  },
+  {
+    id: 28,
+    title: `28. The God of Abraham Praise`,
+    body: `1. The God of Abraham praise,
 Who reigns enthroned above; 
 Ancient of everlasting days, 
 And God of love; 
@@ -820,8 +931,12 @@ They ever cry;
 Hail, Abraham's God and mine! 
 I join the heavenly lays; 
 All might and majesty are Thine,
-And endless praise.` },
-  { id: 29, title: `29. That’s Why I Love Him`, body: `1. Jesus has promised my Shepherd to be, 
+And endless praise.`,
+  },
+  {
+    id: 29,
+    title: `29. That’s Why I Love Him`,
+    body: `1. Jesus has promised my Shepherd to be, 
 That’s why I love Him so; 
 And to the children He said, “Come to Me,
 
@@ -843,8 +958,12 @@ Never will He for a moment forsake,
 
 3. He has in heaven prepared me a place,
 That’s why I love Him so;
-Where I may dwell, by His wonderful grace` },
-  { id: 30, title: `30. Beneath the Cross of Jesus`, body: `1. Beneath the cross of Jesus 
+Where I may dwell, by His wonderful grace`,
+  },
+  {
+    id: 30,
+    title: `30. Beneath the Cross of Jesus`,
+    body: `1. Beneath the cross of Jesus 
 I fain would take my stand, 
 The shadow of a mighty rock 
 Within a weary land; 
@@ -871,8 +990,12 @@ The sunshine of His face;
 Content to let the world go by, 
 To know no gain nor loss, 
 My sinful self my only shame, 
-My glory all the cross.` },
-  { id: 31, title: `31. What a Wonderful Saviour`, body: `1. Christ has for sin atonement made,
+My glory all the cross.`,
+  },
+  {
+    id: 31,
+    title: `31. What a Wonderful Saviour`,
+    body: `1. Christ has for sin atonement made,
 What a wonderful Saviour!
 We are redeemed! The price is paid!
 What a wonderful Saviour!
@@ -912,8 +1035,12 @@ What a wonderful Saviour!
 6. To Him I’ve given all my heart,
 What a wonderful Saviour!
 The world shall never share a part;
-What a wonderful Saviour!` },
-  { id: 32, title: `32. Blessed Are They That Do`, body: `1. Hear the words our Saviour hath spoken,
+What a wonderful Saviour!`,
+  },
+  {
+    id: 32,
+    title: `32. Blessed Are They That Do`,
+    body: `1. Hear the words our Saviour hath spoken,
 Words of life unfailing and true;
 Careless one, prayerless one, hear and remember,
 Jesus says, “Blessed are they that do.” 
@@ -937,8 +1064,12 @@ Blessed, O blessed are they that do.
 3. They with joy may enter the city,
 Free from sin, from sorrow and strife,
 Sanctified, glorified, now and forever,
-They may have right to the tree of life` },
-  { id: 33, title: `33. I Would Be Like Jesus`, body: `Earthly pleasures vainly call me;
+They may have right to the tree of life`,
+  },
+  {
+    id: 33,
+    title: `33. I Would Be Like Jesus`,
+    body: `Earthly pleasures vainly call me;
 I would be like Jesus;
 Nothing worldly shall enthrall me;
 I would be like Jesus.
@@ -966,8 +1097,12 @@ I would be like Jesus.
 4. That in heaven He may meet me,
 I would be like Jesus;
 That His words “Well done” may greet me
-I would be like Jesus.` },
-  { id: 34, title: `34. Bringing in the Sheaves`, body: `1. Sowing in the morning, sowing seeds of 
+I would be like Jesus.`,
+  },
+  {
+    id: 34,
+    title: `34. Bringing in the Sheaves`,
+    body: `1. Sowing in the morning, sowing seeds of 
 kindness,
 Sowing in the noontide and the dewy eve,
 Waiting for the harvest and the time of reaping - 
@@ -998,8 +1133,12 @@ Though the loss sustained our spirit often
 grieves; 
 When our weeping's over He will bid us welcome 
 - 
-We shall come rejoicing, bringing in the sheaves.` },
-  { id: 35, title: `35. Christ for the World`, body: `1. Christ for the world we sing; 
+We shall come rejoicing, bringing in the sheaves.`,
+  },
+  {
+    id: 35,
+    title: `35. Christ for the World`,
+    body: `1. Christ for the world we sing; 
 The world to Christ we bring;
 With loving zeal; 
 The poor, and them that mourn, 
@@ -1023,8 +1162,12 @@ With joyful song;
 The newborn souls, whose days, 
 Reclaimed from error's ways, 
 Inspired with hope and praise, 
-To Christ belong.` },
-  { id: 36, title: `36. Joy By And By`, body: `1. O there’ll be joy when the work is done,
+To Christ belong.`,
+  },
+  {
+    id: 36,
+    title: `36. Joy By And By`,
+    body: `1. O there’ll be joy when the work is done,
 Joy when the reapers gather home,
 Bringing the sheaves at set of sun
 To the 
@@ -1047,8 +1190,12 @@ In the
 3. Pure are the joys that await us there,
 Many the golden mansions fair;
 Jesus Himself doth them prepare,
-In the` },
-  { id: 37, title: `37. Marvelous Grace`, body: `1. Marvelous grace of our loving Lord, 
+In the`,
+  },
+  {
+    id: 37,
+    title: `37. Marvelous Grace`,
+    body: `1. Marvelous grace of our loving Lord, 
 Grace that exceeds our sin and our guilt! 
 Yonder on Calvary's mount outpoured -There where the blood of the Lamb was spilt.
 
@@ -1068,8 +1215,12 @@ Grace that is greater, yes, grace untold -Points to the Refuge, the mighty Cross
 3. Marvelous, infinite, matchless grace, 
 Freely bestowed on all who believe! 
 You that are longing to see His face, 
-Will you this moment His grace receive?` },
-  { id: 38, title: `38. Wonderful Words of Life`, body: `1. Sing them over again to me, 
+Will you this moment His grace receive?`,
+  },
+  {
+    id: 38,
+    title: `38. Wonderful Words of Life`,
+    body: `1. Sing them over again to me, 
 Wonderful words of life,
 Let me more of their beauty see, 
 Wonderful words of life;
@@ -1097,8 +1248,12 @@ Wonderful words of life;
 Offer pardon and peace to all, 
 Wonderful words of life;
 Jesus, only Saviour, 
-Sanctify forever.` },
-  { id: 39, title: `39. Jesus Is Tenderly Calling`, body: `1. Jesus is tenderly calling thee homeCalling today, calling today;
+Sanctify forever.`,
+  },
+  {
+    id: 39,
+    title: `39. Jesus Is Tenderly Calling`,
+    body: `1. Jesus is tenderly calling thee homeCalling today, calling today;
 Why from the sunshine of love wilt thou roam
 Farther and farther away?
 
@@ -1123,8 +1278,12 @@ Come, and no longer delay.
 4. Jesus is pleading – oh, list to His voice – 
 Hear Him today, hear Him today;
 They who believe on His name shall rejoice;
-Quickly arise and away.` },
-  { id: 40, title: `40. Softly and Tenderly`, body: `1. Softly and tenderly Jesus is calling 
+Quickly arise and away.`,
+  },
+  {
+    id: 40,
+    title: `40. Softly and Tenderly`,
+    body: `1. Softly and tenderly Jesus is calling 
 Calling for you and for me;
 At the heart’s portal He’s waiting and watching,
 Watching for you and me.
@@ -1147,8 +1306,12 @@ Mercies for you and for me?
 Promised for you and for me;
 Though we have sinned, He has mercy and 
 pardon,
-Pardon for you and for me.` },
-  { id: 41, title: `41. I Am Going To Calvary`, body: `1. I am going to Calvary, 
+Pardon for you and for me.`,
+  },
+  {
+    id: 41,
+    title: `41. I Am Going To Calvary`,
+    body: `1. I am going to Calvary, 
 Would you like to come with Me
 All the way and back again?
 You must follow the Leader then
@@ -1185,8 +1348,12 @@ Love’s the Lord of everything,
 When you follow the Leader,
 When you follow the Leader,
 Love’s the Lord of everything
-When you follow the Leader.` },
-  { id: 42, title: `42. It Is Well With My Soul `, body: `1. When peace, like a river, attendeth my way, 
+When you follow the Leader.`,
+  },
+  {
+    id: 42,
+    title: `42. It Is Well With My Soul `,
+    body: `1. When peace, like a river, attendeth my way, 
 When sorrows like sea billows roll; 
 Whatever my lot, Thou hast taught me to say, 
 It is well, it is well with my soul. 
@@ -1207,8 +1374,12 @@ sight,
 The clouds be rolled back as a scroll; 
 The trump shall resound, and the Lord shall 
 descend, 
-Even so, it is well with my soul.` },
-  { id: 43, title: `43. I Heard The Voice of Jesus Say`, body: `1. I heard the voice of Jesus say,
+Even so, it is well with my soul.`,
+  },
+  {
+    id: 43,
+    title: `43. I Heard The Voice of Jesus Say`,
+    body: `1. I heard the voice of Jesus say,
 “Come unto Me and rest;
 Lay down, thou weary one, lay down
 Thy head upon My breast.”
@@ -1235,8 +1406,12 @@ And all thy days be bright.”
 I looked to Jesus, and I found 
 In Him my star, my sun;
 And in that light of life I’ll walk,
-Till all my journey’s done.` },
-  { id: 44, title: `44. Shalom  `, body: `1. Shalom, my friends, shalom, my friends,
+Till all my journey’s done.`,
+  },
+  {
+    id: 44,
+    title: `44. Shalom  `,
+    body: `1. Shalom, my friends, shalom, my friends,
 Shalom, shalom.
 May peace be with you, God’s peace be with you.
 Shalom, shalom.
@@ -1251,8 +1426,12 @@ God’s mercies befriend you unto the end.
 3. Till we meet again, till we meet again,
 Shalom, shalom,
 May God be with you, His peace be with you.
-Shalom, shalom.` },
-  { id: 45, title: `45. God Will Take Care of You`, body: `1. Be not dismayed whate'er betide, 
+Shalom, shalom.`,
+  },
+  {
+    id: 45,
+    title: `45. God Will Take Care of You`,
+    body: `1. Be not dismayed whate'er betide, 
 God will take care of you; 
 Beneath His wings of love abide, 
 God will take care of you. 
@@ -1280,8 +1459,12 @@ God will take care of you.
 4. No matter what may be the test, 
 God will take care of you; 
 Lean, weary one, upon His breast, 
-God will take care of you.` },
-  { id: 46, title: `46. My Faith Looks Up To Thee`, body: `1. My faith looks up to thee, 
+God will take care of you.`,
+  },
+  {
+    id: 46,
+    title: `46. My Faith Looks Up To Thee`,
+    body: `1. My faith looks up to thee, 
 Thou Lamb of Calvary, 
 Saviour divine;
 Now hear me while I pray, 
@@ -1305,8 +1488,12 @@ Be Thou my guide;
 Bid darkness turn to day, 
 Wipe sorrow's tears away,
 Nor let me ever stray 
-From Thee aside.` },
-  { id: 47, title: `47. My Lord and I`, body: `1. I have a Friend so precious,
+From Thee aside.`,
+  },
+  {
+    id: 47,
+    title: `47. My Lord and I`,
+    body: `1. I have a Friend so precious,
 So very dear to me,
 He loves me with such tender love,
 He loves so faithfully;
@@ -1343,8 +1530,12 @@ The loving word for Him;
 He bids me tell His wondrous love,
 And why He came to die,
 And so we work together, 
-My Lord and I.` },
-  { id: 48, title: `48. Come, Great Deliverer, Come`, body: `1. O hear my cry, be gracious to me,
+My Lord and I.`,
+  },
+  {
+    id: 48,
+    title: `48. Come, Great Deliverer, Come`,
+    body: `1. O hear my cry, be gracious to me,
 Come, Great Deliverer come;
 My soul bowed down is longing now for Thee,
 
@@ -1370,8 +1561,12 @@ Mine eyes look up Thy loving smile to meet,
 
 4. Thou wilt not spurn contribution’s broken sigh,
 Come, Great Deliverer, come;
-Regard my prayer, and hear my humble cry,` },
-  { id: 49, title: `49. Life in a Look`, body: `1. There’s life in a look at the sacred cross,
+Regard my prayer, and hear my humble cry,`,
+  },
+  {
+    id: 49,
+    title: `49. Life in a Look`,
+    body: `1. There’s life in a look at the sacred cross,
 Jesus has said, “Look unto me;”
 Earth with its riches is only dross,
 Bright treasures beyond in the cross I see.
@@ -1393,8 +1588,12 @@ A look at the cross still my strength shall be.
 3. I’ll look to the cross every day and hour,
 Trusting the promise God has given;
 None ever fall ‘neath the tempter’s power,
-Who trust and obey in the strength of Heaven.` },
-  { id: 50, title: `50. He Brought Me Out`, body: `1. My heart was distressed ‘neath Jehovah’s 
+Who trust and obey in the strength of Heaven.`,
+  },
+  {
+    id: 50,
+    title: `50. He Brought Me Out`,
+    body: `1. My heart was distressed ‘neath Jehovah’s 
 dread frown,
 And low in the pit where my sins dragged me 
 down;
@@ -1425,8 +1624,12 @@ I’ll praise my Redeemer, who has rescued me.
 4. I’ll sing of His wonderful mercy to me,
 I’ll praise Him till all men His goodness shall see;
 I’ll sing of salvation at home and abroad,
-Till many shall hear the truth and trust in God` },
-  { id: 51, title: `51. Turn Your Eyes Upon Jesus`, body: `1. O soul, are you weary and troubled?
+Till many shall hear the truth and trust in God`,
+  },
+  {
+    id: 51,
+    title: `51. Turn Your Eyes Upon Jesus`,
+    body: `1. O soul, are you weary and troubled?
 No light in the darkness you see?
 There’s light for a look at the Saviour,
 And life more abundant and free!
@@ -1449,8 +1652,12 @@ For more than conquerors we are!
 3. His Word shall not fail you—He promised; 
 Believe Him, and all will be well:
 Then go to a world that is dying,
-His perfect salvation to tell!` },
-  { id: 52, title: `52. Break Thou the Bread of Life`, body: `1. Break Thou the bread of life, 
+His perfect salvation to tell!`,
+  },
+  {
+    id: 52,
+    title: `52. Break Thou the Bread of Life`,
+    body: `1. Break Thou the bread of life, 
 Dear Lord, to me,
 As Thou didst break the loaves 
 Beside the sea;
@@ -1487,8 +1694,12 @@ But I am weak;
 Thou art my only help, 
 Thou art my life; 
 Heeding Thy holy Word 
- I win the strife` },
-  { id: 53, title: `53. A Mighty Fortress`, body: `1. A mighty fortress is our God, 
+ I win the strife`,
+  },
+  {
+    id: 53,
+    title: `53. A Mighty Fortress`,
+    body: `1. A mighty fortress is our God, 
 A bulwark never failing;
 Our helper He, amid the flood
 Of mortal ills prevailing. 
@@ -1529,8 +1740,12 @@ Let goods and kindred go,
 This mortal life also; 
 The body they may kill; 
 God's truth abideth still; 
-His kingdom is forever.` },
-  { id: 54, title: `54. Standing on the Promises`, body: `1. Standing on the promises of Christ my King, 
+His kingdom is forever.`,
+  },
+  {
+    id: 54,
+    title: `54. Standing on the Promises`,
+    body: `1. Standing on the promises of Christ my King, 
 Through eternal ages let His praises ring;
 Glory in the highest I will shout and sing,
 Standing on the promises of God.
@@ -1566,8 +1781,12 @@ Standing on the promises of God.
 5. Standing on the promises I cannot fall,
 List’ning ev’ry moment to the Spirit’s call,
 Resting in my Saviour, as my all in all,
-Standing on the promises of God.` },
-  { id: 55, title: `55. Open My Eyes, That I May See`, body: `1.Open my eyes, that l may see 
+Standing on the promises of God.`,
+  },
+  {
+    id: 55,
+    title: `55. Open My Eyes, That I May See`,
+    body: `1.Open my eyes, that l may see 
 Glimpses of truth Thou hast for me;
 Place in my hands the wonderful key
 That shall un-clasp and set me free.
@@ -1589,8 +1808,12 @@ Everything false will disappear.
 3. Open my mouth, and let me bear 
 Gladly the warm truth everywhere;
 Open my heart, and let me prepare, 
-Love with Thy children thus to share.` },
-  { id: 56, title: `56. I Know Whom I Have Believed`, body: `1. I know not why God’s wondrous grace 
+Love with Thy children thus to share.`,
+  },
+  {
+    id: 56,
+    title: `56. I Know Whom I Have Believed`,
+    body: `1. I know not why God’s wondrous grace 
 To me He hath made known,
 Nor why, unworthy, Christ in love 
 Redeemed me for His own.
@@ -1618,8 +1841,12 @@ Creating faith in Him.
 4. I know not when my Lord may come, 
 At night or noon-day fair,
 Nor if l walk the vale with Him, 
-Or meet Him in the air.` },
-  { id: 57, title: `57. Anywhere With Jesus`, body: `1. Anywhere with Jesus I can safely go, 
+Or meet Him in the air.`,
+  },
+  {
+    id: 57,
+    title: `57. Anywhere With Jesus`,
+    body: `1. Anywhere with Jesus I can safely go, 
 Anywhere He leads me in this world below;
 Anywhere without Him, dearest joys would fade;
 Anywhere with Jesus I am not afraid
@@ -1641,8 +1868,12 @@ Anywhere with Jesus is a house of praise.
 When the gloomy shadows round about me 
 creep,
 Knowing I shall waken never more to roam; 
-Anywhere with Jesus will be home sweet home.` },
-  { id: 58, title: `58. He Hideth My Soul `, body: `1. A wonderful Saviour is Jesus my Lord,
+Anywhere with Jesus will be home sweet home.`,
+  },
+  {
+    id: 58,
+    title: `58. He Hideth My Soul `,
+    body: `1. A wonderful Saviour is Jesus my Lord,
 A wonderful Saviour to me,
 He hideth my soul in the cleft of the rock,
 Where rivers of pleasure I see.
@@ -1673,8 +1904,12 @@ For such a Redeemer as mine.
 rise
 To meet Him in clouds of the sky,
 His perfect salvation, His wonderful love,
-I’ll shout with the millions on high.` },
-  { id: 59, title: `59. Under His Wings`, body: `1. Under His wings I am safely abiding;
+I’ll shout with the millions on high.`,
+  },
+  {
+    id: 59,
+    title: `59. Under His Wings`,
+    body: `1. Under His wings I am safely abiding;
 Though the night deepens and tempests are wild,
 Still I can trust Him; I know He will keep me;
 He has redeemed me, and I am His child.
@@ -1696,8 +1931,12 @@ There I find comfort, and there I am blest.
 3. Under His wings, O what precious enjoyment! 
 There will I hide till life’s trials are o’er;
 Sheltered, protected, no evil can harm me;
-Resting in Jesus I’m safe ever-more.` },
-  { id: 60, title: `60. ‘Tis So Sweet to Trust in Jesus `, body: `1. ‘Tis so sweet to trust in Jesus,
+Resting in Jesus I’m safe ever-more.`,
+  },
+  {
+    id: 60,
+    title: `60. ‘Tis So Sweet to Trust in Jesus `,
+    body: `1. ‘Tis so sweet to trust in Jesus,
 Just to take Him at His word;
 Just to rest upon His promise,
 Just to know, “Thus saith the Lord.”
@@ -1725,8 +1964,12 @@ Life, and rest, and joy, and peace.
 4. I’m so glad I learned to trust Thee,
 Precious Jesus, Saviour, Friend;
 And I know that Thou art with me,
-Wilt be with me till the end.` },
-  { id: 61, title: `61. Tell It to Jesus`, body: `1. Are you weary, are you heavy hearted?
+Wilt be with me till the end.`,
+  },
+  {
+    id: 61,
+    title: `61. Tell It to Jesus`,
+    body: `1. Are you weary, are you heavy hearted?
 Tell it to Jesus,
 Tell it to Jesus;
 Are you grieving over joys departed?
@@ -1758,8 +2001,12 @@ Tell it to Jesus alone.
 Tell it to Jesus,
 Tell it to Jesus;
 For Christ’s coming kingdom are you sighing?
-Tell it to Jesus alone.` },
-  { id: 62, title: `62. Just When I Need Him`, body: `1. Just when I need Him, Jesus is near,
+Tell it to Jesus alone.`,
+  },
+  {
+    id: 62,
+    title: `62. Just When I Need Him`,
+    body: `1. Just when I need Him, Jesus is near,
 Just when I falter, just when I fear;
 Ready to help me, ready to cheer,
 Just when I need Him most.
@@ -1785,8 +2032,12 @@ Just when I need Him most.
 4. Just when I need Him, He is my all,
 Answering when upon Him I call;
 Tenderly watching lest I should fall,
-Just when I need Him most.` },
-  { id: 63, title: `63. All the Way My Saviour Leads Me`, body: `1. All the way my Saviour leads me;
+Just when I need Him most.`,
+  },
+  {
+    id: 63,
+    title: `63. All the Way My Saviour Leads Me`,
+    body: `1. All the way my Saviour leads me;
 What have I to ask beside?
 Can I doubt His tender mercy,
 Who through life has been my guide?
@@ -1819,8 +2070,12 @@ Wing my flight to realms of day,
 This my song through endless ages,
 Jesus led me all the way;
 This my song through endless ages,
-Jesus led me all the way. ` },
-  { id: 64, title: `64. We Have an Anchor `, body: `1. Will your anchor hold in the storm of life,
+Jesus led me all the way. `,
+  },
+  {
+    id: 64,
+    title: `64. We Have an Anchor `,
+    body: `1. Will your anchor hold in the storm of life,
 When the clouds unfold their wings of strife?
 When the strong tides lift, and the cables strain,
 Will your anchor drift, or firm remain?
@@ -1856,8 +2111,12 @@ While our hopes abide within the veil.
 5. When our eyes behold, in the dawning light,
 Shining gates of pearl, our harbour bright,
 We shall anchor fast to the heavenly shore,
-With the storms all past forever more.` },
-  { id: 65, title: `65. Moment by Moment `, body: `1. Dying with Jesus, by death reckoned mine,
+With the storms all past forever more.`,
+  },
+  {
+    id: 65,
+    title: `65. Moment by Moment `,
+    body: `1. Dying with Jesus, by death reckoned mine,
 Living with Jesus, a new life divine,
 Looking to Jesus till glory doth shine,
 Moment by moment, O Lord I am Thine.
@@ -1885,8 +2144,12 @@ Moment by moment He thinks of His own.
 4. Never a weakness that He doth not feel,
 Never a sickness that He cannot heal; 
 Moment by moment, in woe or in weal,
-Jesus, my Saviour, abides with me still.` },
-  { id: 66, title: `66. The Great Physician Now Is Near`, body: `1. The Great Physician now is near,
+Jesus, my Saviour, abides with me still.`,
+  },
+  {
+    id: 66,
+    title: `66. The Great Physician Now Is Near`,
+    body: `1. The Great Physician now is near,
 The sympathizing Jesus; 
 He speaks the drooping heart to cheer,
 Oh! Hear the voice of Jesus. 
@@ -1912,8 +2175,12 @@ The precious name of Jesus!
 
 
 4. And when He comes to bring the crownThe crown of life and gloryThen by side we will sit down,
-And tell redemption’s story.` },
-  { id: 67, title: `67. Leaning on the Everlasting Arms SDAH `, body: `1. What a fellowship, what a joy divine, 
+And tell redemption’s story.`,
+  },
+  {
+    id: 67,
+    title: `67. Leaning on the Everlasting Arms SDAH `,
+    body: `1. What a fellowship, what a joy divine, 
 Leaning on the everlasting arms;
 What a blessedness, what a peace is mine,
 Leaning on the everlasting arms;
@@ -1935,8 +2202,12 @@ Leaning on the everlasting arms.
 3. What have I to dread, what have I to fear,
 Leaning on the everlasting arms;
 I have blessed peace with my Lord so near,
-Leaning on the everlasting arms.` },
-  { id: 68, title: `68. A Shelter in the Time of Storm`, body: `1. The Lord’s our Rock, in Him we hide,
+Leaning on the everlasting arms.`,
+  },
+  {
+    id: 68,
+    title: `68. A Shelter in the Time of Storm`,
+    body: `1. The Lord’s our Rock, in Him we hide,
 A shelter in the time of storm;
 Secure whatever may betide,
 A shelter in the time of storm.
@@ -1964,8 +2235,12 @@ A shelter in the time of storm.
 4. O Rock divine, O Refuge dear,
 A Shelter in the time of storm;
 Be Thou our helper ever near,
-A Shelter in the time of storm. ` },
-  { id: 69, title: `69. A Child of the King`, body: `1. My Father is rich in houses and lands;
+A Shelter in the time of storm. `,
+  },
+  {
+    id: 69,
+    title: `69. A Child of the King`,
+    body: `1. My Father is rich in houses and lands;
 He holdeth the wealth of the world in His hands!
 Of rubies and diamonds, of silver and gold,
 His coffers are full− He has riches untold.
@@ -1993,8 +2268,12 @@ An heir to a mansion, a robe, and a crown.
 4. A tent or a cottage, O why should I care?
 They’re building a palace for me over there!
 Though exiled from home, yet still I may sing:
-“All glory to God, I’m a child of the King.”` },
-  { id: 70, title: `70. Trust and Obey`, body: `1. When we walk with the Lord 
+“All glory to God, I’m a child of the King.”`,
+  },
+  {
+    id: 70,
+    title: `70. Trust and Obey`,
+    body: `1. When we walk with the Lord 
 In the light of His word, 
 What a glory He sheds on our way! 
 While we do His good will, 
@@ -2037,8 +2316,12 @@ We will sit at His feet,
 Or we'll walk by His side in the way;
 What he says we will do,
 Where he sends we will go;
-Never fear, only trust and obey.` },
-  { id: 71, title: `71. Marching to Zion`, body: `1. Come, we that love the Lord,
+Never fear, only trust and obey.`,
+  },
+  {
+    id: 71,
+    title: `71. Marching to Zion`,
+    body: `1. Come, we that love the Lord,
 And let our joys be known;
 Join in a song with sweet accord,
 Join in a song with sweet accord,
@@ -2074,8 +2357,12 @@ And every tear be dry;
 We're marching through Immanuel's ground,
 We're marching through Immanuel's ground,
 To fairer worlds on high, 
-To fairer worlds on high.` },
-  { id: 72, title: `72. The Solid Rock`, body: `1. My hope is built on nothing less 
+To fairer worlds on high.`,
+  },
+  {
+    id: 72,
+    title: `72. The Solid Rock`,
+    body: `1. My hope is built on nothing less 
 Than Jesus' blood and righteousness. 
 I dare not trust the sweetest frame,
 But wholly lean on Jesus' name. 
@@ -2102,8 +2389,12 @@ He then is all my hope and stay.
 4. When He shall come with trumpet sound, 
 O may I then in Him be found! 
 Clad in His righteousness alone, 
-Faultless to stand before the throne.` },
-  { id: 73, title: `73. Higher Ground `, body: `1. I’m pressing on the upward way,
+Faultless to stand before the throne.`,
+  },
+  {
+    id: 73,
+    title: `73. Higher Ground `,
+    body: `1. I’m pressing on the upward way,
 New heights I’m gaining every day;
 Still praying as I’m onward bound,
 “Lord, plant my feet on higher ground.”
@@ -2131,8 +2422,12 @@ The song of saints on higher ground.
 4. I want to scale the utmost height
 And catch a gleam of glory bright;
 But still I’ll pray till Heav’n I’ve found,
-“Lord, lead me on to higher ground.”` },
-  { id: 74, title: `74. Build on the Rock `, body: `1. We’ll build on the Rock, the living Rock, 
+“Lord, lead me on to higher ground.”`,
+  },
+  {
+    id: 74,
+    title: `74. Build on the Rock `,
+    body: `1. We’ll build on the Rock, the living Rock, 
 On Jesus, the Rock of Ages;
 So shall we abide the fearful shock,
 When loud the tempest rages.
@@ -2154,8 +2449,12 @@ Of fame, and worldly pleasures.
 3. O build on the Rock forever sure,
 The firm and the true foundation;
 Its hope is the hope which shall endure,
-The hope of our salvation.` },
-  { id: 75, title: `75. Blessed Assurance `, body: `1. Blessed assurance, Jesus is mine! 
+The hope of our salvation.`,
+  },
+  {
+    id: 75,
+    title: `75. Blessed Assurance `,
+    body: `1. Blessed assurance, Jesus is mine! 
 O what a foretaste of glory divine! 
 Heir of salvation, purchase of God, 
 Born of His Spirit, washed in His blood. 
@@ -2177,8 +2476,12 @@ Echoes of mercy, whispers of love.
 3. Perfect submission, all is at rest; 
 I in my Saviour am happy and blest,
 Watching and waiting, looking above, 
-Filled with His goodness, lost in His love.` },
-  { id: 76, title: `76. Sunlight in the Heart`, body: `1. There is sunlight on the hilltop,
+Filled with His goodness, lost in His love.`,
+  },
+  {
+    id: 76,
+    title: `76. Sunlight in the Heart`,
+    body: `1. There is sunlight on the hilltop,
 There is sunlight on the sea;
 And the golden beams are sleeping,
 On the soft and verdant lea;
@@ -2212,8 +2515,12 @@ To Thy praise and glory shine;
 And to that bright home of glory
 Which Thy love hath won for me,
 In my heart and mind ascending,
-My glad spirit follows Thee` },
-  { id: 77, title: `77. O Jesus, My Redeemer`, body: `1. O Jesus, my Redeemer,
+My glad spirit follows Thee`,
+  },
+  {
+    id: 77,
+    title: `77. O Jesus, My Redeemer`,
+    body: `1. O Jesus, my Redeemer,
 Thou art my joy and song,
 My Saviour and my solace
 When griefs around me throng.
@@ -2241,8 +2548,12 @@ Than all on earth beside.
 4. My song and my rejoicing
 While in this world of sin,
 My song and my rejoicing
-The heavenly gates within.` },
-  { id: 78, title: `78. In Times Likes These `, body: `1. In times like these you need a Saviour,
+The heavenly gates within.`,
+  },
+  {
+    id: 78,
+    title: `78. In Times Likes These `,
+    body: `1. In times like these you need a Saviour,
 In times like these you need and anchor;
 Be very sure, be very sure
 Your anchor holds and grips the Solid rock!
@@ -2280,8 +2591,12 @@ Refrain
 This Rock is Jesus, Yes, He's the One;
 This Rock is Jesus, The only One!
 I’m very sure, I’m very sure
-My anchor holds and grips the Solid rock!` },
-  { id: 79, title: `79. Sunshine in the Soul`, body: `1. There’s sunshine in my soul today,
+My anchor holds and grips the Solid rock!`,
+  },
+  {
+    id: 79,
+    title: `79. Sunshine in the Soul`,
+    body: `1. There’s sunshine in my soul today,
 More glorious and bright
 Than glows in any earthly sky,
 For Jesus is my light.
@@ -2309,8 +2624,12 @@ The flowers of grace appear.
 4. There’s gladness in my soul today,
 And hope, and praise, and love,
 For the blessings which He gives me now,
-For joys “laid up” above.` },
-  { id: 80, title: `80. Count Your Mercies`, body: `1. Are you heavy laden and with sorrow tried?
+For joys “laid up” above.`,
+  },
+  {
+    id: 80,
+    title: `80. Count Your Mercies`,
+    body: `1. Are you heavy laden and with sorrow tried?
 Look in faith to Christ, your Helper, Friend and 
 Guide;
 Think of all your mercies, such a boundless store;
@@ -2349,8 +2668,12 @@ Know you not He chooseth what each day shall
 be?
 Trust His loving wisdom, though the hot tears 
 start;
-Give to Him the incense of a grateful heart.` },
-  { id: 81, title: `81. Blessed Be the Name`, body: `1. O for a thousand tongues to sing:
+Give to Him the incense of a grateful heart.`,
+  },
+  {
+    id: 81,
+    title: `81. Blessed Be the Name`,
+    body: `1. O for a thousand tongues to sing:
 Blessed be the name of the Lord!
 The glories of my God and King,
 Blessed be the name of the Lord!
@@ -2372,8 +2695,12 @@ Blessed be the name of the Lord!
 3. He breaks the pow’r of cancelled sin,
 Blessed be the name of the Lord!
 His blood can make the foulest clean,
-Blessed be the name of the Lord!` },
-  { id: 82, title: `2. Beauty For Ashes`, body: `1. I sing the love of God, my Father,
+Blessed be the name of the Lord!`,
+  },
+  {
+    id: 82,
+    title: `2. Beauty For Ashes`,
+    body: `1. I sing the love of God, my Father,
 Whose Spirit abides within,
 Who changes all my grief to gladness
 And pardons me all my sin.
@@ -2407,8 +2734,12 @@ Wherever are lonely hours.
 The “garment of His praise” it offers 
 For “heaviness of spirit” drear;
 It gives me sunshine for my shadow
-And “beauty for ashes” here.` },
-  { id: 83, title: `83. Jesus, Saviour, Pilot Me `, body: `1. Jesus, Saviour, pilot me
+And “beauty for ashes” here.`,
+  },
+  {
+    id: 83,
+    title: `83. Jesus, Saviour, Pilot Me `,
+    body: `1. Jesus, Saviour, pilot me
 Over life’s tempestuous sea;
 Unknown waves before me roll,
 Hiding rock and treacherous shoal;
@@ -2429,8 +2760,12 @@ And the fearful breakers roar
 ‘Twixt me and the peaceful rest,
 Then, while leaning on Thy breast,
 May I hear Thee say to me, “Fear not, I will pilot 
-thee.”` },
-  { id: 84, title: `84. My Hope Is Built on Nothing Less`, body: `1. My hope is built on nothing less 
+thee.”`,
+  },
+  {
+    id: 84,
+    title: `84. My Hope Is Built on Nothing Less`,
+    body: `1. My hope is built on nothing less 
 Than Jesus' blood and righteousness. 
 I dare not trust the sweetest frame,
 But wholly lean on Jesus' name. 
@@ -2457,8 +2792,12 @@ He then is all my hope and stay.
 4. When He shall come with trumpet sound, 
 O may I then in Him be found! 
 Clad in His righteousness alone, 
-Faultless to stand before the throne.` },
-  { id: 85, title: `85. Because He Lives`, body: `1. God sent His Son, they called Him Jesus,
+Faultless to stand before the throne.`,
+  },
+  {
+    id: 85,
+    title: `85. Because He Lives`,
+    body: `1. God sent His Son, they called Him Jesus,
 He came to love, heal and forgive;
 He lived and died to buy my pardon,
 An empty grave is there to prove my Saviour 
@@ -2484,8 +2823,12 @@ lives.
 And fight life’s final war with faith,
 And then as death gives way to victory,
 I’ll see the light of Glory
-And know my Saviour lives.` },
-  { id: 86, title: `86. From Every Stormy Wind`, body: `1. From every stormy wind that blows, 
+And know my Saviour lives.`,
+  },
+  {
+    id: 86,
+    title: `86. From Every Stormy Wind`,
+    body: `1. From every stormy wind that blows, 
 From every swelling tide of woes, 
 There is a calm, a sure retreat; 
 ’Tis found beneath the mercy seat. 
@@ -2512,8 +2855,12 @@ And glory crowns the mercy seat.
 5. Ah, whither should we flee for aid,
 When tempted, desolate, dismayed? 
 Or how the hosts of sin defeat, 
-Had suffering saints no mercy seat?` },
-  { id: 87, title: `87. Precious Name `, body: `1. Take the name of Jesus with you, 
+Had suffering saints no mercy seat?`,
+  },
+  {
+    id: 87,
+    title: `87. Precious Name `,
+    body: `1. Take the name of Jesus with you, 
 Child of sorrow and of woe,
 It will joy and comfort give you; 
 Take it, then, where’er you go. 
@@ -2541,8 +2888,12 @@ And His songs our tongues employ!
 4. At the name of Jesus bowing,
 Falling prostrate at His feet, 
 King of kings in heaven we’ll crown Him,
-When our journey is complete. ` },
-  { id: 88, title: `88. Nor Silver Nor Gold`, body: `1. Nor silver nor gold hath obtained my 
+When our journey is complete. `,
+  },
+  {
+    id: 88,
+    title: `88. Nor Silver Nor Gold`,
+    body: `1. Nor silver nor gold hath obtained my 
 redemption,
 No riches of earth could have saved my poor 
 soul;
@@ -2576,8 +2927,12 @@ redemption,
 The way into heaven could not thus be bought;
 The blood of the cross is my only foundation,
 The death of my Saviour redemption hath 
-wrought.` },
-  { id: 89, title: `89. Blessed Quietness`, body: `1. Joys are flowing like a river
+wrought.`,
+  },
+  {
+    id: 89,
+    title: `89. Blessed Quietness`,
+    body: `1. Joys are flowing like a river
 Since the Comforter has come;
 He abides with us forever,
  Makes the trusting heart His home.
@@ -2609,8 +2964,12 @@ In the lonely wilderness.
 5. What a wonderful salvation,
 Where we always see His face!
 What a peaceful habitation!
-What a quiet resting place!` },
-  { id: 90, title: `90. Music in My Soul`, body: `1. My heart’s a tuneful harp when Christ abides 
+What a quiet resting place!`,
+  },
+  {
+    id: 90,
+    title: `90. Music in My Soul`,
+    body: `1. My heart’s a tuneful harp when Christ abides 
 within,
 There’s music in the name of Jesus;
 But Satan always strikes the chords of doubt and 
@@ -2649,8 +3008,12 @@ There’s only one sure way to rid the heart of selfA burial deep in Calvary’s
 and prayer,
 With not a moment lost in sighing;
 To save a dying world is all her tho’t and care,
-For love is more than self-denying.` },
-  { id: 91, title: `91. Look for the Beautiful`, body: `1. Look for the beautiful, look for the true;
+For love is more than self-denying.`,
+  },
+  {
+    id: 91,
+    title: `91. Look for the Beautiful`,
+    body: `1. Look for the beautiful, look for the true;
 Sunshine and shadow are all around you;
 Looking at evil we grope in the night,
 Looking at Jesus we walk in the light;
@@ -2675,8 +3038,12 @@ Talk of the beautiful, talk of thy Lord.
 Lifting the fallen as Christ lifted you;
 Search for the jewels embedded in sin;
 Bring them to Jesus, His blood washes clean;
-Live for the beautiful, keep love within.` },
-  { id: 92, title: `92. Balm in Gilead `, body: `Refrain
+Live for the beautiful, keep love within.`,
+  },
+  {
+    id: 92,
+    title: `92. Balm in Gilead `,
+    body: `Refrain
 There is a balm in Gilead to make the 
 wounded whole; 
 There is a balm in Gilead to heal the sin 
@@ -2692,8 +3059,12 @@ Revives my soul again.
 2. If you cannot preach like Peter, 
 If you cannot pray like Paul, 
 You can tell the love of Jesus, 
-And say He died for all.` },
-  { id: 93, title: `93. I Want Jesus to Walk With Me `, body: `1. I want Jesus to walk with me. (walk with me)
+And say He died for all.`,
+  },
+  {
+    id: 93,
+    title: `93. I Want Jesus to Walk With Me `,
+    body: `1. I want Jesus to walk with me. (walk with me)
 I want Jesus to walk with me. (walk with me) 
 All along my pilgrim journey, 
 I want Jesus to walk with me. (walk with me) 
@@ -2709,8 +3080,12 @@ I want Jesus to walk with me. (walk with me)
 me)
 In my sorrows, Lord, walk with me. (walk with me)
 When my heart within is aching, 
-I want Jesus to walk with me. (walk with me)` },
-  { id: 94, title: `94. I Will Follow Thee`, body: `I will follow Thee, my Saviour, 
+I want Jesus to walk with me. (walk with me)`,
+  },
+  {
+    id: 94,
+    title: `94. I Will Follow Thee`,
+    body: `I will follow Thee, my Saviour, 
 Wheresoe'er my lot may be. 
 Where Thou goest I will follow;
 Yes, my Lord, I'll follow Thee. 
@@ -2744,8 +3119,12 @@ And I only follow Thee.
 5. Though to Jordan's rolling billows,
 Cold and deep, Thou leadest me, 
 Thou hast crossed the waves before me,
-And I still will follow Thee.` },
-  { id: 95, title: `95. Until Then`, body: `1. My heart can sing when I pause to remember 
+And I still will follow Thee.`,
+  },
+  {
+    id: 95,
+    title: `95. Until Then`,
+    body: `1. My heart can sing when I pause to remember 
 A heartache here is but a stepping stone 
 Along the trail that’s winding always upward, 
 This troubled world is not my final home. 
@@ -2763,8 +3142,12 @@ value
 If we recall they’re borrowed for a while; 
 And things of earth that cause the heart to 
 tremble, 
-Remembered there will only bring a smile.` },
-  { id: 96, title: `96. Even at the Door`, body: `1. The coming King is at the door, 
+Remembered there will only bring a smile.`,
+  },
+  {
+    id: 96,
+    title: `96. Even at the Door`,
+    body: `1. The coming King is at the door, 
 Who once the cross for sinners bore.
 But now the righteous ones alone,
 He comes to gather home.
@@ -2792,8 +3175,12 @@ To banish death and sin.
 4. Then in the glorious earth made new
 We’ll dwell countless ages through;
 The mortal shall immortal be,
-And time, eternally.` },
-  { id: 97, title: `97. In a Little While We’re Going Home`, body: `1. Let us sing a song that will cheer us by the 
+And time, eternally.`,
+  },
+  {
+    id: 97,
+    title: `97. In a Little While We’re Going Home`,
+    body: `1. Let us sing a song that will cheer us by the 
 way, 
 In a little while we're going home; 
 For the night will end in the everlasting day, 
@@ -2827,8 +3214,12 @@ In a little while we're going home.
 care,
 In a little while we're going home; 
 And no tears shall fall in that city bright and fair, 
-In a little while we're going home.` },
-  { id: 98, title: `98. How Far From Home?  `, body: `1. How far from home? I asked, as on 
+In a little while we're going home.`,
+  },
+  {
+    id: 98,
+    title: `98. How Far From Home?  `,
+    body: `1. How far from home? I asked, as on 
 I bent my steps---the watchman spake; 
 “The long, dark night is almost gone,
 The morning soon will break. 
@@ -2865,8 +3256,12 @@ And dried the mourner’s tear.
 Then weep no more, since we shall meet
 Where weary footsteps never roam
 Our trials past, our joys complete, 
-Safe in our Father’s home. ` },
-  { id: 99, title: `99. I’m a Pilgrim`, body: `1. I’m a pilgrim, and I’m a stranger; 
+Safe in our Father’s home. `,
+  },
+  {
+    id: 99,
+    title: `99. I’m a Pilgrim`,
+    body: `1. I’m a pilgrim, and I’m a stranger; 
 I can tarry, I can tarry but a night; 
 Do not detain me, for I am going
 To where the fountains are ever flowing 
@@ -2884,8 +3279,12 @@ I long have wandered forlorn and weary.
 3. There’s the city to which I journey; 
 My Redeemer, my Redeemer is its light! 
 There is no sorrow, nor any sighing,
-Nor any tears there, or any dying.` },
-  { id: 100, title: `100. Day is Dying in the West `, body: `1. Day is dying in the west; 
+Nor any tears there, or any dying.`,
+  },
+  {
+    id: 100,
+    title: `100. Day is Dying in the West `,
+    body: `1. Day is dying in the west; 
 Heaven is touching earth with rest; 
 Wait and worship while the night 
 Sets the evening lamps alight
@@ -2916,8 +3315,12 @@ Our hearts ascend.
  Pass the stars, the day, the night, 
 Lord of angels, on our eyes 
 Let eternal morning rise 
-And shadows end.` },
-  { id: 101, title: `101. I Do Believe`, body: `1. Father, I stretch my hands to Thee; 
+And shadows end.`,
+  },
+  {
+    id: 101,
+    title: `101. I Do Believe`,
+    body: `1. Father, I stretch my hands to Thee; 
 No other help I know; 
 If Thou withdraw Thyself from me, 
 Ah, whither shall I go? 
@@ -2950,8 +3353,12 @@ And taste Thy pardoning grace.
 6. I do believe, I now believe
 That Jesus died for me,
 And that He shed His precious blood
-From sin to set me free.` },
-  { id: 102, title: `102. Jerusalem the Golden `, body: `1. Jerusalem the golden,
+From sin to set me free.`,
+  },
+  {
+    id: 102,
+    title: `102. Jerusalem the Golden `,
+    body: `1. Jerusalem the golden,
 With milk and honey blest,
 Beneath thy contemplation 
 Sink heart and voice oppressed. 
@@ -2988,8 +3395,12 @@ That eager hearts expect!
 Jesus, in mercy bring us
 To that dear land of rest;
 Who art with God the Father,
-And Spirit, ever blest. ` },
-  { id: 103, title: `103. Hark! ‘Tis the Shepherd’s Voice I Hear`, body: `1. Hark! ‘Tis the Shepherd’s voice I hear, 
+And Spirit, ever blest. `,
+  },
+  {
+    id: 103,
+    title: `103. Hark! ‘Tis the Shepherd’s Voice I Hear`,
+    body: `1. Hark! ‘Tis the Shepherd’s voice I hear, 
 Out in the desert dark and drear, 
 Calling the sheep who’ve gone astray, 
 Far from the Shepherd’s fold away.
@@ -3011,8 +3422,12 @@ Where they’ll be shelter from the cold?
 
 Out on the mountain wild and high,
 Hark! ‘Tis the Master speaks to thee,
-“Go, find My sheep where’er they be.”` },
-  { id: 104, title: `104. Give Me the Bible`, body: `1. Give me the Bible, star of gladness gleaming, 
+“Go, find My sheep where’er they be.”`,
+  },
+  {
+    id: 104,
+    title: `104. Give Me the Bible`,
+    body: `1. Give me the Bible, star of gladness gleaming, 
 To cheer the wanderer lone and tempest tossed, 
 No storm can hide that peaceful radiance 
 beaming 
@@ -3040,8 +3455,12 @@ Teach me the danger of these realms below,
 That lamp of safety, o'er the gloom shall 
 brighten, 
 That light alone the path of peace 
-can show.` },
-  { id: 105, title: `105. Lord I Have Made Thy Word My Choice`, body: `1. Lord, I have made Thy Word my choice
+can show.`,
+  },
+  {
+    id: 105,
+    title: `105. Lord I Have Made Thy Word My Choice`,
+    body: `1. Lord, I have made Thy Word my choice
 My lasting heritage;
 There shall my no blest pow’rs rejoice,
 My warmest thoughts engage. 
@@ -3062,8 +3481,12 @@ And hidden glory lies.
 4. The best relief that mourners have,
 It makes our sorrows blest
 Our fairest hope beyond the grave,
-And our eternal rest. ` },
-  { id: 106, title: `106. The Saviour Is Waiting `, body: `1. The Saviour is waiting to enter 
+And our eternal rest. `,
+  },
+  {
+    id: 106,
+    title: `106. The Saviour Is Waiting `,
+    body: `1. The Saviour is waiting to enter 
 your heart,
 Why don’t you let Him come in?
 There’s nothing in this world to keep you apart,
@@ -3081,8 +3504,12 @@ O how He wants to come in.
 friend,
 You’ll find His arms open wide;
 Receive Him, and all of your darkness will end,
-Within your heart He’ll abide.` },
-  { id: 107, title: `107. Fill My Cup, Lord `, body: `1. Like the woman at the well I was seeking
+Within your heart He’ll abide.`,
+  },
+  {
+    id: 107,
+    title: `107. Fill My Cup, Lord `,
+    body: `1. Like the woman at the well I was seeking
 For things that could not satisfy; 
 And then I heard my Saviour speaking: 
 Draw from My well that never shall 
@@ -3111,8 +3538,12 @@ you
 Leave hungers that won’t pass away,
 My blessed Lord will come and 
 save you,
-If you kneel to Him and humbly pray` },
-  { id: 108, title: `108. Jesus, Lover of My Soul `, body: `1.  Jesus, lover of my soul, 
+If you kneel to Him and humbly pray`,
+  },
+  {
+    id: 108,
+    title: `108. Jesus, Lover of My Soul `,
+    body: `1.  Jesus, lover of my soul, 
 Let me to Thy bosom fly, 
 While the nearer waters roll,
  While the tempest still is high. 
@@ -3149,8 +3580,12 @@ Make and keep me pure within;
 Thou of life the Fountain art, 
 Freely let me take of Thee;
 Spring Thou up within my heart,
-Rise to all eternity.` },
-  { id: 109, title: `109. I Will Early Seek the Saviour`, body: `1. I will early seek the Saviour, 
+Rise to all eternity.`,
+  },
+  {
+    id: 109,
+    title: `109. I Will Early Seek the Saviour`,
+    body: `1. I will early seek the Saviour, 
 I will learn of Him each day; 
 I will follow in His footsteps, 
 I will walk the narrow way. 
@@ -3172,8 +3607,12 @@ Not too young His will to know.
 3. He is standing at the doorway
 Of escape from every sin;
 I will knock, for He has promised,
-He will hear and let me in. ` },
-  { id: 110, title: `110. What a Friend We Have in Jesus`, body: `1. What a friend we have in Jesus, 
+He will hear and let me in. `,
+  },
+  {
+    id: 110,
+    title: `110. What a Friend We Have in Jesus`,
+    body: `1. What a friend we have in Jesus, 
 All our sins and griefs to bear! 
 What a privilege to carry
 Everything to God in prayer!
@@ -3200,8 +3639,12 @@ Take it to the Lord in prayer!
 Do thy friends despise, forsake thee? 
 Take it to the Lord in prayer! 
 In His arms He'll take and shield thee; 
-Thou wilt find a solace there.` },
-  { id: 111, title: `111. Take Time to Be Holy`, body: `1. Take time to be holy, 
+Thou wilt find a solace there.`,
+  },
+  {
+    id: 111,
+    title: `111. Take Time to Be Holy`,
+    body: `1. Take time to be holy, 
 Speak oft with thy Lord; 
 Abide in Him always, 
 And feed on His word. 
@@ -3237,8 +3680,12 @@ Beneath His control.
 Thus led by His spirit
 To fountains of love,
 Thou soon shalt be fitted
-For service above.` },
-  { id: 112, title: `112. Tread Softly   `, body: `1. Be silent, be silent, 
+For service above.`,
+  },
+  {
+    id: 112,
+    title: `112. Tread Softly   `,
+    body: `1. Be silent, be silent, 
 A whisper is heard; 
 Be silent, and listen, 
 Oh, treasure each word. 
@@ -3266,8 +3713,12 @@ This moment we share.
 4. Be silent, be silent,
 His mercy record;
 Be silent, be silent,
-And wait on the Lord.` },
-  { id: 113, title: `113. Sweet Hour of Prayer `, body: `1. Sweet hour of prayer! Sweet hour of prayer! 
+And wait on the Lord.`,
+  },
+  {
+    id: 113,
+    title: `113. Sweet Hour of Prayer `,
+    body: `1. Sweet hour of prayer! Sweet hour of prayer! 
 That calls me from a world of care,
 And bids me at my Father's throne 
 Make all my wants and wishes known. 
@@ -3294,8 +3745,12 @@ I view my home and take my flight.
 In my immortal flesh I'll rise
 To seize the everlasting prize. 
 And shout while passing through the air, 
-"Farewell, farewell, sweet hour of prayer!"` },
-  { id: 114, title: `114. Take the world, but Give Me Jesus`, body: `1. Take the world, but give me Jesus;
+"Farewell, farewell, sweet hour of prayer!"`,
+  },
+  {
+    id: 114,
+    title: `114. Take the world, but Give Me Jesus`,
+    body: `1. Take the world, but give me Jesus;
 All its joys are but a name, 
 But His love abideth ever, 
 Through eternal years the same. 
@@ -3323,8 +3778,12 @@ Light will cheer me all the while.
 4. Take the world, but give me Jesus; 
 In His cross my trust shall be, 
 Till, with clearer, brighter vision
-Face to face my Lord I see.` },
-  { id: 115, title: `115. Just I Am`, body: `1. Just as I am, without one plea, 
+Face to face my Lord I see.`,
+  },
+  {
+    id: 115,
+    title: `115. Just I Am`,
+    body: `1. Just as I am, without one plea, 
 But that Thy blood was shed for me, 
 And that Thou bid’st me come to Thee, 
 O Lamb of God, I come, I come. 
@@ -3358,8 +3817,12 @@ O Lamb of God, I come, I come.
 6. Just as I am, Thy love I own 
 Has broken every barrier down; 
 Now, to be Thine, and, Thine alone, 
-O Lamb of God, I come, I come.` },
-  { id: 116, title: `116. O for a Closer Walk! `, body: `1. O for a closer walk with God! 
+O Lamb of God, I come, I come.`,
+  },
+  {
+    id: 116,
+    title: `116. O for a Closer Walk! `,
+    body: `1. O for a closer walk with God! 
 A calm and heavenly frame, 
 A light to shine upon the road 
 That leads me to the Lamb! 
@@ -3380,8 +3843,12 @@ The world can never fill.
 4. The dearest idol I have known, 
 Whate’er that idol be 
 Help me to tear it from Thy throne, 
-And worship only Thee.` },
-  { id: 117, title: `117. Faith of Our Fathers`, body: `1. Faith of our fathers, living still, 
+And worship only Thee.`,
+  },
+  {
+    id: 117,
+    title: `117. Faith of Our Fathers`,
+    body: `1. Faith of our fathers, living still, 
 In spite of dungeon, fire and sword; 
 O how our hearts beat high with joy 
 Whenever we hear that glorious Word. 
@@ -3404,8 +3871,12 @@ And preach Thee, too, as love
 knows how 
 By kindly words and virtuous life. 
 Faith of our fathers, holy faith! 
-We will be true to thee till death.` },
-  { id: 118, title: `118. Draw Me Nearer `, body: `1. I am thine, O Lord, I have heard 
+We will be true to thee till death.`,
+  },
+  {
+    id: 118,
+    title: `118. Draw Me Nearer `,
+    body: `1. I am thine, O Lord, I have heard 
 Thy voice, 
 And it told Thy love to me; 
 But I long to rise in the arms of faith 
@@ -3429,8 +3900,12 @@ And my will be lost in Thine.
 3. O the pure delight of a single hour 
 That before Thy throne I spend, 
 When I kneel in prayer, and with Thee, my God, 
-I commune as friend with friend!` },
-  { id: 119, title: `119. Nearer, Still Nearer`, body: `1. Nearer, still nearer, close Thy heart, 
+I commune as friend with friend!`,
+  },
+  {
+    id: 119,
+    title: `119. Nearer, Still Nearer`,
+    body: `1. Nearer, still nearer, close Thy heart, 
 Draw me, my Saviour, so precious Thou art; 
 Fold me, O fold me close to Thy breast, 
 Shelter me safe in that haven of rest, 
@@ -3455,8 +3930,12 @@ Give me, but Jesus, my Lord crucified.
 Till safe in glory my anchor is cast; 
 Through endless ages ever to be, 
 Nearer, my Saviour, still nearer to Thee, 
-Nearer, my Saviour, still nearer to Thee.` },
-  { id: 120, title: `120. Wholly Thine`, body: `I would be, dear Saviour, wholly Thine; 
+Nearer, my Saviour, still nearer to Thee.`,
+  },
+  {
+    id: 120,
+    title: `120. Wholly Thine`,
+    body: `I would be, dear Saviour, wholly Thine; 
 Teach me how, teach me how; 
 I would do Thy will, O Lord, not mine; 
 Help me, help me now. 
@@ -3478,8 +3957,12 @@ This my wealth shall be.
 3. As I cast earth's transient joys behind, 
 Come Thou near, come Thou near; 
 In Thy presence all in all I find, 
-'Tis my comfort here.` },
-  { id: 121, title: `121. I Am Coming to the Cross `, body: `1. I am coming to the cross; 
+'Tis my comfort here.`,
+  },
+  {
+    id: 121,
+    title: `121. I Am Coming to the Cross `,
+    body: `1. I am coming to the cross; 
 I am poor and weak and blind; 
 I am counting all but dross; 
 I shall full salvation find. 
@@ -3507,8 +3990,12 @@ Wholly Thine forevermore.
 4. Jesus comes! He fills my soul! 
 Perfected in Him I am; 
 I am every whit made whole: 
-Glory, glory to the Lamb! ` },
-  { id: 122, title: `122. I Surrender All `, body: `1. All to Jesus, I surrender; 
+Glory, glory to the Lamb! `,
+  },
+  {
+    id: 122,
+    title: `122. I Surrender All `,
+    body: `1. All to Jesus, I surrender; 
 All to Him I freely give; 
 I will ever love and trust Him, 
 In His presence daily live. 
@@ -3535,8 +4022,12 @@ Truly know that Thou art mine.
 4. All to Jesus I surrender; 
 Now I feel the sacred flame.
 O the joy of full salvation! 
-Glory, glory, to His Name! ` },
-  { id: 123, title: `123. Power in the Blood`, body: `1. Would you be free from the burden 
+Glory, glory, to His Name! `,
+  },
+  {
+    id: 123,
+    title: `123. Power in the Blood`,
+    body: `1. Would you be free from the burden 
 of sin? 
 There's power in the blood, power in 
 the blood; 
@@ -3565,8 +4056,12 @@ There's power in the blood, power in
 the blood; 
 Would you live daily His praises 
 to sing? 
-There's wonderful power in the blood.` },
-  { id: 124, title: `124. Chief of Sinners`, body: `1. Chief of sinners though I be, 
+There's wonderful power in the blood.`,
+  },
+  {
+    id: 124,
+    title: `124. Chief of Sinners`,
+    body: `1. Chief of sinners though I be, 
 Jesus shed His blood for me; 
 Died that I might live on high, 
 Died that I might never die; 
@@ -3587,8 +4082,12 @@ Christ is all in all to me;
 All my wants to Him are known, 
 All my sorrows are His own; 
 Safe with Him from earthly strife, 
-He sustains the hidden life` },
-  { id: 125, title: `125. Near the Cross`, body: `1. Jesus, keep me near the cross; 
+He sustains the hidden life`,
+  },
+  {
+    id: 125,
+    title: `125. Near the Cross`,
+    body: `1. Jesus, keep me near the cross; 
 There a precious fountain, 
 Free to all, a healing stream, 
 Flows from Calvary's mountain. 
@@ -3616,8 +4115,12 @@ With its shadow o'er me.
 4. Near the cross I'll watch and wait, 
 Hoping, trusting ever, 
 Till I reach the golden strand 
-Just beyond the river.` },
-  { id: 126, title: `126. I Lay My Sins on Jesus`, body: `1. I lay my sins on Jesus, 
+Just beyond the river.`,
+  },
+  {
+    id: 126,
+    title: `126. I Lay My Sins on Jesus`,
+    body: `1. I lay my sins on Jesus, 
 The spotless Lamb of God; 
 He bears them all, and frees us 
 From the accursed load; 
@@ -3649,8 +4152,12 @@ The Father’s holy child.
 Amid the heav’nly Throng 
 To sing with them His praises, 
 And learn the angels’ song, 
-And learn the angels’ song. ` },
-  { id: 127, title: `127. Take My Life and Let It Be`, body: `1. Take my life, and let it be 
+And learn the angels’ song. `,
+  },
+  {
+    id: 127,
+    title: `127. Take My Life and Let It Be`,
+    body: `1. Take my life, and let it be 
 Consecrated Lord, to Thee; 
 Take my hands, and let them move 
 At the impulse of Thy love, 
@@ -3682,8 +4189,12 @@ It shall be Thy royal throne.
 At Thy feet its treasure store; 
 Take myself, and I will be, 
 Ever, only, all for Thee, 
-Ever, only, all for Thee.` },
-  { id: 128, title: `128. My Jesus, I Love Thee`, body: `1. My Jesus, I love Thee, I know 
+Ever, only, all for Thee.`,
+  },
+  {
+    id: 128,
+    title: `128. My Jesus, I Love Thee`,
+    body: `1. My Jesus, I love Thee, I know 
 Thou art mine; 
 For Thee all the follies of sin I resign; 
 My gracious Redeemer, my Saviour 
@@ -3711,8 +4222,12 @@ If ever I loved Thee, my Jesus, 'tis now.
 I'll ever adore Thee in heaven so bright; 
 I'll sing with the glittering crown on 
 my brow, 
-If ever I loved Thee, my Jesus, 'tis now.` },
-  { id: 129, title: `129. Not I, but Christ`, body: `1. Not I, but Christ be honoured, loved, exalted; 
+If ever I loved Thee, my Jesus, 'tis now.`,
+  },
+  {
+    id: 129,
+    title: `129. Not I, but Christ`,
+    body: `1. Not I, but Christ be honoured, loved, exalted; 
 Not I, but Christ, be seen, be known, 
 be heard; 
 Not I, but Christ, in every look and action, 
@@ -3736,8 +4251,12 @@ Christ, only Christ, no trace of “I” be found.
 4. Not I, but Christ, my every need supplying 
 Not I, but Christ, my strength and health to be; 
 Christ, only Christ, for body, soul, and spirit, 
-Christ, only Christ, here and eternally.` },
-  { id: 130, title: `130. Whiter Than Snow`, body: `1. Lord Jesus, I long to be perfectly whole; 
+Christ, only Christ, here and eternally.`,
+  },
+  {
+    id: 130,
+    title: `130. Whiter Than Snow`,
+    body: `1. Lord Jesus, I long to be perfectly whole; 
 I want Thee forever to live in my soul; 
 Break down every idol, cast out 
 every foe; 
@@ -3773,8 +4292,12 @@ heart create;
 To those who have sought Thee, 
 Thou never said'st No; 
 Now wash me, and I shall be whiter 
-than snow.` },
-  { id: 131, title: `131. Don’t Forget the Sabbath`, body: `1. Don’t forget the Sabbath, 
+than snow.`,
+  },
+  {
+    id: 131,
+    title: `131. Don’t Forget the Sabbath`,
+    body: `1. Don’t forget the Sabbath, 
 The Lord our God hath blest, 
 Of all the week the brightest, 
 Of all the week the best; 
@@ -3810,8 +4333,12 @@ The children’s dearest Friend;
 O gentle loving, Saviour, 
 How good and kind Thou art, 
 How precious is Thy promise 
-To dwell in every heart! ` },
-  { id: 132, title: `132. Light of Light, Enlighten Me`, body: `1. Light of light, enlighten me, 
+To dwell in every heart! `,
+  },
+  {
+    id: 132,
+    title: `132. Light of Light, Enlighten Me`,
+    body: `1. Light of light, enlighten me, 
 Now a new the day is dawning; 
 Sun of grace, the shadows flee; 
 Brighten Thou my Sabbath morning; 
@@ -3832,8 +4359,12 @@ For the day to God is Holy;
 Come, Thou glorious Majesty, 
 Deign to fill this temple lowly 
 Nought today my soul shall move, 
-Simply resting in Thy love. ` },
-  { id: 133, title: `133. O Where Are the Reapers? `, body: `1. O where are the reapers that garner in 
+Simply resting in Thy love. `,
+  },
+  {
+    id: 133,
+    title: `133. O Where Are the Reapers? `,
+    body: `1. O where are the reapers that garner in 
 The sheaves of the good from the fields of sin? 
 With sickles of truth must the work be done, 
 And no one may rest till the “harvest home.” 
@@ -3857,8 +4388,12 @@ And much will be lost should the harvest wait.
 3. So come with your sickles, ye sons of men, 
 And gather together the golden grain; 
 Toil on till the Lord of the harvest come, 
-Then share ye His joy in the “harvest home.”` },
-  { id: 134, title: `134. I Would Draw Nearer to Jesus`, body: `1. I would draw nearer to Jesus, 
+Then share ye His joy in the “harvest home.”`,
+  },
+  {
+    id: 134,
+    title: `134. I Would Draw Nearer to Jesus`,
+    body: `1. I would draw nearer to Jesus, 
 In His sweet presence abide, 
 Constantly trying to serve Him, 
 Safe and secure at His side. 
@@ -3880,8 +4415,12 @@ I would draw nearer to Him.
 
 Seeking His strength to be true, 
 Willing to tell of His goodness, 
-Gladly His blest will to do.` },
-  { id: 135, title: `135. When I Survey the Wondrous Cross`, body: `1. When I survey the wondrous cross 
+Gladly His blest will to do.`,
+  },
+  {
+    id: 135,
+    title: `135. When I Survey the Wondrous Cross`,
+    body: `1. When I survey the wondrous cross 
 On which the Prince of Glory died; 
 My richest gain I count but loss, 
 And pour contempt on all my pride. 
@@ -3902,8 +4441,12 @@ Or thorns compose so rich a crown.
 4. Were the whole realm of nature mine, 
 That were an offering far too small; 
 Love so amazing, so divine, 
-Demands my soul, my life, my all.` },
-  { id: 136, title: `136. When I Survey the Wondrous Cross`, body: `1. When I survey the wondrous cross 
+Demands my soul, my life, my all.`,
+  },
+  {
+    id: 136,
+    title: `136. When I Survey the Wondrous Cross`,
+    body: `1. When I survey the wondrous cross 
 On which the Prince of glory died, 
 My richest gain I count but loss, 
  And pour contempt on all my pride. 
@@ -3924,8 +4467,12 @@ Save in the cross of Christ my Lord.
 4. Were the whole realm of nature mine, 
 That were a present far too small;
 Love so amazing, so divine, 
-Demands my soul, my life, my all.` },
-  { id: 137, title: `137. The Way of the Cross Leads Home`, body: `1. I must needs go home by the way of the cross,
+Demands my soul, my life, my all.`,
+  },
+  {
+    id: 137,
+    title: `137. The Way of the Cross Leads Home`,
+    body: `1. I must needs go home by the way of the cross,
 There’s no other way but this:
 I shall ne’er get sight of the gates of light,
 If the way of the cross I miss.
@@ -3947,8 +4494,12 @@ Where the soul is at home with God.
 3. Then I bid farewell to the way of the world,
 To walk in it never more;
 For my Lord says, “Come,” and I seek my home,
-Where He waits at the open door.` },
-  { id: 138, title: `138. The Breaking of the Day`, body: `1. ‘Tis almost time for the Lord to come,
+Where He waits at the open door.`,
+  },
+  {
+    id: 138,
+    title: `138. The Breaking of the Day`,
+    body: `1. ‘Tis almost time for the Lord to come,
 I hear the people say;
 The stars of heaven are growing dim,
 It must be the breaking of the day.
@@ -3977,8 +4528,12 @@ To look for the breaking of the day.
 4. Go quickly out in the streets and lanes
 And in the broad highway,
 And call the maimed, the halt, and blind,
-To be ready for the breaking of the day.` },
-  { id: 139, title: `139. The King’s Business`, body: `1. I am stranger here within a foreign land;
+To be ready for the breaking of the day.`,
+  },
+  {
+    id: 139,
+    title: `139. The King’s Business`,
+    body: `1. I am stranger here within a foreign land;
 My home is far away, upon a golden strand;
 Ambassador to be of realms beyond the sea,
 I am here on business for my King.
@@ -4005,8 +4560,12 @@ plain,
 Eternal life and joy thru-out its vast domain;
 My Sov’reign bids me tell how mortals there may 
 dwell,
-And that’s my business for my King.` },
-  { id: 140, title: `140. Saviour, Like a Shepherd  `, body: `1. Saviour, like a shepherd lead us, 
+And that’s my business for my King.`,
+  },
+  {
+    id: 140,
+    title: `140. Saviour, Like a Shepherd  `,
+    body: `1. Saviour, like a shepherd lead us, 
 Much we need Thy tenderest care; 
 In Thy pleasant pastures feed us, 
 For our use Thy folds prepare. 
@@ -4033,8 +4592,12 @@ Grace to cleanse and power to free.
 Blessed Jesus, blessed Jesus! 
 We will early turn to Thee. 
 Blessed Jesus, blessed Jesus! 
-We will early turn to thee.` },
-  { id: 141, title: `141. Let Us Break Bread Together `, body: `1. Let us break bread together on our knees; 
+We will early turn to thee.`,
+  },
+  {
+    id: 141,
+    title: `141. Let Us Break Bread Together `,
+    body: `1. Let us break bread together on our knees; 
 Let us break bread together on our knees. 
 
 
@@ -4049,8 +4612,12 @@ Let us drink wine together on our knees.
 
 
 3. Let us praise God together on our knees; 
-Let us praise God together on our knees.` },
-  { id: 142, title: `142. Watch, Ye Saints `, body: `1. Watch, ye saints, with eyelids waking; 
+Let us praise God together on our knees.`,
+  },
+  {
+    id: 142,
+    title: `142. Watch, Ye Saints `,
+    body: `1. Watch, ye saints, with eyelids waking; 
 Lo! The powers of heaven are shaking; 
 Keep your lamps all trimmed and burning, 
 Ready for your Lord’s returning. 
@@ -4084,8 +4651,12 @@ Shout, ye saints, your Lord is coming.
 5. Sinners, come, while Christ is pleading; 
 Now for you He’s interceding; 
 Haste, ere grace and time diminished 
-Shall proclaim the mystery finished.` },
-  { id: 143, title: `143. I Shall See the King`, body: `1. I shall see the King 
+Shall proclaim the mystery finished.`,
+  },
+  {
+    id: 143,
+    title: `143. I Shall See the King`,
+    body: `1. I shall see the King 
 Where the angels sing, 
 I shall see the King someday, 
 In the better land, 
@@ -4113,8 +4684,12 @@ All my tributes bring,
 And shall look upon His face; 
 Then my song shall be
 How He ransomed me 
-And has kept me by His grace.` },
-  { id: 144, title: `144. Safely Through Another Week`, body: `1. Safely through another week 
+And has kept me by His grace.`,
+  },
+  {
+    id: 144,
+    title: `144. Safely Through Another Week`,
+    body: `1. Safely through another week 
 God has brought us on our way;
 Let us now a blessing seek, 
 Waiting in His courts today; 
@@ -4151,8 +4726,12 @@ Bring relief to all complaints;
 Thus may all our Sabbaths be 
 Till we rise to reign with Thee. 
 Thus may all our Sabbaths be 
-Till we rise to reign with Thee. ` },
-  { id: 145, title: `145. Publish Glad Tidings`, body: `1. O Zion, haste, thy mission high fulfilling,
+Till we rise to reign with Thee. `,
+  },
+  {
+    id: 145,
+    title: `145. Publish Glad Tidings`,
+    body: `1. O Zion, haste, thy mission high fulfilling,
 To tell all the world that God is light;
 That He who made all nations is not willing
 One soul should perish, lost in the shades of 
@@ -4182,8 +4761,12 @@ And all thou spendest Jesus will repay.
 Make known to every heart His saving grace,
 Let none whom He hath ransomed fail to greet 
 Him,
-Through thy neglect, unfit to see His face.` },
-  { id: 146, title: `146. More Love to Thee`, body: `1. More love to Thee, O Christ! 
+Through thy neglect, unfit to see His face.`,
+  },
+  {
+    id: 146,
+    title: `146. More Love to Thee`,
+    body: `1. More love to Thee, O Christ! 
 More love to Thee; 
 Hear Thou the prayer I make 
 On bended knee. 
@@ -4220,8 +4803,12 @@ My heart shall raise;
 This still its prayer shall be, 
 More love, O Christ, to Thee, 
 More love to Thee! 
-More love to thee!` },
-  { id: 147, title: `147 Wonderful Peace`, body: `1. Far away in the depths of my spirit tonight, 
+More love to thee!`,
+  },
+  {
+    id: 147,
+    title: `147 Wonderful Peace`,
+    body: `1. Far away in the depths of my spirit tonight, 
 Rolls a melody sweeter than psalm; 
 In celestial like strains it unceasingly falls 
 O’er my soul like an infinite calm. 
@@ -4252,8 +4839,12 @@ rest,
 Passing down the rough pathway of time! 
 Make the Saviour your friend ere the shadows 
 grow dark; 
-O accept of this peace so sublime.` },
-  { id: 148, title: `148. There’s Sunshine in My Soul Today`, body: `1. There's sunshine in my soul today, 
+O accept of this peace so sublime.`,
+  },
+  {
+    id: 148,
+    title: `148. There’s Sunshine in My Soul Today`,
+    body: `1. There's sunshine in my soul today, 
 More glorious and bright 
 Than glows in any earthly sky, 
 For Jesus is my light. 
@@ -4281,8 +4872,12 @@ The flowers of grace appear.
 4. There's gladness in my soul today, 
 And hope, and praise, and love, 
 For blessings which He gives me now, 
-For joys "laid up" above.` },
-  { id: 149, title: `149. Nearer My God, to Thee `, body: `1. Nearer, my God, to Thee, 
+For joys "laid up" above.`,
+  },
+  {
+    id: 149,
+    title: `149. Nearer My God, to Thee `,
+    body: `1. Nearer, my God, to Thee, 
 Nearer to Thee! 
 E'en though it be a cross 
 That raiseth me! 
@@ -4329,8 +4924,12 @@ Upward I fly,
 Still all my song shall be, 
 Nearer, my God, to Thee; 
 Nearer, my God, to thee, 
-Nearer to thee!` },
-  { id: 150, title: `150. Take the Name of Jesus with You`, body: `1. Take the name of Jesus with you, 
+Nearer to thee!`,
+  },
+  {
+    id: 150,
+    title: `150. Take the Name of Jesus with You`,
+    body: `1. Take the name of Jesus with you, 
 Child of sorrow and of woe, 
 It will joy and comfort give you; 
 Take it then, where’er you go. 
@@ -4358,8 +4957,12 @@ And His songs our tongues employ!
 4. At the name of Jesus bowing, 
 Falling prostrate at His feet, 
 King of kings in heaven we’ll crown Him, 
-When our journey is complete.` },
-  { id: 151, title: `151. I Need Thee Every Hour`, body: `1. I need Thee every hour, 
+When our journey is complete.`,
+  },
+  {
+    id: 151,
+    title: `151. I Need Thee Every Hour`,
+    body: `1. I need Thee every hour, 
 Most gracious Lord; 
 No tender voice like Thine 
 Can peace afford. 
@@ -4387,8 +4990,12 @@ Or life is vain.
 4. I need Thee every hour; 
 Teach me Thy will; 
 And thy rich promises 
-In me fulfill.` },
-  { id: 152, title: `152. Near to the Heart of God `, body: `1. There is a place of quiet rest, 
+In me fulfill.`,
+  },
+  {
+    id: 152,
+    title: `152. Near to the Heart of God `,
+    body: `1. There is a place of quiet rest, 
 Near to the heart of God; 
 A place where sin cannot molest, 
 Near to the heart of God. 
@@ -4410,8 +5017,12 @@ Near to the heart of God.
 3. There is place a place of full release, 
 Near to the heart of God; 
 A place where all is joy and peace, 
-Near to the heart of God.` },
-  { id: 153, title: `153. We’ll Build on the Rock`, body: `1. We’ll build on the Rock, the living Rock, 
+Near to the heart of God.`,
+  },
+  {
+    id: 153,
+    title: `153. We’ll Build on the Rock`,
+    body: `1. We’ll build on the Rock, the living Rock, 
 On Jesus, the Rock of Ages; 
 So shall we abide the fearful shock, 
 When loud the tempest rages. 
@@ -4433,8 +5044,12 @@ Of fame, and worldly pleasure.
 3. O build on the Rock forever sure, 
 The firm and the true foundation; 
 Its hope is the hope which shall endure, 
-The hope of our salvation.` },
-  { id: 154, title: `154. Will Your Anchor Hold? `, body: `1. Will your anchor hold in the storms 
+The hope of our salvation.`,
+  },
+  {
+    id: 154,
+    title: `154. Will Your Anchor Hold? `,
+    body: `1. Will your anchor hold in the storms 
 of life, 
 When the clouds unfold their wings 
 of strife? 
@@ -4474,8 +5089,12 @@ While our hopes abide within the veil.
 5. When our eyes behold, in the dawning light, 
 Shining gates of pearl, our harbour bright; 
 We shall anchor fast to the heav’nly shore, 
-With the storms all past forevermore. ` },
-  { id: 155, title: `155. I am Trusting Thee, Lord Jesus`, body: `1. I am trusting Thee, Lord, Jesus, 
+With the storms all past forevermore. `,
+  },
+  {
+    id: 155,
+    title: `155. I am Trusting Thee, Lord Jesus`,
+    body: `1. I am trusting Thee, Lord, Jesus, 
 Trusting only Thee; 
 Trusting Thee for full salvation, 
 Great and free. 
@@ -4496,8 +5115,12 @@ All my need.
 4. I am trusting Thee, Lord Jesus; 
 Never let me fall; 
 I am trusting Thee forever, 
-And for all.` },
-  { id: 156, title: `156. Guide Me, O Thou Great Jehovah`, body: `1. Guide me, O Thou great Jehovah, 
+And for all.`,
+  },
+  {
+    id: 156,
+    title: `156. Guide Me, O Thou Great Jehovah`,
+    body: `1. Guide me, O Thou great Jehovah, 
 Pilgrim through this barren land. 
 I am weak, but Thou art mighty; 
 Hold me with Thy powerful hand. 
@@ -4521,8 +5144,12 @@ Death of death and hell's destruction,
 Land me safe on Canaan's side. 
 Songs of praises, songs of praises, 
 I will ever give to thee; 
-I will ever give to thee.` },
-  { id: 157, title: `157. Abide with Me`, body: `1. Abide with me; fast falls the eventide; 
+I will ever give to thee.`,
+  },
+  {
+    id: 157,
+    title: `157. Abide with Me`,
+    body: `1. Abide with me; fast falls the eventide; 
 The darkness deepens; Lord with me abide! 
 When other helpers fail and comforts flee, 
 Help of the helpless, O abide with me!
@@ -4544,8 +5171,12 @@ Through cloud and sunshine, O abide with me!
 Ills have no weight, 
 And tears no bitterness. 
 Where is death's sting? Where, grave, thy victory? 
-I triumph still, if Thou abide with me!` },
-  { id: 158, title: `158. Lord, Dismiss Us With Thy Blessing`, body: `1. Lord, dismiss us with Thy blessing; 
+I triumph still, if Thou abide with me!`,
+  },
+  {
+    id: 158,
+    title: `158. Lord, Dismiss Us With Thy Blessing`,
+    body: `1. Lord, dismiss us with Thy blessing; 
 Fill our hearts with joy and peace; 
 Let us each, Thy love possessing, 
 Triumph in redeeming grace. 
@@ -4558,8 +5189,12 @@ For Thy gospel's joyful sound.
 May the fruits of Thy salvation 
 In our hearts and lives abound; 
 Ever faithful, ever faithful 
-To the truth may we be found.` },
-  { id: 159, title: `159. Holy, Holy, Holy  `, body: `1. Holy, holy, holy! Lord God Almighty! 
+To the truth may we be found.`,
+  },
+  {
+    id: 159,
+    title: `159. Holy, Holy, Holy  `,
+    body: `1. Holy, holy, holy! Lord God Almighty! 
 Early in the morning our song shall rise to Thee; 
 Holy, holy, holy, merciful and mighty! 
 God in three Persons, blessed Trinity! 
@@ -4585,8 +5220,12 @@ Perfect in power, in love, and purity.
 All Thy works shall praise Thy name, in earth, and 
 sky, and sea; 
 Holy, holy, holy; merciful and mighty! 
-God in three Persons, blessed Trinity!` },
-  { id: 160, title: `160. How Great Thou Art`, body: `1. O Lord my God! When I in awesome wonder 
+God in three Persons, blessed Trinity!`,
+  },
+  {
+    id: 160,
+    title: `160. How Great Thou Art`,
+    body: `1. O Lord my God! When I in awesome wonder 
 Consider all the worlds Thy hands have made, 
 I see the stars, I hear the rolling thunder, 
 Thy pow’r thro’out the universe displayed, 
@@ -4619,8 +5258,12 @@ He bled and died to take away my sin;
 acclamation 
 And take me home, what joy shall fill my heart! 
 Then I shall bow in humble adoration 
-And there proclaim, my God, how great Thou art!` },
-  { id: 161, title: `161. God Who spoke in the Beginning`, body: `1. God who spoke in the beginning, 
+And there proclaim, my God, how great Thou art!`,
+  },
+  {
+    id: 161,
+    title: `161. God Who spoke in the Beginning`,
+    body: `1. God who spoke in the beginning, 
 Forming rock and shaping spar, 
 Set all life and growth in motion, 
 Earthly world and distant star; 
@@ -4641,8 +5284,12 @@ Christ is servant, Christ is Lord–
 Calls us to a life of service, 
 Heart and will to action stirred; 
 He who uses man’s obedience 
-Has the first and final word.` },
-  { id: 162, title: `162. Joy to the World `, body: `1. Joy to the world, the Lord is come! 
+Has the first and final word.`,
+  },
+  {
+    id: 162,
+    title: `162. Joy to the World `,
+    body: `1. Joy to the world, the Lord is come! 
 Let earth receive her King; 
 Let every heart prepare Him room, 
 And heaven and nature sing, 
@@ -4671,8 +5318,12 @@ And makes the nations prove
 The glories of His righteousness, 
 And wonders of His love, 
 And wonders of His love, 
-And wonders, and wonders of His love.` },
-  { id: 163, title: `163. O Come, All Ye Faithful `, body: `1. O come, all ye faithful, joyful and triumphant, 
+And wonders, and wonders of His love.`,
+  },
+  {
+    id: 163,
+    title: `163. O Come, All Ye Faithful `,
+    body: `1. O come, all ye faithful, joyful and triumphant, 
 O come ye, O come ye to Bethlehem! 
 Come and behold Him, born the King of angels! 
 
@@ -4692,8 +5343,12 @@ Glory to God, all glory in the highest!
 3. Yea, Lord, we greet Thee, born this happy 
 morning, 
 Jesus, to Thee be all glory given; 
-Word of the Father, now in flesh appearing! ` },
-  { id: 164, title: `164. Tell Me the Story of Jesus`, body: `1. Tell me the story of Jesus, 
+Word of the Father, now in flesh appearing! `,
+  },
+  {
+    id: 164,
+    title: `164. Tell Me the Story of Jesus`,
+    body: `1. Tell me the story of Jesus, 
 Write on my heart every word, 
 Tell me the story most precious 
 Sweetest that ever was heard; 
@@ -4727,8 +5382,12 @@ Tell how He liveth again;
 Love in that story so tender, 
 Clearer than ever I see; 
 Stay, let me weep while you whisper, 
-Love paid the ransom for me.` },
-  { id: 165, title: `165. Prince of Peace, Control My Will`, body: `1. Prince of Peace, control my will, 
+Love paid the ransom for me.`,
+  },
+  {
+    id: 165,
+    title: `165. Prince of Peace, Control My Will`,
+    body: `1. Prince of Peace, control my will, 
 Bid this struggling heart be still; 
 Bid my fears and doubtings cease, 
 Hush my spirit into peace 
@@ -4743,8 +5402,12 @@ Lord, in being one with Thee.
 3. May Thy will, not mine, be done, 
 May Thy will and mine be one;  
 Chase these doubtings from my heart, 
-Now Thy perfect peace impart.` },
-  { id: 166, title: `166. Face to Face`, body: `1. Face to face with Christ my Saviour, 
+Now Thy perfect peace impart.`,
+  },
+  {
+    id: 166,
+    title: `166. Face to Face`,
+    body: `1. Face to face with Christ my Saviour, 
 Face to face, what will it be, 
 When with rapture I behold Him, 
 Jesus Christ, who died for me? 
@@ -4772,8 +5435,12 @@ And the dark things shall be plain!
 4. Face to face! Oh, blissful moment! 
 Face to face to see and know; 
 Face to face with my Redeemer, 
-Jesus Christ, who loves me so` },
-  { id: 167, title: `167. I’m But a Stranger Here`, body: `1. I’m but a stranger here, 
+Jesus Christ, who loves me so`,
+  },
+  {
+    id: 167,
+    title: `167. I’m But a Stranger Here`,
+    body: `1. I’m but a stranger here, 
 Heaven is my home; 
 Earth is a desert drear, 
 Heaven is my home; 
@@ -4800,8 +5467,12 @@ Heaven is my home.
 There’ll be the good and blest, 
 Those I love most and best. 
 There, too, I soon shall rest; 
-Heaven is my home.` },
-  { id: 168, title: `168. When the Roll is Called Up Yonder`, body: `1. When the trumpet of the Lord shall sound, and 
+Heaven is my home.`,
+  },
+  {
+    id: 168,
+    title: `168. When the Roll is Called Up Yonder`,
+    body: `1. When the trumpet of the Lord shall sound, and 
 time shall be no more, 
 And the morning breaks, eternal, bright and fair; 
 When the saved of earth shall gather over on the 
@@ -4834,8 +5505,12 @@ and care,
 Then, when all of life is over, and our work on 
 earth is done, 
 And the roll is called up yonder 
-I'll be there.` },
-  { id: 169, title: `169. The Church Has Waited Long `, body: `1. The church has waited long 
+I'll be there.`,
+  },
+  {
+    id: 169,
+    title: `169. The Church Has Waited Long `,
+    body: `1. The church has waited long 
 Her absent Lord to see; 
 And still in loneliness she waits, 
 A friendless stranger she. 
@@ -4856,8 +5531,12 @@ As now we share Thy grace.
 4. Come, Lord, and wipe away 
 The curse, the sin, the stain, 
 And make this blighted world of ours 
-Thine own fair world again.` },
-  { id: 170, title: `170. Hark! The Voice of Jesus Calling`, body: `1. Hark! The voice of Jesus calling, 
+Thine own fair world again.`,
+  },
+  {
+    id: 170,
+    title: `170. Hark! The Voice of Jesus Calling`,
+    body: `1. Hark! The voice of Jesus calling, 
 “Who will go and work today? 
 Fields are white, the harvest waiting, 
 Who will bear the sheaves away?” 
@@ -4894,8 +5573,12 @@ Let none hear you idly saying,
 Gladly take the task He gives you, 
 Let His work your pleasure be; 
 Answer quickly when He calleth, 
-“Here am I, O Lord, send me.”` },
-  { id: 171, title: `171. Sweet By and By`, body: `1. There's a land that is fairer than day, 
+“Here am I, O Lord, send me.”`,
+  },
+  {
+    id: 171,
+    title: `171. Sweet By and By`,
+    body: `1. There's a land that is fairer than day, 
 And by faith we can see it afar; 
 For the Father waits over the way, 
 To prepare us a dwelling place there. 
@@ -4917,8 +5600,12 @@ Not a sigh for the blessing of rest.
 3. To our bountiful Father above, 
 We will offer a tribute of praise, 
 For the glorious gift of His love, 
-And the blessings that hallow our days.` },
-  { id: 172, title: `172. Jesus, I Come`, body: `1. Out of my bondage, sorrow, and night, 
+And the blessings that hallow our days.`,
+  },
+  {
+    id: 172,
+    title: `172. Jesus, I Come`,
+    body: `1. Out of my bondage, sorrow, and night, 
 Jesus, I come, Jesus, I come; 
 Into Thy freedom, gladness, and light, 
 Jesus, I come to Thee; 
@@ -4955,8 +5642,12 @@ Jesus, I come to Thee.
 Out of the depths of ruin untold, 
 Into the peace of Thy sheltering fold, 
 Ever Thy glorious face to behold, 
-Jesus, I come to Thee. ` },
-  { id: 173, title: `173. Heavenly Father, Bless Us Now`, body: `1. Heavenly Father, bless us now; 
+Jesus, I come to Thee. `,
+  },
+  {
+    id: 173,
+    title: `173. Heavenly Father, Bless Us Now`,
+    body: `1. Heavenly Father, bless us now; 
 At the cross of Christ we bow; 
 Take our guilt and grief away; 
 Hear and heal us now we pray. 
@@ -4977,8 +5668,12 @@ Calm our anguish into rest.
 4. O Thou loving blessed One, 
 Rising o’er us like the sun, 
 Light and life art Thou within: 
-Saviour, Thou, from every sin! ` },
-  { id: 174, title: `174. Lord, I’m Coming Home`, body: `1. I’ve wandered far away from God, 
+Saviour, Thou, from every sin! `,
+  },
+  {
+    id: 174,
+    title: `174. Lord, I’m Coming Home`,
+    body: `1. I’ve wandered far away from God, 
 Now I’m coming home; 
 The paths of sin too long I’ve trod, 
 Lord, I’m coming home. 
@@ -5012,8 +5707,12 @@ Lord, I’m coming home.
 5. I need His cleansing blood I know, 
 Now I’m coming home; 
 O wash me whiter than the snow; 
-Lord, I’m coming home.` },
-  { id: 175, title: `175. Rock of Ages`, body: `1. Rock of Ages, cleft for me, 
+Lord, I’m coming home.`,
+  },
+  {
+    id: 175,
+    title: `175. Rock of Ages`,
+    body: `1. Rock of Ages, cleft for me, 
 Let me hide myself in Thee; 
 Let the water and the blood, 
 From Thy riven side which flowed, 
@@ -5034,8 +5733,12 @@ Victor o'er the last of foes,
 When I soar to worlds unknown, 
 And behold Thee on Thy throne, 
 Rock of Ages, cleft for me, 
-Let me hide myself in Thee.` },
-  { id: 176, title: `176. Lead Me to Calvary`, body: `1. King of my life, I crown Thee now, 
+Let me hide myself in Thee.`,
+  },
+  {
+    id: 176,
+    title: `176. Lead Me to Calvary`,
+    body: `1. King of my life, I crown Thee now, 
 Thine shall the glory be; 
 Lest I forget Thy thorn crowned brow, 
 Lead me to Calvary. 
@@ -5063,8 +5766,12 @@ Lead me to Calvary.
 4. May I be willing, Lord, to bear 
 Daily my cross for Thee; 
 Even Thy cup of grief to share, 
-Thou hast borne all for me. ` },
-  { id: 177, title: `177. O Day of Rest and Gladness`, body: `1. O day of rest and gladness, 
+Thou hast borne all for me. `,
+  },
+  {
+    id: 177,
+    title: `177. O Day of Rest and Gladness`,
+    body: `1. O day of rest and gladness, 
 O day of joy and light 
 O balm of care and sadness, 
 Most beautiful, most bright 
@@ -5091,8 +5798,12 @@ From earth to things above.
 New graces ever gaining 
 From this our day of rest 
 We seek the rest remaining 
-In mansions of the blest.` },
-  { id: 178, title: `178. Come, Thou Fount of Every Blessing `, body: `1. Come, Thou Fount of every blessing, 
+In mansions of the blest.`,
+  },
+  {
+    id: 178,
+    title: `178. Come, Thou Fount of Every Blessing `,
+    body: `1. Come, Thou Fount of every blessing, 
 Tune my heart to sing Thy grace; 
 Streams of mercy, never ceasing, 
 Call for songs of loudest praise. 
@@ -5119,8 +5830,12 @@ Bind me closer still to Thee.
 Prone to wander, Lord, I feel it, 
 Prone to leave the God I love; 
 Here's my heart, O take and seal it, 
-Seal it for Thy courts above.` },
-  { id: 179, title: `179. There is a Fountain`, body: `1. There is a fountain filled with blood 
+Seal it for Thy courts above.`,
+  },
+  {
+    id: 179,
+    title: `179. There is a Fountain`,
+    body: `1. There is a fountain filled with blood 
 Drawn from Immanuel's veins; 
 And sinners plunged beneath that flood 
 Lose all their guilty stains. 
@@ -5177,8 +5892,12 @@ Is ransomed from the grave,
 Is ransomed from the grave, 
 Is ransomed from the grave, 
 When this poor lisping, stammering tongue 
-Is ransomed from the grave.` },
-  { id: 180, title: `180. Redeemed!`, body: `1. Redeemed! How I love to proclaim it! 
+Is ransomed from the grave.`,
+  },
+  {
+    id: 180,
+    title: `180. Redeemed!`,
+    body: `1. Redeemed! How I love to proclaim it! 
 Redeemed by the blood of the Lamb; 
 Redeemed through His infinite mercy, 
 His child, and forever, I am. 
@@ -5200,8 +5919,12 @@ With me doth continually dwell.
 3. I know there’s a crown that is waiting 
 In yonder bright mansion for me; 
 And soon, with the saints made perfect, 
-At home with the Lord I shall be.` },
-  { id: 181, title: `181. To God Be the Glory`, body: `1. To God be the glory, great things He hath 
+At home with the Lord I shall be.`,
+  },
+  {
+    id: 181,
+    title: `181. To God Be the Glory`,
+    body: `1. To God be the glory, great things He hath 
 done! 
 So loved He the world that He gave us His Son, 
 Who yielded His life an atonement 
@@ -5234,8 +5957,12 @@ And great our rejoicing through Jesus
 the Son;  
 But purer, and higher, and greater 
 will be 
-Our wonder, our transport, when Jesus we see` },
-  { id: 182, title: `182. Is This a Day of New Beginnings?`, body: `1. Is this a day of new beginnings, 
+Our wonder, our transport, when Jesus we see`,
+  },
+  {
+    id: 182,
+    title: `182. Is This a Day of New Beginnings?`,
+    body: `1. Is this a day of new beginnings, 
 Time to remember and move on, 
 Time to believe what love is bringing, 
 Laying to rest the pain that’s gone? 
@@ -5262,8 +5989,12 @@ Seeking new paths, and sure to find.
 5. Christ is alive, and goes before us 
 To show and share what love can do. 
 This is a day of new beginnings; 
-Our God is making all things new.` },
-  { id: 183, title: `183. The Church Has One Foundation `, body: `1. The church has one foundation 
+Our God is making all things new.`,
+  },
+  {
+    id: 183,
+    title: `183. The Church Has One Foundation `,
+    body: `1. The church has one foundation 
 'Tis Jesus Christ her Lord; 
 She is His new creation 
 By water and the Word. 
@@ -5300,8 +6031,12 @@ Of peace forevermore;
 Till with the vision glorious, 
 Her longing eyes are blest, 
 And the great church victorious 
-Shall be the church at rest.` },
-  { id: 184, title: `184. I Will Sing of My Redeemer`, body: `1. I will sing of my Redeemer, 
+Shall be the church at rest.`,
+  },
+  {
+    id: 184,
+    title: `184. I Will Sing of My Redeemer`,
+    body: `1. I will sing of my Redeemer, 
 And wondrous love to me; 
 On the cruel cross He suffered 
 From the curse to set me free. 
@@ -5323,8 +6058,12 @@ He the ransom freely gave.
 3. I will sing of my Redeemer, 
 And His heav’nly love to me; 
 He from death to life hath brought me, 
-Son of God, with Him to be.` },
-  { id: 185, title: `185. When the King Comes In`, body: `1. Called to the feast by the King are we,
+Son of God, with Him to be.`,
+  },
+  {
+    id: 185,
+    title: `185. When the King Comes In`,
+    body: `1. Called to the feast by the King are we,
 Sitting, perhaps, where His people be;
 How will it fare, friend, with thee and me 
 When the King comes in?
@@ -5353,8 +6092,12 @@ When the King comes in.
 4. Joyful His eye shall on each one rest
 Who is in white wedding garments dressed;
 Ah! Well for us if we stand the test, 
-When the King comes in.` },
-  { id: 186, title: `186. Hasten On, Glad Day`, body: `1. The world’s glorious harvest is fast drawing on,
+When the King comes in.`,
+  },
+  {
+    id: 186,
+    title: `186. Hasten On, Glad Day`,
+    body: `1. The world’s glorious harvest is fast drawing on,
 The Master is calling His reapers to come;
 The grain bright and golden, in fields far and 
 near,
@@ -5378,8 +6121,12 @@ Then hasten to gather e’er autumn be past.
 A stream never failing whose Fount is above;
 ‘Tis love that invites us, ‘tis love that points the 
 field,
-‘Tis love wields the sickle and wondrous the yield.` },
-  { id: 187, title: `187. They Come From the East and West`, body: `1. They come from the east and west,
+‘Tis love wields the sickle and wondrous the yield.`,
+  },
+  {
+    id: 187,
+    title: `187. They Come From the East and West`,
+    body: `1. They come from the east and west,
 They come from the north and south,
 Invited to join with Jesus as guests,
 And dwell in their Father’s house;
@@ -5418,8 +6165,12 @@ For those He from sin set free.
 Loved ones who have passed away
 Are resting within the grave,
 Awaiting God’s last trumpet call,
-For those He came to save.` },
-  { id: 188, title: `188. Great Is Thy Faithfulness`, body: `1. Great is Thy faithfulness, O God my Father, 
+For those He came to save.`,
+  },
+  {
+    id: 188,
+    title: `188. Great Is Thy Faithfulness`,
+    body: `1. Great is Thy faithfulness, O God my Father, 
 There is no shadow of turning with Thee; 
 Thou changest not, Thy compassions, they fail 
 not; 
@@ -5445,8 +6196,12 @@ To Thy great faithfulness, mercy and love.
 Thy own dear presence to cheer and to guide; 
 Strength for today and bright hope for 
 tomorrow, 
-Blessings all mine, with ten thousand beside.` },
-  { id: 189, title: `189. Children of the Heavenly Father`, body: `1. Children of the heavenly Father 
+Blessings all mine, with ten thousand beside.`,
+  },
+  {
+    id: 189,
+    title: `189. Children of the Heavenly Father`,
+    body: `1. Children of the heavenly Father 
 Safely in His bosom gather; 
 Nestling bird nor star in heaven 
 Such a refuge e'er was given. 
@@ -5473,8 +6228,12 @@ Every foe-man must surrender.
 5. Though He giveth or He taketh, 
 God His children ne'er forsaketh; 
 His the loving purpose solely 
-To preserve them pure and holy.` },
-  { id: 190, title: `190. The Old Rugged Cross  `, body: `1. On a hill far away stood an old rugged cross, 
+To preserve them pure and holy.`,
+  },
+  {
+    id: 190,
+    title: `190. The Old Rugged Cross  `,
+    body: `1. On a hill far away stood an old rugged cross, 
 The emblem of suffering and shame; 
 And I love that old cross where the dearest and 
 best 
@@ -5499,8 +6258,12 @@ To bear it to dark Calvary.
 Its shame and reproach gladly bear; 
 Then He'll call me some day to my home far 
 away, 
-Where His glory forever I'll share.` },
-  { id: 191, title: `191. Ride On in Majesty`, body: `1. Ride on, ride on, in majesty! 
+Where His glory forever I'll share.`,
+  },
+  {
+    id: 191,
+    title: `191. Ride On in Majesty`,
+    body: `1. Ride on, ride on, in majesty! 
 Hark! All the tribes Hosanna cry; 
 O Saviour meek, pursue Thy road 
 With palms and scattered garments strowed. 
@@ -5521,8 +6284,12 @@ To see the approaching sacrifice.
 4. Ride on, ride on, in majesty! 
 In lowly pomp ride on to die! 
 Bow Thy meek head to mortal pain, 
-Then take, O God! Thy power and reign.` },
-  { id: 192, title: `192. We Have This Hope`, body: `We have this hope that burns within 
+Then take, O God! Thy power and reign.`,
+  },
+  {
+    id: 192,
+    title: `192. We Have This Hope`,
+    body: `We have this hope that burns within 
 our hearts, 
 Hope in the coming of the Lord 
 We have this faith that Christ alone imparts, 
@@ -5533,8 +6300,12 @@ Shall awake and shout and sing
 Hallelujah! Christ is King! 
 We have this hope that burns within 
 our hearts 
-Hope in the coming of the Lord. ` },
-  { id: 193, title: `193. The King shall Com`, body: `1. The King shall come when morning dawns, 
+Hope in the coming of the Lord. `,
+  },
+  {
+    id: 193,
+    title: `193. The King shall Com`,
+    body: `1. The King shall come when morning dawns, 
 And light triumphant breaks; 
 When beauty gilds the eastern hills, 
 And life to joy awakes. 
@@ -5561,8 +6332,12 @@ And we shall see His face.
 5. The King shall come when morning dawns, 
 And light and beauty brings. 
 Hail, Christ the Lord! Thy people pray, 
-Come quickly, King of kings. ` },
-  { id: 194, title: `194. Showers of Blessing `, body: `1. "There shall be showers of blessing;" 
+Come quickly, King of kings. `,
+  },
+  {
+    id: 194,
+    title: `194. Showers of Blessing `,
+    body: `1. "There shall be showers of blessing;" 
 This is the promise of love; 
 There shall be seasons refreshing, 
 Sent from the Saviour above. 
@@ -5590,8 +6365,12 @@ Come, and now honour Thy word.
 4. "There shall be showers of blessing;" 
 O that today they might fall, 
 Now as to God were confessing, 
-Now as on Jesus we call!` },
-  { id: 195, title: `195. It May be at Morn`, body: `1. It may be at morn, when the day 
+Now as on Jesus we call!`,
+  },
+  {
+    id: 195,
+    title: `195. It May be at Morn`,
+    body: `1. It may be at morn, when the day 
 is awaking, 
 When sunlight through darkness and shadow is 
 breaking, 
@@ -5622,8 +6401,12 @@ No sickness, no sadness, no dread,
 and no crying, 
 Caught up through the clouds with our Lord into 
 glory, 
-When Jesus receives His own.` },
-  { id: 196, title: `196. When He Cometh`, body: `1. When He cometh, when He cometh 
+When Jesus receives His own.`,
+  },
+  {
+    id: 196,
+    title: `196. When He Cometh`,
+    body: `1. When He cometh, when He cometh 
 To make up His jewels, 
 All His jewels, precious jewels, 
 His loved and His own. 
@@ -5645,8 +6428,12 @@ His loved and His own.
 3. Little children, little children, 
 Who love their Redeemer, 
 Are the jewels, precious jewels, 
-His loved and His own.` },
-  { id: 197, title: `197. Praise Him! Praise Him!`, body: `1. Praise Him! Praise Him! Jesus, our blessed 
+His loved and His own.`,
+  },
+  {
+    id: 197,
+    title: `197. Praise Him! Praise Him!`,
+    body: `1. Praise Him! Praise Him! Jesus, our blessed 
 Redeemer! 
 Sing, O earth, His wonderful love proclaim! 
 Hail Him! Hail Him! Highest archangels in glory; 
@@ -5682,8 +6469,12 @@ Jesus, Saviour, reigneth forever and ever.
 Crown Him! Crown Him! Prophet, and Priest, and 
 King! 
 Christ is coming over the world victorious, 
-Power and glory unto the Lord belong.` },
-  { id: 198, title: `198. O for a Thousand Tongues to Sing`, body: `1. O for a thousand tongues to sing 
+Power and glory unto the Lord belong.`,
+  },
+  {
+    id: 198,
+    title: `198. O for a Thousand Tongues to Sing`,
+    body: `1. O for a thousand tongues to sing 
 My great Redeemer's praise, 
 The glories of my God and King, 
 The triumphs of His grace! 
@@ -5716,8 +6507,12 @@ The humble poor believe.
 6. Hear Him, ye deaf; His praise, ye dumb, 
 Your loosened tongues employ; 
 Ye blind, behold your Saviour come, 
-And leap, ye lame, for joy.` },
-  { id: 199, title: `199. I Need the Prayers`, body: `1. I need the prayers of those I love, 
+And leap, ye lame, for joy.`,
+  },
+  {
+    id: 199,
+    title: `199. I Need the Prayers`,
+    body: `1. I need the prayers of those I love, 
 While trav’ling o’er life rugged way, 
 That I may true and faithful be, 
 And live for Jesus every day. 
@@ -5739,8 +6534,12 @@ That He may keep me by His pow’r.
 3. I want my friends to pray for me, 
 To hold me up on wings of faith, 
 That I may walk the narrow way, 
-Kept by our Father’s glorious grace.` },
-  { id: 200, title: `200. What Heavenly Music`, body: `1. What heavenly music steals over the sea! 
+Kept by our Father’s glorious grace.`,
+  },
+  {
+    id: 200,
+    title: `200. What Heavenly Music`,
+    body: `1. What heavenly music steals over the sea! 
 Entrancing the senses like sweet melody! 
 'Tis the voice of the angels borne soft on the air; 
 For me they are singing; their welcome I hear. 
@@ -5758,8 +6557,12 @@ away.
 wave, 
 If Jesus permit, the wild surges I'll brave; 
 For that heavenly music hath ravished me so, 
-I must join in that chorus! I'll go! Let me go!` },
-  { id: 201, title: `201. Jesus Saves `, body: `1. We have heard a joyful sound, 
+I must join in that chorus! I'll go! Let me go!`,
+  },
+  {
+    id: 201,
+    title: `201. Jesus Saves `,
+    body: `1. We have heard a joyful sound, 
 Jesus saves, Jesus saves; 
 Spread the gladness all around, 
 Jesus saves, Jesus saves; 
@@ -5796,8 +6599,12 @@ Jesus saves, Jesus saves;
 Shout salvation full and free, 
 Highest hills and deepest caves, 
 This our song of victory, 
-Jesus saves, Jesus saves.` },
-  { id: 202, title: `202. The Cleansing Wave`, body: `1. O now I see the crimson wave, 
+Jesus saves, Jesus saves.`,
+  },
+  {
+    id: 202,
+    title: `202. The Cleansing Wave`,
+    body: `1. O now I see the crimson wave, 
 The fountain deep and wide 
 Jesus, my Lord, mighty to save, 
 Points to His wounded side. 
@@ -5825,8 +6632,12 @@ And Christ enthroned within.
 4. Amazing grace! ‘Tis heaven below 
 To feel the blood applied, 
 And Jesus, only Jesus, know, 
-My Jesus crucified.` },
-  { id: 203, title: `203. I Love to Tell the Story`, body: `1. I love to tell the story 
+My Jesus crucified.`,
+  },
+  {
+    id: 203,
+    title: `203. I Love to Tell the Story`,
+    body: `1. I love to tell the story 
 Of unseen things above, 
 Of Jesus and His glory, 
 Of Jesus and His love. 
@@ -5870,8 +6681,12 @@ To hear it like the rest.
 And when in scenes of glory, 
 I sing the new, new song, 
 'Twill be the old, old story 
-That I have loved so long.` },
-  { id: 204, title: `204. The Helping Word`, body: `1. If any little word of mine
+That I have loved so long.`,
+  },
+  {
+    id: 204,
+    title: `204. The Helping Word`,
+    body: `1. If any little word of mine
 May make a dark life brighter,
 If any little song of mine
 May make a sad heart lighter,
@@ -5893,8 +6708,12 @@ May make a friend’s the fleeter,
 3. If any little lift of mine
 May ease a toiler bending,
 God give me love and care and strength,
-We live for Him by lending.` },
-  { id: 205, title: `205. No Night There `, body: `1. In the land of fadeless day 
+We live for Him by lending.`,
+  },
+  {
+    id: 205,
+    title: `205. No Night There `,
+    body: `1. In the land of fadeless day 
 Lies “the city four-square,” 
 It shall never pass away, 
 And there is “no night there.”
@@ -5920,8 +6739,12 @@ And there is “no night there.”
 4. There they need to sunshine bright. 
 In “that city four-square,” 
 For the Lamb is all the light, 
-And there is “no night there.” ` },
-  { id: 206, title: `206. ‘Tis the Blessed Hour of Prayer`, body: `1. ’Tis the blessed hour of prayer, when our 
+And there is “no night there.” `,
+  },
+  {
+    id: 206,
+    title: `206. ‘Tis the Blessed Hour of Prayer`,
+    body: `1. ’Tis the blessed hour of prayer, when our 
 hearts lowly bend, 
 And we gather to Jesus, our Saviour and Friend; 
 If we come to Him in faith, 
@@ -5963,8 +6786,12 @@ receive;
 In the fullness of this trust we shall lose every 
 care; 
 What a balm for the weary, 
-O how sweet to be there! ` },
-  { id: 207, title: `207. Sun of My Soul`, body: `1. Sun of my soul, Thou Saviour dear! 
+O how sweet to be there! `,
+  },
+  {
+    id: 207,
+    title: `207. Sun of My Soul`,
+    body: `1. Sun of my soul, Thou Saviour dear! 
 It is not night if Thou be near; 
 O may no earth-born cloud arise 
 To hide Thee from Thy servant’s eyes. 
@@ -5985,8 +6812,12 @@ For without Thee I dare not die.
 4. Be near and bless me when I wake, 
 Ere through the world my way I take; 
 Till in the ocean of Thy love 
-I lose myself in heaven above.  ` },
-  { id: 208, title: `208. Pass Me Not, O Gentle Saviour`, body: `1. Pass me not, O gentle Saviour, 
+I lose myself in heaven above.  `,
+  },
+  {
+    id: 208,
+    title: `208. Pass Me Not, O Gentle Saviour`,
+    body: `1. Pass me not, O gentle Saviour, 
 Hear my humble cry; 
 While on others Thou art calling, 
 Do not pass me by. 
@@ -6013,8 +6844,12 @@ Save me by Thy grace.
 4. Thou the spring of all my comfort, 
 More than life to me, 
 Whom have I on earth beside Thee? 
-Whom in heaven but Thee?` },
-  { id: 209, title: `209. Stand Up! Stand Up for Jesus!`, body: `1. Stand up, stand up for Jesus,
+Whom in heaven but Thee?`,
+  },
+  {
+    id: 209,
+    title: `209. Stand Up! Stand Up for Jesus!`,
+    body: `1. Stand up, stand up for Jesus,
 Ye soldiers of the cross; 
 Lift high His royal banner, 
 It must not suffer loss. 
@@ -6051,8 +6886,12 @@ The next the victor's song.
 To him that overcometh 
 A crown of life shall be; 
 They with the King of Glory 
-Shall reign eternally.` },
-  { id: 210, title: `210. On Jordan’s Stormy Banks`, body: `1. On Jordan’s stormy banks I stand, 
+Shall reign eternally.`,
+  },
+  {
+    id: 210,
+    title: `210. On Jordan’s Stormy Banks`,
+    body: `1. On Jordan’s stormy banks I stand, 
 And cast a wishful eye 
 To Canaan’s fair and happy land, 
 Where my possessions lie. 
@@ -6080,8 +6919,12 @@ And in His kingdom rest?
 4. Filled with delight, my raptured soul 
 Would here no longer stay; 
 Though Jordan’s waves around me roll, 
-Fearless I'd launch away.` },
-  { id: 211, title: `211. Watchmen, on the Walls of Zion`, body: `1. Watchmen, on the walls of Zion, 
+Fearless I'd launch away.`,
+  },
+  {
+    id: 211,
+    title: `211. Watchmen, on the Walls of Zion`,
+    body: `1. Watchmen, on the walls of Zion, 
 What O tell us, of the night? 
 Is the daystar now arising? 
 Will the morn soon greet our sight? 
@@ -6118,8 +6961,12 @@ Soon the haven will appear;
 Let your voices
 Sound aloud your holy cheer; 
 Let your voices
-Sound aloud your holy cheer.` },
-  { id: 212, title: `212. Love at Home`, body: `1. There is beauty all around, 
+Sound aloud your holy cheer.`,
+  },
+  {
+    id: 212,
+    title: `212. Love at Home`,
+    body: `1. There is beauty all around, 
 When there’s love at home; 
 There is joy in every sound, 
 When there’s love at home. 
@@ -6152,8 +6999,12 @@ Then there’s love at home.
 Safely from all harm I’ll rest, 
 With no sinful care distressed, 
 Through Thy tender mercy blessed, 
-When there’s love at home.` },
-  { id: 213, title: `213. Jesus, Stand Among Us`, body: `1. Jesus, stand among us
+When there’s love at home.`,
+  },
+  {
+    id: 213,
+    title: `213. Jesus, Stand Among Us`,
+    body: `1. Jesus, stand among us
 In Thy risen power;
 Let this time of worship
 Be a hallowed hour.
@@ -6168,21 +7019,37 @@ From each soul depart.
 3. Thus with quickened footsteps
 We pursue our way,
 Watching for the dawning
-Of eternal day.` },
-  { id: 214, title: `214. Hear Our Prayer, O Lord`, body: `Hear our prayer, O Lord, 
+Of eternal day.`,
+  },
+  {
+    id: 214,
+    title: `214. Hear Our Prayer, O Lord`,
+    body: `Hear our prayer, O Lord, 
 Hear our prayer, O Lord; 
 Incline Thine ear to us, 
 And grant us Thy peace. 
-Amen.` },
-  { id: 215, title: `215. Praise God, From Whom All Blessings`, body: `Praise God, from Whom all blessings flow; 
+Amen.`,
+  },
+  {
+    id: 215,
+    title: `215. Praise God, From Whom All Blessings`,
+    body: `Praise God, from Whom all blessings flow; 
 Praise Him, all creatures here below; 
 Praise Him above, ye heavenly host; 
-Praise Father, Son, and Holy Ghost.` },
-  { id: 216, title: `216. Praise God, From All Blessings`, body: `Praise God, from Whom all blessings flow; 
+Praise Father, Son, and Holy Ghost.`,
+  },
+  {
+    id: 216,
+    title: `216. Praise God, From All Blessings`,
+    body: `Praise God, from Whom all blessings flow; 
 Praise Him, all creatures here below; 
 Praise Him above, ye heavenly host; 
-Praise Father, Son, and Holy Ghost.` },
-  { id: 217, title: `217. Lower Lights`, body: `1. Brightly beams our Father’s mercy,
+Praise Father, Son, and Holy Ghost.`,
+  },
+  {
+    id: 217,
+    title: `217. Lower Lights`,
+    body: `1. Brightly beams our Father’s mercy,
 From His light-house evermore,
 But to us He gives the keeping
 Of the lights along the shore.
@@ -6204,8 +7071,12 @@ For the lights along the shore.
 3. Trim your feeble lamp, my brother:
 Some poor sailor, tempest tossed,
 Trying now to make the harbour,
-In the darkness may be lost.` },
-  { id: 218, title: `218. He Leadeth Me`, body: `1. He leadeth me: O blessed thought! 
+In the darkness may be lost.`,
+  },
+  {
+    id: 218,
+    title: `218. He Leadeth Me`,
+    body: `1. He leadeth me: O blessed thought! 
 O words with heavenly comfort fraught! 
 Whate'er I do, where'er I be, 
 Still 'tis God's hand that leadeth me. 
@@ -6233,8 +7104,12 @@ Since 'tis my God that leadeth me.
 4. And when my task on earth is done, 
 When by Thy grace the victory's won, 
 E'en death's cold wave I will not flee, 
-Since God through Jordan leadeth me.` },
-  { id: 219, title: `219. Have Thine Own Way, Lord`, body: `1. Have Thine own way, Lord! 
+Since God through Jordan leadeth me.`,
+  },
+  {
+    id: 219,
+    title: `219. Have Thine Own Way, Lord`,
+    body: `1. Have Thine own way, Lord! 
 Have Thine own way! 
 Thou art the potter,
 I am the clay. 
@@ -6271,8 +7146,12 @@ Absolute sway.
 Fill with thy Spirit
 Till all shall see 
 Christ only, always,
-Living in me!` },
-  { id: 220, title: `220. O Let Me Walk With Thee`, body: `1. O let me walk with Thee, my God, 
+Living in me!`,
+  },
+  {
+    id: 220,
+    title: `220. O Let Me Walk With Thee`,
+    body: `1. O let me walk with Thee, my God, 
 As Enoch walked in days of old; 
 Place Thou my trembling hand in Thine, 
 And sweet communion with me hold; 
@@ -6293,8 +7172,12 @@ I'll count the joys of earth but loss,
 And firmly, bravely journey on; 
 I'll bear the banner of the cross 
 Till Zion's glorious gates I see, 
-Yet, Saviour, let me walk with Thee. ` },
-  { id: 221, title: `221. Heir of the Kingdom`, body: `1. Heir of the kingdom, O why dost 
+Yet, Saviour, let me walk with Thee. `,
+  },
+  {
+    id: 221,
+    title: `221. Heir of the Kingdom`,
+    body: `1. Heir of the kingdom, O why dost 
 thou slumber? 
 Why art thou sleeping so near thy 
 blest home? 
@@ -6335,8 +7218,12 @@ Watch for the glory of earth’s coming King;
 Lo! O’er the mountain-tops light is 
 now breaking; 
 Heir of the kingdom, rejoice ye 
-and sing.` },
-  { id: 222, title: `222. Hold Fast Till I Come`, body: `1. Sweet promise is give to all who believe– 
+and sing.`,
+  },
+  {
+    id: 222,
+    title: `222. Hold Fast Till I Come`,
+    body: `1. Sweet promise is give to all who believe– 
 “Behold I come quickly, Mine own to receive; 
 Hold fast till I come; the danger is great; 
 Sleep not as do others; be watchful, and wait.” 
@@ -6363,8 +7250,12 @@ As spring shows that summer is not far away.
 3. Yes! This is our hope, ‘tis built on His word– 
 The glorious appearing of Jesus, our Lord; 
 Of promises all, it stands as the sum: 
-“Behold I come quickly, hold fast till I come.”` },
-  { id: 223, title: `223. Sound the Battle Cry`, body: `1. Sound the battle cry, 
+“Behold I come quickly, hold fast till I come.”`,
+  },
+  {
+    id: 223,
+    title: `223. Sound the Battle Cry`,
+    body: `1. Sound the battle cry, 
 See! The foe is nigh; 
 Raise the standard high 
 For the Lord; 
@@ -6398,8 +7289,12 @@ By Thy grace;
 When the battle's done, 
 And the victory won, 
 May we wear the crown 
-Before Thy face.` },
-  { id: 224, title: `224. Rise Up, O Church of God`, body: `1. Rise up, O men of God! 
+Before Thy face.`,
+  },
+  {
+    id: 224,
+    title: `224. Rise Up, O Church of God`,
+    body: `1. Rise up, O men of God! 
 His kingdom tarries long. 
 Bring in the day of brotherhood 
 And end the night of wrong. 
@@ -6420,8 +7315,12 @@ Rise up, and make her great!
 4. Lift high the cross of Christ! 
 Tread where his feet have trod. 
 Disciples of the Son of Man, 
-Rise up, O church of God!` },
-  { id: 225, title: `225. O Perfect Love `, body: `1. O perfect Love, all human thought 
+Rise up, O church of God!`,
+  },
+  {
+    id: 225,
+    title: `225. O Perfect Love `,
+    body: `1. O perfect Love, all human thought 
 transcending, 
 Lowly we kneel in prayer before Thy throne, 
 That theirs may be the love which knows no 
@@ -6440,8 +7339,12 @@ sorrow;
 Grant them the peace which calms all earthly 
 strife, 
 And to life's day the glorious unknown morrow 
-That dawns upon eternal love and life.` },
-  { id: 226, title: `226. Live Out Thy Life Within Me `, body: `1. Live out Thy life within me, 
+That dawns upon eternal love and life.`,
+  },
+  {
+    id: 226,
+    title: `226. Live Out Thy Life Within Me `,
+    body: `1. Live out Thy life within me, 
 O Jesus King of kings! 
 Be Thou Thyself the answer 
 To all my questionings; 
@@ -6478,8 +7381,12 @@ When Thou hast need of me.
 Live out Thy life within me, 
 O Jesus, King of kings! 
 Be Thou the glorious answer 
-To all my questionings.` },
-  { id: 227, title: `227. When We All Get to Heaven `, body: `1. Sing the wondrous love of Jesus, 
+To all my questionings.`,
+  },
+  {
+    id: 227,
+    title: `227. When We All Get to Heaven `,
+    body: `1. Sing the wondrous love of Jesus, 
 Sing His mercy and His grace; 
 In the mansion bright and blessed 
 He’ll prepare for us a place. 
@@ -6507,8 +7414,12 @@ Will the toils of life repay.
 4. Onward to the prize before us! 
 Soon His beauty we’ll behold; 
 Soon the pearly gates will open– 
-We shall tread the streets of gold.` },
-  { id: 228, title: `228. Onward, Christian Soldiers!`, body: `1. Onward, Christian soldiers, 
+We shall tread the streets of gold.`,
+  },
+  {
+    id: 228,
+    title: `228. Onward, Christian Soldiers!`,
+    body: `1. Onward, Christian soldiers, 
 Marching as to war, 
 With the cross of Jesus 
 Going on before. 
@@ -6552,8 +7463,12 @@ In the triumph song.
 Glory, praise, and honour  
 Unto Christ the King, 
 This through countless ages 
-Men and angels sing.` },
-  { id: 229, title: `229. We Know Not the Hour`, body: `1. We know not the hour of the Master's 
+Men and angels sing.`,
+  },
+  {
+    id: 229,
+    title: `229. We Know Not the Hour`,
+    body: `1. We know not the hour of the Master's 
 appearing; 
 Yet signs all foretell that the moment is nearing 
 When He shall return 'tis the promise most 
@@ -6581,8 +7496,12 @@ trimmed and burning;
 We'll work and we'll wait till the Master's 
 returning; 
 We'll sing and rejoice, every omen discerning 
-But we know not the hour.` },
-  { id: 230, title: `230. My Soul, Be on Thy Guard `, body: `1. My soul, be on thy guard! 
+But we know not the hour.`,
+  },
+  {
+    id: 230,
+    title: `230. My Soul, Be on Thy Guard `,
+    body: `1. My soul, be on thy guard! 
 Ten thousand foes arise; 
 The hosts of sin are pressing hard 
 To draw thee from the skies. 
@@ -6597,8 +7516,12 @@ And help divine implore.
 3. Ne’er think the victory won, 
 Nor lay thine armour down; 
 Thy arduous task will not be done 
-Till thou obtain the crown.` },
-  { id: 231, title: `231. I’ll Go Where You Want Me to Go`, body: `1. It may not be on the mountain’s height, 
+Till thou obtain the crown.`,
+  },
+  {
+    id: 231,
+    title: `231. I’ll Go Where You Want Me to Go`,
+    body: `1. It may not be on the mountain’s height, 
 Or over the stormy sea; 
 It may not be at the battle’s front 
 My Lord will have need of me; 
@@ -6634,8 +7557,12 @@ For Jesus, the crucified.
 So, trusting my all unto Thy care,
 I know Thou lovest me! 
 I’ll do Your will with a heart sincere, 
-I’ll be what You want me to be.` },
-  { id: 232, title: `232. O Master, Let Me Walk With Thee`, body: `1. O Master, let me walk with Thee 
+I’ll be what You want me to be.`,
+  },
+  {
+    id: 232,
+    title: `232. O Master, Let Me Walk With Thee`,
+    body: `1. O Master, let me walk with Thee 
 In lowly paths of service free; 
 Tell me Thy secret; help me bear 
 The strain of toil, the fret of care. 
@@ -6656,8 +7583,12 @@ In trust that triumphs over wrong;
 4. In hope that sends a shining ray 
 Far down the future's broadening way, 
 In peace that only Thou canst give, 
-With thee, O Master, let me live.` },
-  { id: 233, title: `233. In the Garden`, body: `1. I come to the garden alone, 
+With thee, O Master, let me live.`,
+  },
+  {
+    id: 233,
+    title: `233. In the Garden`,
+    body: `1. I come to the garden alone, 
 While the dew is still on the roses; 
 And the voice I hear, falling on my ear, 
 The Son of God discloses. 
@@ -6680,8 +7611,12 @@ Within my heart is ringing.
 3. I’d stay in the garden with Him 
 Though the night around me be falling, 
 But He bids me go; through the voice of woe, 
-His voice to me is calling.` },
-  { id: 234, title: `234. At First I Prayed for Light `, body: `1. At first I prayed for light; 
+His voice to me is calling.`,
+  },
+  {
+    id: 234,
+    title: `234. At First I Prayed for Light `,
+    body: `1. At first I prayed for light; 
 Could I but see the way, 
 How gladly, swifty would I walk 
 To everlasting day! 
@@ -6708,8 +7643,12 @@ However dark His plan.
 5. And light and strength and faith 
 Are opening everywhere! 
 God waited patiently until 
-I prayed larger prayer.` },
-  { id: 235, title: `235. Burdens Are Lifted at Calvary`, body: `1. Days are filled with sorrow and care,
+I prayed larger prayer.`,
+  },
+  {
+    id: 235,
+    title: `235. Burdens Are Lifted at Calvary`,
+    body: `1. Days are filled with sorrow and care,
 Heart are lonely and drear; 
 Burdens are lifted at Calvary, 
 Jesus is very near. 
@@ -6731,8 +7670,12 @@ Jesus is very near.
 3. Troubled soul, the Saviour can see 
 Every heartache and tear; 
 Burdens are lifted at Calvary, 
-Jesus is very near. ` },
-  { id: 236, title: `236. Father, Lead Me Day by Day `, body: `1. Father, lead me day by day, 
+Jesus is very near. `,
+  },
+  {
+    id: 236,
+    title: `236. Father, Lead Me Day by Day `,
+    body: `1. Father, lead me day by day, 
 Ever in Thine own sweet way; 
 Teach me to be pure and true; 
 Show me what I ought to do. 
@@ -6753,8 +7696,12 @@ Shield me with Thy mighty hand.
 4. May I do the good I know, 
 Be Thy loving child below, 
 Then at last go home to Thee, 
-Evermore Thy child to be.` },
-  { id: 237, title: `237. Still, Still With Thee`, body: `1. Still, still with Thee, when purple morning 
+Evermore Thy child to be.`,
+  },
+  {
+    id: 237,
+    title: `237. Still, Still With Thee`,
+    body: `1. Still, still with Thee, when purple morning 
 breaketh, 
 When the bird waketh, and the shadows flee; 
 Fairer than morning, lovelier than daylight, 
@@ -6790,8 +7737,12 @@ But sweeter still to wake and find Thee there.
 6. So shall it be at last, in that bright morning, 
 When the soul waketh and life’s shadows flee; 
 O in that hour, fairer than daylight dawning, 
-Shall rise the glorious thought, I am with Thee.` },
-  { id: 238, title: `238. I Love Thee`, body: `1. I love Thee, I love Thee, 
+Shall rise the glorious thought, I am with Thee.`,
+  },
+  {
+    id: 238,
+    title: `238. I Love Thee`,
+    body: `1. I love Thee, I love Thee, 
 I love Thee, my Lord; 
 I love Thee, my Saviour, 
 I love Thee, my God. 
@@ -6826,8 +7777,12 @@ sing.
 I'll praise Him, I'll praise Him, with notes loud and 
 clear, 
 While rivers of pleasure my spirit 
-do cheer.` },
-  { id: 239, title: `239. Seeking the Lost`, body: `1. Seeking the lost-yes, kindly entreating
+do cheer.`,
+  },
+  {
+    id: 239,
+    title: `239. Seeking the Lost`,
+    body: `1. Seeking the lost-yes, kindly entreating
 Wanderers on the mountain astray
 "Come unto Me," His message repeating,
 Words of the Master speaking today.
@@ -6857,8 +7812,12 @@ Showing the path to life evermore.
 3. Thus I would go on missions of mercy
 Following Christ from day unto day,
 Cheering the faint and raising the fallen,
-Pointing the lost to Jesus, the Way` },
-  { id: 240, title: `240. Jesus, With Thy Church Abide`, body: `1. Jesus, with Thy church abide; 
+Pointing the lost to Jesus, the Way`,
+  },
+  {
+    id: 240,
+    title: `240. Jesus, With Thy Church Abide`,
+    body: `1. Jesus, with Thy church abide; 
 Be her Saviour, Lord, and Guide, 
 While on earth her faith is tried: 
 We beseech Thee, hear us. 
@@ -6879,8 +7838,12 @@ We beseech Thee, hear us.
 4. May she holy triumphs win, 
 Over throw the hosts of sin, 
 Gather all the nations in: 
-We beseech Thee, hear us.` },
-  { id: 241, title: `241. In the Heart of Jesus`, body: `1. In the heart of Jesus 
+We beseech Thee, hear us.`,
+  },
+  {
+    id: 241,
+    title: `241. In the Heart of Jesus`,
+    body: `1. In the heart of Jesus 
 There is love for you, 
 Love most pure and tender, 
 Love most deep and true; 
@@ -6916,8 +7879,12 @@ Calm and peaceful, too;
 Why then, like a wanderer, 
 Roam with weary pace, 
 If the home of Jesus 
-Holds for you a place?` },
-  { id: 242, title: `242. Give Me Jesus`, body: `1. In the morning when I rise, 
+Holds for you a place?`,
+  },
+  {
+    id: 242,
+    title: `242. Give Me Jesus`,
+    body: `1. In the morning when I rise, 
 In the morning when I rise, 
 In the morning when I rise, 
 Give me Jesus. 
@@ -6945,8 +7912,12 @@ Give me Jesus.
 4. Oh, when I come to die, 
 Oh, when I come to die, 
 Oh, when I come to die, 
-Give me Jesus.` },
-  { id: 243, title: `243. Deeper Yet `, body: `1. In the blood from the cross 
+Give me Jesus.`,
+  },
+  {
+    id: 243,
+    title: `243. Deeper Yet `,
+    body: `1. In the blood from the cross 
 I have been washed from sin; 
 But to be free from dross, 
 Still I would enter in. 
@@ -6974,8 +7945,12 @@ So then with faith I pray.
 4. Now I have peace, sweet peace, 
 While in this world of sin; 
 But to pray I'll not cease 
-Till I am pure within.` },
-  { id: 244, title: `244. For You I Am Praying `, body: `1. I have a Saviour, He's pleading in glory, 
+Till I am pure within.`,
+  },
+  {
+    id: 244,
+    title: `244. For You I Am Praying `,
+    body: `1. I have a Saviour, He's pleading in glory, 
 A dear, loving Saviour, though earth friends be 
 few; 
 And now He is watching in tenderness o'er me, 
@@ -7008,8 +7983,12 @@ That my loving Saviour is your Saviour, too;
 Then pray that your Saviour will bring them to 
 glory, 
 And prayer will be answered 'twas answered for 
-you!` },
-  { id: 245, title: `245. Jesus Calls Us`, body: `1. Jesus calls us o'er the tumult 
+you!`,
+  },
+  {
+    id: 245,
+    title: `245. Jesus Calls Us`,
+    body: `1. Jesus calls us o'er the tumult 
 Of our life's wild, restless sea; 
 Day by day His sweet voice soundeth, 
 Saying, "Christian, follow Me!" 
@@ -7030,8 +8009,12 @@ Still He calls, in cares and pleasures,
 4. Jesus calls us! By Thy mercies, 
 Saviour, may we hear Thy call, 
 Give our hearts to Thy obedience, 
-Serve and love Thee best of all.` },
-  { id: 246, title: `246. I Hear Thy Welcome Voice `, body: `1. I hear Thy welcome voice 
+Serve and love Thee best of all.`,
+  },
+  {
+    id: 246,
+    title: `246. I Hear Thy Welcome Voice `,
+    body: `1. I hear Thy welcome voice 
 That calls me, Lord, to Thee, 
 For cleansing in Thy precious blood 
 That flowed on Calvary. 
@@ -7059,8 +8042,12 @@ For earth and heaven above.
 4. All hail! Atoning blood! 
 All hail! Redeeming grace! 
 All hail! The gift of Christ our Lord,
-Our Strength and Righteousness.` },
-  { id: 247, title: `247. Hover O’er Me, Holy Spirit`, body: `1. Hover o’er me, Holy Spirit, 
+Our Strength and Righteousness.`,
+  },
+  {
+    id: 247,
+    title: `247. Hover O’er Me, Holy Spirit`,
+    body: `1. Hover o’er me, Holy Spirit, 
 Bathe my trembling heart and brow; 
 Fill me with Thy hallowed presence, 
 Come, O come and fill me now. 
@@ -7088,8 +8075,12 @@ Fill with love and fill me now.
 4. Cleanse and comfort, bless and save me, 
 Bathe, O bathe my heart and brow; 
 Thou art comforting and saving, 
-Thou at sweetly filling now.` },
-  { id: 248, title: `248. We’ve a Story to Tell to the Nations`, body: `1. We’ve a story to tell to the nations
+Thou at sweetly filling now.`,
+  },
+  {
+    id: 248,
+    title: `248. We’ve a Story to Tell to the Nations`,
+    body: `1. We’ve a story to tell to the nations
 That shall turn their hearts to the right,
 A story of truth and mercy,
 A story of peace and light,
@@ -7122,8 +8113,12 @@ And show us that God is love.
 Who the path of sorrow hath trod,
 That all of the world’s great peoples
 Might come to the truth of God,
-Might come to the truth of God.` },
-  { id: 249, title: `249. We Have Not Known Thee`, body: `1. We have not known Thee as we ought, 
+Might come to the truth of God.`,
+  },
+  {
+    id: 249,
+    title: `249. We Have Not Known Thee`,
+    body: `1. We have not known Thee as we ought, 
 Nor learned Thy wisdom, grace 
 and power; 
 The things of earth have filled 
@@ -7163,8 +8158,12 @@ And fear and love and serve aright?
 When shall we, out of trial brought, 
 Be perfect in the land of light? 
 Lord, may we day by day prepare 
-To see Thy face and serve Thee there.` },
-  { id: 250, title: `250. In the Cross of Christ I Glory`, body: `1. In the cross of Christ I glory, 
+To see Thy face and serve Thee there.`,
+  },
+  {
+    id: 250,
+    title: `250. In the Cross of Christ I Glory`,
+    body: `1. In the cross of Christ I glory, 
 Towering o'er the wrecks of time; 
 All the light of sacred story 
 Gathers round its head sublime. 
@@ -7185,8 +8184,12 @@ Adds new luster to the day.
 4. Bane and blessing, pain and pleasure, 
 By the cross are sanctified; 
 Peace is there that knows no measure, 
-Joys that through all time abide.` },
-  { id: 251, title: `251. How Sweet the Name!  `, body: `1. How sweet the Name of Jesus sounds 
+Joys that through all time abide.`,
+  },
+  {
+    id: 251,
+    title: `251. How Sweet the Name!  `,
+    body: `1. How sweet the Name of Jesus sounds 
 In a believer’s ear! 
 It soothes his sorrows, heals his wounds, 
 And drives away his fear. 
@@ -7213,8 +8216,12 @@ Accept the praise I bring.
 5. Weak is the effort of my heart, 
 And cold my warmest thought; 
 But when I see Thee as Thou art, 
-I’ll praise Thee as I ought.` },
-  { id: 252, title: `252. Watchman, Blow the Gospel Trumpet`, body: `1. Watchman, blow the gospel trumpet, 
+I’ll praise Thee as I ought.`,
+  },
+  {
+    id: 252,
+    title: `252. Watchman, Blow the Gospel Trumpet`,
+    body: `1. Watchman, blow the gospel trumpet, 
 Every soul a warning give 
 Whosoever hears the message 
 May repent, and turn and live. 
@@ -7242,8 +8249,12 @@ Father waits to welcome home.
 4. Sound it for the heavy laden, 
 Weary, longing to be free; 
 Sound a Saviour's invitation, 
-Sweetly saying, “Come to me.”` },
-  { id: 253, title: `253. Hiding in Thee `, body: `1. O safe to the Rock that is higher than I, 
+Sweetly saying, “Come to me.”`,
+  },
+  {
+    id: 253,
+    title: `253. Hiding in Thee `,
+    body: `1. O safe to the Rock that is higher than I, 
 My soul in its conflicts and sorrows would fly; 
 So sinful, so weary, Thine, Thine, would I be; 
 Thou blest “Rock of Ages,” I’m hiding in Thee. 
@@ -7268,8 +8279,12 @@ foe,
 I have fled to my Refuge and breathed out my 
 woe; 
 How often, when trials like sea billows roll, 
-Have I hidden in Thee, O Thou Rock of my soul.` },
-  { id: 254, title: `254. Far and Near the Fields Are Teeming`, body: `1. Far and near the fields are teeming 
+Have I hidden in Thee, O Thou Rock of my soul.`,
+  },
+  {
+    id: 254,
+    title: `254. Far and Near the Fields Are Teeming`,
+    body: `1. Far and near the fields are teeming 
 With the sheaves of ripened grain; 
 Far and near their gold is gleaming 
 O’er the sunny slope and plain. 
@@ -7291,8 +8306,12 @@ Bid them gather everywhere.
 3. O thou, whom thy Lord is sending, 
 Gather now the sheaves of gold 
 Heavenward then at evening wending 
-Thou shalt come with joy untold.` },
-  { id: 255, title: `255. I’ve a Found a Friend`, body: `1. I've found a Friend; oh, such a Friend! 
+Thou shalt come with joy untold.`,
+  },
+  {
+    id: 255,
+    title: `255. I’ve a Found a Friend`,
+    body: `1. I've found a Friend; oh, such a Friend! 
 He loved me ere I knew Him; 
 He drew me with the cords of love, 
 And thus He bound me to Him. 
@@ -7329,8 +8348,12 @@ So mighty a defender.
 From Him, who loveth me so well, 
 What power my soul can sever? 
 Shall life or death, or earth, or hell? 
-No; I am His forever.` },
-  { id: 256, title: `256. There’ll Be No Dark Valley `, body: `1. There'll be no dark valley when 
+No; I am His forever.`,
+  },
+  {
+    id: 256,
+    title: `256. There’ll Be No Dark Valley `,
+    body: `1. There'll be no dark valley when 
 Jesus comes, 
 There'll be no dark valley when 
 Jesus comes, 
@@ -7362,8 +8385,12 @@ There'll be songs of greeting when
 Jesus comes, 
 And a joyful meeting when 
 Jesus comes, 
-To gather His loved ones home.` },
-  { id: 257, title: `257. Seeking for Me`, body: `1. Jesus, my Saviour, to Bethlehem,
+To gather His loved ones home.`,
+  },
+  {
+    id: 257,
+    title: `257. Seeking for Me`,
+    body: `1. Jesus, my Saviour, to Bethlehem,
 Born in a manager to sorrow and shame;
 Oh, it was wonderful, blest be His name!
 Seeking for me , for me.
@@ -7400,8 +8427,12 @@ Coming for me, for me,
 Coming for me, coming for me,
 Coming for me, coming for me;
 Oh, I shall see Him descending the sky,
-Coming for me, for me.` },
-  { id: 258, title: `258. Be Still, My Soul `, body: `1. Be still, my soul: the Lord is on thy side; 
+Coming for me, for me.`,
+  },
+  {
+    id: 258,
+    title: `258. Be Still, My Soul `,
+    body: `1. Be still, my soul: the Lord is on thy side; 
 Bear patiently the cross of grief or pain; 
 Leave to thy God to order and provide; 
 In every change He faithful will remain. 
@@ -7426,8 +8457,12 @@ When disappointment, grief, and fear are gone,
 Sorrow forgot, loves purest joys restored. 
 Be still, my soul: when change and tears are part, 
 All safe and blessed we shall meet 
-at last. ` },
-  { id: 259, title: `259. We Speak of the Realms`, body: `1. We speak of the realms of the blest, 
+at last. `,
+  },
+  {
+    id: 259,
+    title: `259. We Speak of the Realms`,
+    body: `1. We speak of the realms of the blest, 
 That country so bright and so fair, 
 And oft are its glories confessed-- 
 But what must it be to be there! 
@@ -7464,8 +8499,12 @@ And feel what it is to be there.
 Then o’er the bright fields we shall roam, 
 In glory celestial and fair, 
 With saints and with angels at home, 
-And Jesus Himself will be there.` },
-  { id: 260, title: `260. So Send I You `, body: `1. So send I you by grace made strong to triumph 
+And Jesus Himself will be there.`,
+  },
+  {
+    id: 260,
+    title: `260. So Send I You `,
+    body: `1. So send I you by grace made strong to triumph 
 Oe’r hosts of hell, O’er darkness, death, and sin, 
 My name to bear, and in that name to conquer 
 So send I you, My victory to win.  
@@ -7490,8 +8529,12 @@ And then one day with joy to lay it down,
 To hear My voice, “Well done, My faithful servant 
 Come, share My throne, My kingdom, and my 
 crown!” 
-“As the Father hath sent Me, So send I you.”` },
-  { id: 261, title: `261. The Judgement Has Set`, body: `1. The judgment has set, the books have been 
+“As the Father hath sent Me, So send I you.”`,
+  },
+  {
+    id: 261,
+    title: `261. The Judgement Has Set`,
+    body: `1. The judgment has set, the books have been 
 opened; 
 How shall we stand in that great day 
 When every thought, and word and action, 
@@ -7516,8 +8559,12 @@ His decision to abide.
 searching,
 When all our sins those books reveal? 
 When from that court, each case decided, 
-Shall be granted no appeal?` },
-  { id: 262, title: `262. Living for Jesus.`, body: `1. Living for Jesus a life that is true,
+Shall be granted no appeal?`,
+  },
+  {
+    id: 262,
+    title: `262. Living for Jesus.`,
+    body: `1. Living for Jesus a life that is true,
 Striving to please Him in all that I do,
 Yielding allegiance, glad-hearted and free,
 This is the pathway of blessing for me.
@@ -7549,8 +8596,12 @@ Deeming each trial a part of my cross.
 4. Living for Jesus thro’ earth’s little while,
 My dearest treasure, the light of His smile,
 Seeking the lost ones He died to redeem,
-Bringing the weary to find rest in Him.` },
-  { id: 263, title: `263. I’d Rather Have Jesus `, body: `1. I’d rather have Jesus than silver or gold, 
+Bringing the weary to find rest in Him.`,
+  },
+  {
+    id: 263,
+    title: `263. I’d Rather Have Jesus `,
+    body: `1. I’d rather have Jesus than silver or gold, 
 I’d rather be His than have riches untold; 
 I’d rather have Jesus than houses or lands, 
 I’d rather be led by His nail pierced hand.
@@ -7572,8 +8623,12 @@ I’d rather be true to His Holy name.
 3. He’s fairer than lilies of rarest bloom, 
 He’s sweeter than honey from out the comb; 
 He’s all that my hungering spirit needs, 
-I’d rather have Jesus and let Him lead.` },
-  { id: 264, title: `264. Must Jesus Bear the Cross Alone`, body: `1. Must Jesus bear the cross alone, 
+I’d rather have Jesus and let Him lead.`,
+  },
+  {
+    id: 264,
+    title: `264. Must Jesus Bear the Cross Alone`,
+    body: `1. Must Jesus bear the cross alone, 
 And all the world go free? 
 No, there's a cross for everyone, 
 And there's a cross for me. 
@@ -7588,8 +8643,12 @@ For there's a crown for me.
 3. Upon the crystal pavement, down 
 At Jesus' pierced feet, 
 With joy I'll cast my golden crown,
-And His dear name repeat.` },
-  { id: 265, title: `265. Hail Him the King of Glory `, body: `1. Tell it to every kindred and nation, 
+And His dear name repeat.`,
+  },
+  {
+    id: 265,
+    title: `265. Hail Him the King of Glory `,
+    body: `1. Tell it to every kindred and nation, 
 Tell it far and near; 
 Earth's darkest night will fade with the dawning, 
 Jesus will soon appear. 
@@ -7611,8 +8670,12 @@ Herald the glorious day.
 3. Children of God look up with rejoicing; 
 Shout and sing His praise; 
 Blessed are they who, waiting and watching, 
-Look for the dawning rays.` },
-  { id: 266, title: `266. O God, Our Help`, body: `1. O God, our help in ages past, 
+Look for the dawning rays.`,
+  },
+  {
+    id: 266,
+    title: `266. O God, Our Help`,
+    body: `1. O God, our help in ages past, 
 Our hope for years to come,
 Our shelter from the stormy blast,
 And our eternal home! 
@@ -7639,8 +8702,12 @@ Before the rising sun.
 5. O God, our help in ages past,
 Our hope for years to come;
 Be Thou our guide while life shall last,
-And our eternal home!` },
-  { id: 267, title: `267. As We Come to You in Prayer`, body: `Now, Dear Lord, as we pray, 
+And our eternal home!`,
+  },
+  {
+    id: 267,
+    title: `267. As We Come to You in Prayer`,
+    body: `Now, Dear Lord, as we pray, 
 Take our hearts and minds far away 
 From the press of the world all around 
 To Your throne where grace 
@@ -7650,8 +8717,12 @@ Your love,
 May our souls be refreshed from above. 
 At this moment, let people everywhere 
 Join us now as we come to You 
-in prayer.` },
-  { id: 268, title: `268. A Quiet Place`, body: `There is a quiet place, 
+in prayer.`,
+  },
+  {
+    id: 268,
+    title: `268. A Quiet Place`,
+    body: `There is a quiet place, 
 Far from the rapid place where 
 God can soothe my troubled mind. 
 Sheltered by tree and flower, 
@@ -7662,8 +8733,12 @@ Or on a mountain tall,
 New strength and courage there I find; 
 Then from this quiet place 
 I go prepared to face a new day 
-With love for all mankind.` },
-  { id: 269, title: `269. Lord Jesus, Think on Me`, body: `1. Lord Jesus, think on me 
+With love for all mankind.`,
+  },
+  {
+    id: 269,
+    title: `269. Lord Jesus, Think on Me`,
+    body: `1. Lord Jesus, think on me 
 And purge away my sin; 
 From earthborn passions set me free, 
 And make me pure within.
@@ -7702,8 +8777,12 @@ And share Thy joy at last.
 7. Lord Jesus, think on me 
 That I may sing above 
 To Father, Spirit, and to Thee 
-The strains of praise and love.` },
-  { id: 270, title: `270. Baptize Us Anew`, body: `1. Baptize us anew 
+The strains of praise and love.`,
+  },
+  {
+    id: 270,
+    title: `270. Baptize Us Anew`,
+    body: `1. Baptize us anew 
 With power from on high, 
 With love, O refresh us! 
 Dear Saviour, draw nigh. 
@@ -7736,8 +8815,12 @@ Refrain (last vs.)
 We praise Thee, we bless Thee, dear lamb 
 that was slain, 
 We laud and adore Thee, 
-Amen and Amen. ` },
-  { id: 271, title: `271. Fairest Lord Jesus`, body: `1. Fairest Lord Jesus, 
+Amen and Amen. `,
+  },
+  {
+    id: 271,
+    title: `271. Fairest Lord Jesus`,
+    body: `1. Fairest Lord Jesus, 
 Ruler of all nature, 
 O Thou of God and man the Son! 
 Thee will I cherish, 
@@ -7766,8 +8849,12 @@ Lord of the nations,
 Son of God and Son of Man! 
 Glory and honour, 
 Praise, adoration, 
-Now and forever more be Thine!` },
-  { id: 272, title: `272. Jesus, the Very Thought of Thee`, body: `1. Jesus, the very thought of Thee 
+Now and forever more be Thine!`,
+  },
+  {
+    id: 272,
+    title: `272. Jesus, the Very Thought of Thee`,
+    body: `1. Jesus, the very thought of Thee 
 With sweetness fills my breast; 
 But sweeter far Thy face to see, 
 And in Thy presence rest. 
@@ -7794,8 +8881,12 @@ None but His loved ones know.
 5. Jesus, our only joy be Thou, 
 As Thou our prize wilt be; 
 In Thee be all glory now, 
-And through eternity.` },
-  { id: 273, title: `273. Jesus, Thou Joy of Loving Hearts`, body: `1. Jesus, Thou Joy of loving hearts! 
+And through eternity.`,
+  },
+  {
+    id: 273,
+    title: `273. Jesus, Thou Joy of Loving Hearts`,
+    body: `1. Jesus, Thou Joy of loving hearts! 
 Thou fount of life! Thou light of men!  
 From the best bliss that earth imparts, 
 We turn unfilled to Thee again. 
@@ -7822,8 +8913,12 @@ Blest when our faith can hold Thee fast.
 5. O Jesus, ever with us stay; 
 Make all our moments calm and bright; 
 Chase the dark night of sin away, 
-Shed o’r the world Thy holy light.` },
-  { id: 274, title: `274. All Hail the Power of Jesus’ Name`, body: `1. All hail the power of Jesus' name! 
+Shed o’r the world Thy holy light.`,
+  },
+  {
+    id: 274,
+    title: `274. All Hail the Power of Jesus’ Name`,
+    body: `1. All hail the power of Jesus' name! 
 Let angels prostrate fall; 
 Bring forth the royal diadem, 
 And crown Him Lord of all. 
@@ -7852,8 +8947,12 @@ We at His feet may fall,
 Join in the everlasting song, 
 And crown Him Lord of all. 
 Join in the everlasting song, 
-And crown Him Lord of all.` },
-  { id: 275, title: `275. Glory Song`, body: `1. When all my labours and trials are o’er,
+And crown Him Lord of all.`,
+  },
+  {
+    id: 275,
+    title: `275. Glory Song`,
+    body: `1. When all my labours and trials are o’er,
 And I am safe on that beautiful shore,
 Just to be near Lord I adore,
 Will through the ages be glory for me.
@@ -7876,8 +8975,12 @@ Will through the ages be glory for me.
 3. Friends will be there I have loved long ago;
 Joy like a river around me will flow,
 Yet, just a smile from my Saviour, I know,
-Will through the ages be glory for me.` },
-  { id: 276, title: `276. Make Me a Blessing Today`, body: `1.O softly the Spirit is whisp’ring to me
+Will through the ages be glory for me.`,
+  },
+  {
+    id: 276,
+    title: `276. Make Me a Blessing Today`,
+    body: `1.O softly the Spirit is whisp’ring to me
 With tender compassion, with pitying plea;
 I hear His beseeching, and earnestly pray
 That Jesus will make a blessing today.  
@@ -7908,8 +9011,12 @@ The sweet consolation that soul to restore.
 4. Come, all ye that labour, ye weary and worn,
 Come ye who in sorrow or sinfulness mourn;
 With me this petition to Jesus convey;
-O make me a blessing, dear Saviour today.` },
-  { id: 277, title: `277. Blest Be the Tie That Binds`, body: `1. Blest be the tie that binds 
+O make me a blessing, dear Saviour today.`,
+  },
+  {
+    id: 277,
+    title: `277. Blest Be the Tie That Binds`,
+    body: `1. Blest be the tie that binds 
 Our hearts in Christian love!
 The fellowship of kindred minds 
 Is like to that above. 
@@ -7930,8 +9037,12 @@ The sympathizing tear.
  4. When we asunder part, 
 It gives us inward pain; 
 But we shall still be joined in heart, 
-And hope to meet again.` },
-  { id: 278, title: `278. How Sweet Are the Tidings`, body: `1. How sweet are the tidings that greet the 
+And hope to meet again.`,
+  },
+  {
+    id: 278,
+    title: `278. How Sweet Are the Tidings`,
+    body: `1. How sweet are the tidings that greet the 
 pilgrim’s ear, 
 As he wanders in exile from home! 
 Soon, soon will Saviour in glory appear, 
@@ -7963,8 +9074,12 @@ And worship our heavenly King.
 4. Hallelujah, Amen! Hallelujah again! 
 Soon, if faithful, we all shall be there, 
 O, be watchful, be hopeful, be joyful till then, 
-And a crown of bright glory we’ll wear.` },
-  { id: 279, title: `279. There’ll Be No Sorrow There`, body: `1. There’ll be no night in heaven, 
+And a crown of bright glory we’ll wear.`,
+  },
+  {
+    id: 279,
+    title: `279. There’ll Be No Sorrow There`,
+    body: `1. There’ll be no night in heaven, 
 In that blest world above;   
 No anxious toil, no weary hours; 
 For labour there is love. 
@@ -7986,8 +9101,12 @@ Refrain
 There’ll be no sorrow there, 
 There’ll be no sorrow there; 
 In heaven above, where all is love, 
-There’ll be no sorrow there.` },
-  { id: 280, title: `280. We Would See Jesus`, body: `1. "We would see Jesus;" for the shadows 
+There’ll be no sorrow there.`,
+  },
+  {
+    id: 280,
+    title: `280. We Would See Jesus`,
+    body: `1. "We would see Jesus;" for the shadows 
 lengthen 
 Across the little landscape of our life; 
 We would see Jesus, our weak faith 
@@ -8014,8 +9133,12 @@ We would not mourn them, in exchange for Thee.
 4. "We would see Jesus;" this is all we're needing 
 Strength, joy and willingness come with the sight; 
 We would see Jesus, dying, risen, pleading, 
-Soon to return and end this mortal night!` },
-  { id: 281, title: `281. Work for the Night Is Coming`, body: `1. Work, for the night is coming; 
+Soon to return and end this mortal night!`,
+  },
+  {
+    id: 281,
+    title: `281. Work for the Night Is Coming`,
+    body: `1. Work, for the night is coming; 
 Work through the morning hours 
 Work while the dew is sparkling; 
 Work ‘mid springing flowers; 
@@ -8042,8 +9165,12 @@ Work for daylight flies;
 Work till the last beam fadeth, 
 Fadeth to shine no more; 
 Work, for the night is coming; 
-When man’s work is o’er.` },
-  { id: 282, title: `282. Speak to My Soul`, body: `1. Speak to my soul dear Jesus,
+When man’s work is o’er.`,
+  },
+  {
+    id: 282,
+    title: `282. Speak to My Soul`,
+    body: `1. Speak to my soul dear Jesus,
 Speak now in tend’rest tone;
 Whisper in loving kindness, 
 “Thou not left alone.”  
@@ -8081,8 +9208,12 @@ Let me Thy law fulfil.
 Lead me to glorify Thee,
 Help me to show Thy praise,
 Gladly to do Thy bidding, 
-Honour Thee all my days.` },
-  { id: 283, title: `283. The King of Love My Shepherd Is`, body: `1. The King of love my Shepherd is, 
+Honour Thee all my days.`,
+  },
+  {
+    id: 283,
+    title: `283. The King of Love My Shepherd Is`,
+    body: `1. The King of love my Shepherd is, 
 Whose goodness faileth never, 
 I nothing lack if I am His 
 And He is mine forever. 
@@ -8103,8 +9234,12 @@ And home, rejoicing, brought me.
 4. And so through all the length of days 
 Thy goodness faileth never; 
 Good Shepherd! I would sing Thy praise 
-Within Thy house forever.` },
-  { id: 284, title: `284. Sweeter as the Years Go By`, body: `1. Of Jesus’ love that sought me
+Within Thy house forever.`,
+  },
+  {
+    id: 284,
+    title: `284. Sweeter as the Years Go By`,
+    body: `1. Of Jesus’ love that sought me
 When I was lost in sin;
 Of wondrous grace that brought me
 Back to His fold again;
@@ -8139,8 +9274,12 @@ The anguish of the cross;
 With saints redeemed in glory,
 Let us our voices raise, 
 Till heav’n and earth re-echo
-With our Redeemer’s praise.` },
-  { id: 285, title: `285. Lord Jesus, Once You Spoke to Men`, body: `1. Lord Jesus, once You spoke to men 
+With our Redeemer’s praise.`,
+  },
+  {
+    id: 285,
+    title: `285. Lord Jesus, Once You Spoke to Men`,
+    body: `1. Lord Jesus, once You spoke to men 
 Upon the mountain and the plain, 
 O help us listen now as then 
 And wonder at Your words again. 
@@ -8155,8 +9294,12 @@ Our living Lord and present friend.
 3. The gospel speaks, and we receive
 Your light, Your love, Your own command. 
 O help us live what we believe, 
-In daily word of heart and hand.` },
-  { id: 286, title: `286. Beautiful Robes`, body: `1. We shall walk with Him 
+In daily word of heart and hand.`,
+  },
+  {
+    id: 286,
+    title: `286. Beautiful Robes`,
+    body: `1. We shall walk with Him 
 In that country pure and bright,
 Where shall enter naught that may defile;
 Where the day beam ne’er declines,
@@ -8187,8 +9330,12 @@ By the fountains of delight,
 Where the Lamb His ransomed ones shall lead;
 For His blood shall wash each stain,
 Till no spot of sin remain,
-And the soul forever more is freed.` },
-  { id: 287, title: `287. Come, Holy Spirit`, body: `1. Come, Holy Spirit, heavenly Dove, 
+And the soul forever more is freed.`,
+  },
+  {
+    id: 287,
+    title: `287. Come, Holy Spirit`,
+    body: `1. Come, Holy Spirit, heavenly Dove, 
 With all Thy quickening powers; 
 Kindle a flame of sacred love 
 In these cold hearts of ours. 
@@ -8215,8 +9362,12 @@ For Thine to us is great!
 5. Come, Holy Spirit, heavenly Dove, 
 With all Thy quickening powers; 
 Come, shed abroad the Saviour’s love 
-And that shall kindle ours. ` },
-  { id: 288, title: `288. My Saviour First of All `, body: `1. When my life-work is ended, and I cross the 
+And that shall kindle ours. `,
+  },
+  {
+    id: 288,
+    title: `288. My Saviour First of All `,
+    body: `1. When my life-work is ended, and I cross the 
 swelling tide,
 When “this mortal puts on immortality”;
 I shall know my Redeemer when I reach the other 
@@ -8254,8 +9405,12 @@ white,
 He will lead me where no tears shall ever fall;
 In the glad song of ages I shall mingle with 
 delight;
-But I long to meet my Saviour first of all.` },
-  { id: 289, title: `289. The Year of Jubilee`, body: `1. Oh, glory to God it is coming again,
+But I long to meet my Saviour first of all.`,
+  },
+  {
+    id: 289,
+    title: `289. The Year of Jubilee`,
+    body: `1. Oh, glory to God it is coming again,
 ‘Tis the glad jubilee of the children of men;
 Then, blow ye the trumpet shout glory and sing,
 And join in the praises of Jesus the King.
@@ -8281,8 +9436,12 @@ When on wings like the eagle we mount to the
 sky;
 We shall dwell ever-more in that land of the 
 blest,
-In that grand jubilee, in that Sabbath of rest.` },
-  { id: 290, title: `290. We Are Nearing Home`, body: `1. Just over the mountains in the Promised Land,
+In that grand jubilee, in that Sabbath of rest.`,
+  },
+  {
+    id: 290,
+    title: `290. We Are Nearing Home`,
+    body: `1. Just over the mountains in the Promised Land,
 Lies the holy city built by God’s own hand;
 As our weary footsteps gain the mountain’s crest,
 We can view our homeland of eternal rest.
@@ -8322,8 +9481,12 @@ praise.
 In that land of sunshine where there’ll be no 
 care?
 Accept of God’s message, and to Him be true;
-Then when Jesus cometh He will call for you.` },
-  { id: 291, title: `291. What Are You Doing for Jesus?`, body: `1. What are you doing for Jesus
+Then when Jesus cometh He will call for you.`,
+  },
+  {
+    id: 291,
+    title: `291. What Are You Doing for Jesus?`,
+    body: `1. What are you doing for Jesus
 As you journey thro’ life?
 Sowing the grain for the harvest
 Or scattering seeds of strife?
@@ -8349,8 +9512,12 @@ To brighten someone’s way?
 3. What are you doing for Jesus?
 Soon comes setting of sun;
 Hasten to tell the glad tidings,
-Lest you leave some work undone.` },
-  { id: 292, title: `292. In Christ There Is No East nor West`, body: `1. In Christ there is no east or west, 
+Lest you leave some work undone.`,
+  },
+  {
+    id: 292,
+    title: `292. In Christ There Is No East nor West`,
+    body: `1. In Christ there is no east or west, 
 In Him no south or north; 
 But one great fellowship of love 
 Throughout the whole wide earth. 
@@ -8371,8 +9538,12 @@ Is surely kin to me.
 4. In Christ now meet both east and west, 
 In Him meet north and south; 
 All Christly souls are one in Him 
-Throughout the whole wide earth.` },
-  { id: 293, title: `293. Ask Not to Be Excused `, body: `1. Ask not be excused, 
+Throughout the whole wide earth.`,
+  },
+  {
+    id: 293,
+    title: `293. Ask Not to Be Excused `,
+    body: `1. Ask not be excused, 
 There’s earnest work to do;
 Stand ready to be used 
 Where God may station you.
@@ -8410,8 +9581,12 @@ Forever turns away.
 While Mercy gently pleads 
 And points the way to heav’n,
 While Jesus intercedes,
-O come and be forgiv’n.` },
-  { id: 294, title: `294. “Even Unto the End”`, body: `1. “Go ye into all the world,
+O come and be forgiv’n.`,
+  },
+  {
+    id: 294,
+    title: `294. “Even Unto the End”`,
+    body: `1. “Go ye into all the world,
 And preach the gospel to every creature,”
 Let My banner be unfurled,
 With pen, and song, and the living teacher.
@@ -8439,8 +9614,12 @@ Work on, love demands no pay,
 4. All things on the alter lay,
 Let Calv’ry’s cross be thy only glory;
 Cast all selfish fear away,
-Begin just now telling love’s sweet story.` },
-  { id: 295, title: `295. Golden Dawning`, body: `1. I am waiting for the morning
+Begin just now telling love’s sweet story.`,
+  },
+  {
+    id: 295,
+    title: `295. Golden Dawning`,
+    body: `1. I am waiting for the morning
 Of the day that brings release,
 Waiting for the golden dawning
 Of God’s everlasting peace.
@@ -8462,8 +9641,12 @@ As God’s glory gilds the skies.
 3. Endless joy for hours of crying,
 Everlasting peace for care;
 Immortality for dying,
-Hallelujahs glad, for prayer.` },
-  { id: 296, title: `296. On Jordan’s Banks the Baptist’s Cry`, body: `1. On Jordan’s bank the Baptist’s cry 
+Hallelujahs glad, for prayer.`,
+  },
+  {
+    id: 296,
+    title: `296. On Jordan’s Banks the Baptist’s Cry`,
+    body: `1. On Jordan’s bank the Baptist’s cry 
 Announces that the Lord is nigh; 
 Awake and hearken, for he brings 
 Glad tidings of the King of kings! 
@@ -8484,8 +9667,12 @@ Like flow’rs that wither and decay.
 4. Stretch forth Your hand, our health restore, 
 And make us rise to fall no more; 
 Oh, let Your face upon us shine 
-And fill the world with love divine.` },
-  { id: 297, title: `297. He’s Coming`, body: `1. How sweet are the tidings that greet the
+And fill the world with love divine.`,
+  },
+  {
+    id: 297,
+    title: `297. He’s Coming`,
+    body: `1. How sweet are the tidings that greet the
 pilgrim’s ear, 
 As he wander in exile from home! 
 Soon, soon will the Saviour in glory appear,
@@ -8517,8 +9704,12 @@ And worship our Heavenly king.
 4. Hallelujah, Amen! Hallelujah again!
 Soon, if faithful, we all shall be there; 
 O, be watchful, be hopeful, be joyful till then,
-And a crown of bright glory we’ll wear.` },
-  { id: 298, title: `298. Saviour, Teach Me`, body: `1. Saviour, teach me day by day 
+And a crown of bright glory we’ll wear.`,
+  },
+  {
+    id: 298,
+    title: `298. Saviour, Teach Me`,
+    body: `1. Saviour, teach me day by day 
 Love’s sweet lesson to obey, 
 Sweeter lesson cannot be, 
 Loving Him Who first loved me. 
@@ -8545,8 +9736,12 @@ Loving Him who first loved me.
 5. Teach me thus Thy steps to trace, 
 Strong to follow in Thy grace, 
 Learning how to love from Thee, 
-Loving Him Who first loved me.` },
-  { id: 299, title: `299. Heaven at Last`, body: `1. Angel voices sweetly singing,
+Loving Him Who first loved me.`,
+  },
+  {
+    id: 299,
+    title: `299. Heaven at Last`,
+    body: `1. Angel voices sweetly singing,
 Echoes through the blue dome ringing,
 News of wondrous gladness bringing;
 Ah ‘tis heaven at last!
@@ -8581,8 +9776,12 @@ Ah ‘tis heaven at last!
 5. Christ Himself the living splendour
 Christ the sun light, mild and tender;
 Praise to the Lamb we render;
-Ah ‘tis heaven at last!` },
-  { id: 300, title: `300. My Faith Has Found a Resting Place `, body: `1. My faith has found a resting place, 
+Ah ‘tis heaven at last!`,
+  },
+  {
+    id: 300,
+    title: `300. My Faith Has Found a Resting Place `,
+    body: `1. My faith has found a resting place, 
 Not in a man made creed; 
 I trust the ever living One, 
 That He for me will plead. 
@@ -8610,8 +9809,12 @@ Salvation through His blood.
 4.The great Physician heals the sick, 
 The lost He came to save; 
 For me His precious blood He shed, 
-For me His life He gave. ` },
-  { id: 301, title: `301. Jesus Is Coming Again `, body: `1. Lift up the trumpet, and loud let it ring: 
+For me His life He gave. `,
+  },
+  {
+    id: 301,
+    title: `301. Jesus Is Coming Again `,
+    body: `1. Lift up the trumpet, and loud let it ring: 
 Jesus is coming again! 
 Cheer up, ye pilgrims, be joyful 
 and sing: 
@@ -8641,8 +9844,12 @@ Jesus is coming again!
 Jesus is coming again! 
 Knowledge increases; men run to 
 and fro; 
-Jesus is coming again!` },
-  { id: 302, title: `302. Happy the Home`, body: `1. Happy the home when God is there, 
+Jesus is coming again!`,
+  },
+  {
+    id: 302,
+    title: `302. Happy the Home`,
+    body: `1. Happy the home when God is there, 
 And love fills every breast; 
 When one their wish, and one their prayer, 
 And one their heavenly rest. 
@@ -8663,8 +9870,12 @@ And all its wisdom prize.
 4. Lord, let us in our homes agree 
 This blessed peace to gain; 
 Unite our hearts in love to Thee, 
-And love to all will reign.` },
-  { id: 303, title: `303. I Must Tell Jesus.`, body: `1. I must tell Jesus all of my trials, 
+And love to all will reign.`,
+  },
+  {
+    id: 303,
+    title: `303. I Must Tell Jesus.`,
+    body: `1. I must tell Jesus all of my trials, 
 I cannot bear these burdens alone, 
 In my distress He kindly will help me, 
 He ever loves and cares for His own. 
@@ -8686,8 +9897,12 @@ Makes of my troubles quickly an end.
 3. O how the world to evil allures me! 
 O how my heart is tempted to sin! 
 I must tell Jesus, and He will help me 
-Over the world the vict’ry to win. ` },
-  { id: 304, title: `304. Oh How I Love Jesus`, body: `1. There is a name I love to hear, 
+Over the world the vict’ry to win. `,
+  },
+  {
+    id: 304,
+    title: `304. Oh How I Love Jesus`,
+    body: `1. There is a name I love to hear, 
 I love to sing its worth; 
 It sounds like music in my ear, 
 The sweetest name on earth. 
@@ -8715,8 +9930,12 @@ Yields sunshine all the way.
 4. It tells of One whose loving heart 
 Can feel my deepest woe; 
 Who in each sorrow bears 
-A part that none can bear below. ` },
-  { id: 305, title: `305. His Name is Wonderful`, body: `(His name is wonderful) x 3,
+A part that none can bear below. `,
+  },
+  {
+    id: 305,
+    title: `305. His Name is Wonderful`,
+    body: `(His name is wonderful) x 3,
 Jesus my Lord.
 He is the mighty King,
 Father of everything.
@@ -8728,16 +9947,24 @@ Almighty God is He;
 Bow down before Him,
 Love and adore Him,
 His name is wonderful,
-Jesus my Lord.` },
-  { id: 306, title: `306. Spirit of the Living God`, body: `Spirit of the living God, 
+Jesus my Lord.`,
+  },
+  {
+    id: 306,
+    title: `306. Spirit of the Living God`,
+    body: `Spirit of the living God, 
 Fall afresh on me! 
 Spirit of the living God, 
 Fall afresh on me! 
 Break me, melt me, 
 Mold me, fill me! 
 Spirit of the living God, 
-Fall afresh on me!` },
-  { id: 307, title: `307. We Are Climbing `, body: `1. We are climbing Jacob’s ladder. 
+Fall afresh on me!`,
+  },
+  {
+    id: 307,
+    title: `307. We Are Climbing `,
+    body: `1. We are climbing Jacob’s ladder. 
 We are climbing Jacob’s ladder. 
 We are climbing Jacob’s ladder, 
 Soldiers of the cross. 
@@ -8758,8 +9985,12 @@ Soldiers of the cross.
 4. If you love Him, why not serve Him? 
 If you love Him, why not serve Him? 
 If you love Him, why not serve Him? 
-Soldier of the cross.` },
-  { id: 308, title: `308. Nothing But The Blood`, body: `1. What can wash my sins away?
+Soldier of the cross.`,
+  },
+  {
+    id: 308,
+    title: `308. Nothing But The Blood`,
+    body: `1. What can wash my sins away?
 Nothing but the blood of Jesus.
 What can make whole again?
 Nothing but the blood of Jesus.
@@ -8787,8 +10018,12 @@ Nothing but the blood of Jesus.
 4. This is my hope and peace,
 Nothing but the blood of Jesus,
 This is my righteousness,
-Nothing but the blood of Jesus.` },
-  { id: 309, title: `309. I Have Decided `, body: `1. (I have decided to follow Jesus) x 3
+Nothing but the blood of Jesus.`,
+  },
+  {
+    id: 309,
+    title: `309. I Have Decided `,
+    body: `1. (I have decided to follow Jesus) x 3
 No turning back, no turning back.
 2. (Though no one join me 
 Still I will follow) x 3
@@ -8796,8 +10031,12 @@ No turning back, no turning back.
 3. (My cross I’ll carry till I see Jesus) x 3
 No turning back, no turning back.
 4. (The world behind me, the cross before me) x 3
-No turning back, no turning back. ` },
-  { id: 310, title: `310. Jesus Loves Me `, body: `1. Jesus loves me! This I know, 
+No turning back, no turning back. `,
+  },
+  {
+    id: 310,
+    title: `310. Jesus Loves Me `,
+    body: `1. Jesus loves me! This I know, 
 For the Bible tells me so. 
 Little ones to Him belong; 
 They are weak, but He is strong. 
@@ -8825,8 +10064,12 @@ Comes to watch me where I lie.
 4. Jesus loves me He will stay,
 Close beside me all the way;
 If I love Him when I die,
-He will take me home on high.` },
-  { id: 311, title: `311. Without Him`, body: `1. Without Him I could do nothing,
+He will take me home on high.`,
+  },
+  {
+    id: 311,
+    title: `311. Without Him`,
+    body: `1. Without Him I could do nothing,
 Without Him I’d surely fail,
 Without Him I would be drifting,
 Like a ship without a sail.
@@ -8842,8 +10085,12 @@ Without Him how lost I would be.
 Without Him I’d be enslaved;
 Without Him life would be hopeless,
 But with Jesus thank God,
-I’m saved.` },
-  { id: 312, title: `312. We Gather Together `, body: `1. We gather together to ask the Lord's blessing; 
+I’m saved.`,
+  },
+  {
+    id: 312,
+    title: `312. We Gather Together `,
+    body: `1. We gather together to ask the Lord's blessing; 
 He chastens and hastens His will to make known. 
 The wicked oppressing now cease from 
 distressing. 
@@ -8860,8 +10107,12 @@ Thou, Lord, were at our side, all glory be Thine!
 3. We all do extol Thee, Thou leader in the battle, 
 And pray that Thou still our defender wilt be. 
 Let Thy congregation escape tribulation; 
-Thy name be ever praised! O Lord, make us free!` },
-  { id: 313, title: `313. Sweet, Sweet Spirit `, body: `1. There’s a sweet, sweet spirit in 
+Thy name be ever praised! O Lord, make us free!`,
+  },
+  {
+    id: 313,
+    title: `313. Sweet, Sweet Spirit `,
+    body: `1. There’s a sweet, sweet spirit in 
 this place, 
 And I know that it’s Spirit of the Lord.
 There’s a sweet expression on each face;
@@ -8890,12 +10141,20 @@ You’re the one to profit when you say,
 Now you are weak, you’re bound and cannot 
 enter in,
 You can make it right if you will yield,
-You’ll enjoy the Holy Spirit that we feel.` },
-  { id: 314, title: `314. I’ve got Peace`, body: `1. [(I’ve got peace like a river) x 2
+You’ll enjoy the Holy Spirit that we feel.`,
+  },
+  {
+    id: 314,
+    title: `314. I’ve got Peace`,
+    body: `1. [(I’ve got peace like a river) x 2
 I’ve got peace like a river in my soul] x 2
 2. I’ve got love like an ocean….
-3. I’ve got joy like a fountain….` },
-  { id: 315, title: `315. When the Morning Comes`, body: `1. Trials dark on every hand,
+3. I’ve got joy like a fountain….`,
+  },
+  {
+    id: 315,
+    title: `315. When the Morning Comes`,
+    body: `1. Trials dark on every hand,
 And we cannot understand, 
 All the way that God would lead us, 
 To that blessed Promised Land;
@@ -8927,8 +10186,12 @@ And our hearts are made to bleed,
 For some thoughtless word or deed,
 And we wonder why the test,
 When we try to do our best, 
-But we’ll understand it better by and by.` },
-  { id: 316, title: `316. Swing Low`, body: `1. I looked over Jordan and what did I see,
+But we’ll understand it better by and by.`,
+  },
+  {
+    id: 316,
+    title: `316. Swing Low`,
+    body: `1. I looked over Jordan and what did I see,
 Coming for to carry me home,
 A band of angels coming after me,
 Coming for to carry me home.
@@ -8951,8 +10214,12 @@ Coming for to carry me home.
 I’m sometimes down,
 Coming for to carry me home,
 But still my soul feels heavenly bound,
-Coming for to carry me home.` },
-  { id: 317, title: `317. His Sheep I Am`, body: `1. In God’s green pastures feeding,
+Coming for to carry me home.`,
+  },
+  {
+    id: 317,
+    title: `317. His Sheep I Am`,
+    body: `1. In God’s green pastures feeding,
 By His cool waters lie, 
 Soft in the evening walk my Lord and I, 
 All the sheep of His pasture fare so wondrously 
@@ -8969,8 +10236,12 @@ Walk my Lord and I.
 3. Dark the night (in the valley)
 Rough the way (on the mountain),
 Step by step (step by step)
-My Lord and I.` },
-  { id: 318, title: `318. Jesus is the Answer`, body: `If you have some questions in the corner of your 
+My Lord and I.`,
+  },
+  {
+    id: 318,
+    title: `318. Jesus is the Answer`,
+    body: `If you have some questions in the corner of your 
 mind,
 Traces of discouragement and peace you cannot 
 find,
@@ -8986,24 +10257,36 @@ Above Him there’s no other,
 Jesus is the way.
 Jesus is the answer of the world today; 
 Above Him there’s no other, 
-Jesus is the way.` },
-  { id: 319, title: `319. Pathfinders’ Song`, body: `Oh, we are the pathfinders strong,
+Jesus is the way.`,
+  },
+  {
+    id: 319,
+    title: `319. Pathfinders’ Song`,
+    body: `Oh, we are the pathfinders strong,
 The servants of God we are,
 Faithful as we march along,
 In truth and purity.
 A message to tell the world,
 A truth that will set us free;
 King Jesus the Saviour’s coming back for you and 
-me!` },
-  { id: 320, title: `320. Alleluia`, body: `1. Alleluia x 7
+me!`,
+  },
+  {
+    id: 320,
+    title: `320. Alleluia`,
+    body: `1. Alleluia x 7
 Alleluia praise the Lord.
 2. (He is risen, alleluia) x 3
 He is risen praise the Lord.
 3. (Jesus loves me, alleluia) x 3
 Jesus loves me,
 Praise the Lord.
-He is coming…` },
-  { id: 321, title: `321. Yield Not to Temptation`, body: `1. Yield not to temptation,
+He is coming…`,
+  },
+  {
+    id: 321,
+    title: `321. Yield Not to Temptation`,
+    body: `1. Yield not to temptation,
 For yielding is sin,
 Each vict’ry will help you some other to win,
 Fight manfully onward,
@@ -9036,8 +10319,12 @@ Though often cast down;
 He who is our Saviour
 Our strength will renew,
 Look ever to Jesus,
-He will carry you through.` },
-  { id: 322, title: `322. Reach Out to Jesus`, body: `1. Is your burden heavy as you bear it all-lone?
+He will carry you through.`,
+  },
+  {
+    id: 322,
+    title: `322. Reach Out to Jesus`,
+    body: `1. Is your burden heavy as you bear it all-lone?
 Does the road you travel harbour danger yet 
 unknown?
 Are you growing weary in the struggle of it all?
@@ -9064,14 +10351,22 @@ care?
 Are you tired and friendless?
 Have you almost lost your way?
 Jesus will help you,
-Just come to Him today.` },
-  { id: 323, title: `323. I’m So Glad `, body: `1. (I’m so glad, Jesus lifted me) x 3
+Just come to Him today.`,
+  },
+  {
+    id: 323,
+    title: `323. I’m So Glad `,
+    body: `1. (I’m so glad, Jesus lifted me) x 3
 Singing glory hallelujah,
 Jesus lifted me.
 2. Satan had me bound, but Jesus lifted me…
 3. Jesus, Jesus, Jesus, Jesus lifted me…
-4. Glory hallelujah, Jesus lifted me…` },
-  { id: 324, title: `324. In My Heart`, body: `1. I have a song that Jesus gave me,
+4. Glory hallelujah, Jesus lifted me…`,
+  },
+  {
+    id: 324,
+    title: `324. In My Heart`,
+    body: `1. I have a song that Jesus gave me,
 It was sent from heaven above,
 There never was a sweeter melody,
 ‘Tis the melody of love.
@@ -9094,8 +10389,12 @@ And I know it’s there to stay.
 3. ‘Twill be my endless theme in glory,
 With the angels I will sing,
 ‘Twill be a song with glorious harmony,
-When the courts of heaven ring.` },
-  { id: 325, title: `325. Youth of the World`, body: `1. We have heard Thy call Lord Jesus,
+When the courts of heaven ring.`,
+  },
+  {
+    id: 325,
+    title: `325. Youth of the World`,
+    body: `1. We have heard Thy call Lord Jesus,
 And our hearts respond with joy,
 We will pledge Thee our allegiance,
 For Thy cause our all employ.
@@ -9115,8 +10414,12 @@ Galilee.
 2. Whatso’er we are of have the Lord,
 Shall be subject to Thy will,
 Trust us with Thy greatest task Lord;
-And with pride our hearts will thrill.` },
-  { id: 326, title: `326. I’m On My Way`, body: `1. Well I’m on my way,
+And with pride our hearts will thrill.`,
+  },
+  {
+    id: 326,
+    title: `326. I’m On My Way`,
+    body: `1. Well I’m on my way,
 To Canaan’s Land,
 I’m on my way,
 To Canaan’s Land,
@@ -9135,8 +10438,12 @@ I’ll journey on…
 4. If the preacher don’t go,
 I’ll journey on…
 5. If you don’t go,
-I’ll journey on…` },
-  { id: 327, title: `327. Do You Love Jesus`, body: `O friend do you love Jesus?
+I’ll journey on…`,
+  },
+  {
+    id: 327,
+    title: `327. Do You Love Jesus`,
+    body: `O friend do you love Jesus?
 Oh yes I love Jesus.
 Are you sure you love Jesus?
 I’m sure I love Jesus.
@@ -9150,8 +10457,12 @@ Refrain
 Oh how I love Jesus,
 Oh, how I love Jesus,
 Oh, how I love Jesus,
-Because He first loved me.` },
-  { id: 328, title: `328. All Night`, body: `Refrain
+Because He first loved me.`,
+  },
+  {
+    id: 328,
+    title: `328. All Night`,
+    body: `Refrain
 All night all day,
 Angels watching over me my Lord,
 All night all day,
@@ -9167,16 +10478,24 @@ Angels watching over me.
 2. If I die before I wake,
 Angels watching over me my Lord,
 Pray the Lord my soul to take,
-Angels watching over me.` },
-  { id: 329, title: `329. He’s Able`, body: `(He’s able,
+Angels watching over me.`,
+  },
+  {
+    id: 329,
+    title: `329. He’s Able`,
+    body: `(He’s able,
 He’s able,
 I know my Lord is able to carry me through) x2 
 He healed the broken hearted
 He set the captives free,
 He made the lame to walk again,
 And caused the blind to see;
-(He’s able…) x1` },
-  { id: 330, title: `330. I’ll Be True`, body: `1. I’ll be true precious Jesus,
+(He’s able…) x1`,
+  },
+  {
+    id: 330,
+    title: `330. I’ll Be True`,
+    body: `1. I’ll be true precious Jesus,
 I’ll be true,
 I’ll be true precious Jesus
 I’ll be true.
@@ -9190,8 +10509,12 @@ I’ll be true.
 I’ll go through,
 I’ll go through precious Jesus
 I’ll go through
-There’s a race to be won…` },
-  { id: 331, title: `331. Whisper a Prayer`, body: `1. Whisper a prayer in the morning,
+There’s a race to be won…`,
+  },
+  {
+    id: 331,
+    title: `331. Whisper a Prayer`,
+    body: `1. Whisper a prayer in the morning,
 Whisper a prayer at noon,
 Whisper a prayer in the evening,
 To keep your heart in tune.
@@ -9206,15 +10529,23 @@ To keep your heart in tune.
 3. Jesus may come in the morning,
 Jesus may come at noon,
 Jesus may come in the evening,
-So keep your heart in tune.` },
-  { id: 332, title: `332. For God So Loved Us`, body: `For God so loved the world,
+So keep your heart in tune.`,
+  },
+  {
+    id: 332,
+    title: `332. For God So Loved Us`,
+    body: `For God so loved the world,
 He gave His only Son,
 To die on Calvary,
 From sin to set me free;
 Some day He’s coming back,
 What glory that will be,
-Wonderful His love to me.` },
-  { id: 333, title: `333. Fishers of Men`, body: `1. I will make you fishers of men,
+Wonderful His love to me.`,
+  },
+  {
+    id: 333,
+    title: `333. Fishers of Men`,
+    body: `1. I will make you fishers of men,
 Fishers of men, fishers of men,
 I will make you fishers of men,
 If you follow Me, x 3
@@ -9228,14 +10559,22 @@ Hear Christ calling,
 Come unto Me,
 I will give you rest, X 3
 Hear Christ calling come unto Me,
-I will give you rest.` },
-  { id: 334, title: `334. Everybody Ought to Know`, body: `Everybody ought to know, x 3
+I will give you rest.`,
+  },
+  {
+    id: 334,
+    title: `334. Everybody Ought to Know`,
+    body: `Everybody ought to know, x 3
 Who Jesus is.
 He’s the Lily of the Valley,
 He’s the Bright and Morning Star,
 He’s the fairest of ten thousand,
-Everybody ought to know.` },
-  { id: 335, title: `335. Rejoice`, body: `Rejoice in the Lord always,
+Everybody ought to know.`,
+  },
+  {
+    id: 335,
+    title: `335. Rejoice`,
+    body: `Rejoice in the Lord always,
 And again I say rejoice.
 Rejoice in the Lord always
 And again I say rejoice.
@@ -9243,22 +10582,34 @@ Rejoice, rejoice, and again I say rejoice.
 Rejoice, rejoice,
 And again I say rejoice,
 Rejoice, rejoice,
-And again I say rejoice,` },
-  { id: 336, title: `336. Roll Your Burdens Away`, body: `1. Roll, roll your burdens away,
+And again I say rejoice,`,
+  },
+  {
+    id: 336,
+    title: `336. Roll Your Burdens Away`,
+    body: `1. Roll, roll your burdens away,
 Roll, roll your burdens away,
 For Jesus has promised to take them all,
 Roll, roll, your burdens away.
 2. Sing…
 3. Pray…
-4. Shout…` },
-  { id: 337, title: `337. I’ll Share My Faith`, body: `I’ll share my faith,
+4. Shout…`,
+  },
+  {
+    id: 337,
+    title: `337. I’ll Share My Faith`,
+    body: `I’ll share my faith,
 With others on life’s way,
 I’ll share my faith,
 There’s no time to delay,
 When Jesus calls for volunteers,
 I’ll hasten to obey,
-I’ll share, share, and share my faith, everyday.` },
-  { id: 338, title: `338. Volunteers`, body: `1. There’s another task to do,
+I’ll share, share, and share my faith, everyday.`,
+  },
+  {
+    id: 338,
+    title: `338. Volunteers`,
+    body: `1. There’s another task to do,
 There’s a battle to renew,
 And the Captain calls for you,
 Volunteers! Volunteers!
@@ -9292,13 +10643,21 @@ Nevermore the end in doubt,
 Volunteers! Volunteers!
 We are in the winning fight,
 Shout for vict’ry is in sight,
-Volunteer! Volunteer! Volunteer!` },
-  { id: 339, title: `339. I Want to be Ready`, body: `I want to be ready when Jesus comes,
+Volunteer! Volunteer! Volunteer!`,
+  },
+  {
+    id: 339,
+    title: `339. I Want to be Ready`,
+    body: `I want to be ready when Jesus comes,
 I want to be ready when Jesus comes,
 Earth’s pleasures grow dim,
 While I’m waiting for Him,
-Lord, keep me till Jesus comes.` },
-  { id: 340, title: `340. When He Calls Me.`, body: `1. When He calls me I will answer,
+Lord, keep me till Jesus comes.`,
+  },
+  {
+    id: 340,
+    title: `340. When He Calls Me.`,
+    body: `1. When He calls me I will answer,
 When He calls me I will answer,
 When He calls me I will answer,
 I’ll be somewhere listening for my name.
@@ -9315,8 +10674,12 @@ Listening for my name) x 2
 2. If I think right, I will answer…
 3. If I live right, I will answer…
 4. If I sing right, I will answer…
-5. If I talk right…` },
-  { id: 341, title: `341. Give Me Oil`, body: `1. Give me oil in my lamp,
+5. If I talk right…`,
+  },
+  {
+    id: 341,
+    title: `341. Give Me Oil`,
+    body: `1. Give me oil in my lamp,
 Keep me burning,
 Give me oil in my lamp,
 I pray;
@@ -9337,8 +10700,12 @@ Keep me seeking,
 Make me a fisher of men I pray,
 Make me a fisher of men,
 Keep me seeking,
-Keep me seeking till the break of day.` },
-  { id: 342, title: `342. Side By Side`, body: `1. Side by side we stand,
+Keep me seeking till the break of day.`,
+  },
+  {
+    id: 342,
+    title: `342. Side By Side`,
+    body: `1. Side by side we stand,
 Awaiting God’s command,
 Worshipping the saving King.
 Living by His grace and moving on in faith;
@@ -9357,8 +10724,12 @@ Brothers and sisters I’ll be there.
 2. Soldier all are we to go where Jesus leads;
 We’ll fight in faith and we will overcome;
 Heaven is our goal, and saving every soul;
-Pray that we all will be there.` },
-  { id: 343, title: `343. It’s Me`, body: `It’s me, it’s me, it’s me O Lord
+Pray that we all will be there.`,
+  },
+  {
+    id: 343,
+    title: `343. It’s Me`,
+    body: `It’s me, it’s me, it’s me O Lord
 Standing in the need of prayer.
 It’s me, it’s me, it’s me O Lord
 Standing in the need of prayer.
@@ -9367,8 +10738,12 @@ But it’s me O Lord,
 Standing in the need of prayer;
 Not my brother nor my sister,
 But it’s me O Lord,
-Standing in the need of prayer.` },
-  { id: 344, title: `344. I’m So Glad`, body: `1. I’m so glad Jesus lifted me,
+Standing in the need of prayer.`,
+  },
+  {
+    id: 344,
+    title: `344. I’m So Glad`,
+    body: `1. I’m so glad Jesus lifted me,
 I’m so glad Jesus lifted me,
 Singing glory, hallelujah,
 Jesus lifted me.
@@ -9378,16 +10753,24 @@ But Jesus lifted…
 
 3. Jesus, Jesus, Jesus,
 Jesus lifted me…
-4. Glory Hallelujah… ` },
-  { id: 345, title: `345. Are You Downhearted`, body: `Are you downhearted?
+4. Glory Hallelujah… `,
+  },
+  {
+    id: 345,
+    title: `345. Are You Downhearted`,
+    body: `Are you downhearted?
 No! No! No!
 Are you downhearted?
 No! No! No!
 Troubles may come and troubles may go;
 We trust in Jesus, come weal or woe,
 Are you downhearted?
-No! No! No!` },
-  { id: 346, title: `346. In My Father’s House`, body: `1. I’m on my way up there,
+No! No! No!`,
+  },
+  {
+    id: 346,
+    title: `346. In My Father’s House`,
+    body: `1. I’m on my way up there,
 To my Father’s house,
 To my Father’s house,
 To my Father’s house,
@@ -9399,8 +10782,12 @@ To my Father’s house…
 3. There’s no more dying there,
 In my Father’s house…
 4. There’ll be no crying there,
-In my Father’s house…` },
-  { id: 347, title: `347. If You Want Joy`, body: `If you want joy, real joy, wonderful joy, (true joy)
+In my Father’s house…`,
+  },
+  {
+    id: 347,
+    title: `347. If You Want Joy`,
+    body: `If you want joy, real joy, wonderful joy, (true joy)
 Let Jesus come into your heart (your heart)
 If you want joy, real joy,
 Wonderful joy, (true joy)
@@ -9409,28 +10796,44 @@ Your sins He’ll wash away,
 Your night He’ll turn to day,
 Your life He’ll make it over anew (anew).
 If you want joy, real joy, wonderful joy, (true joy)
-Let Jesus come into your heart (your heart).` },
-  { id: 348, title: `348. God is My Help`, body: `God is my help
+Let Jesus come into your heart (your heart).`,
+  },
+  {
+    id: 348,
+    title: `348. God is My Help`,
+    body: `God is my help
 His joy is my strength,
 His peace is my power,
 His grace is forever and ever more;
 When you seek His face,
 You can be sure,
-He’ll never leave you alone.` },
-  { id: 349, title: `349. Wide as the Ocean`, body: `Wide, wide as the ocean,
+He’ll never leave you alone.`,
+  },
+  {
+    id: 349,
+    title: `349. Wide as the Ocean`,
+    body: `Wide, wide as the ocean,
 High as the heaven’s above;
 Deep, deep as the deepest sea is my Saviour’s 
 love,
 I, though so unworthy,
 Still I’m a child of His care,
 For His word teaches me,
-That His loves reaches me everywhere.` },
-  { id: 350, title: `350. What the World Needs Is Jesus`, body: `(What the world needs is Jesus,
+That His loves reaches me everywhere.`,
+  },
+  {
+    id: 350,
+    title: `350. What the World Needs Is Jesus`,
+    body: `(What the world needs is Jesus,
 Just a glimpse of Him) x 2
 He will bring joy and gladness,
 What the world needs is Jesus,
-Just a glimpse of Him.` },
-  { id: 351, title: `351. Down by the Riverside`, body: `Goin’ to lay down my burden,
+Just a glimpse of Him.`,
+  },
+  {
+    id: 351,
+    title: `351. Down by the Riverside`,
+    body: `Goin’ to lay down my burden,
 Down by the riverside,
 Down by the riverside,
 Down by the riverside, 
@@ -9447,16 +10850,24 @@ shield…
 
 
 3.Goin’ to meet my loving 
-Saviour…` },
-  { id: 352, title: `352. Every Day with Jesus`, body: `Every day with Jesus,
+Saviour…`,
+  },
+  {
+    id: 352,
+    title: `352. Every Day with Jesus`,
+    body: `Every day with Jesus,
 Is sweeter than the day before
 Every day with Jesus,
 I love Him more and more;
 Jesus saves and keeps me,
 And He’s the one I’m waiting for;
 Every day with Jesus is sweeter
-Than the day before.` },
-  { id: 353, title: `353. Leave It There`, body: `1. If the world from you withhold,
+Than the day before.`,
+  },
+  {
+    id: 353,
+    title: `353. Leave It There`,
+    body: `1. If the world from you withhold,
 All it’s silver and it’s gold,
 And you have to get along with meagre fare,
 Just remember in His word,
@@ -9497,8 +10908,12 @@ And old age is stealing on,
 And your body bends beneath the load of care,
 He will never leave you then,
 He’ll go with you till the end,
-Take your burden to the Lord and leave it there.` },
-  { id: 354, title: `354. Love`, body: `Love, love love, love,
+Take your burden to the Lord and leave it there.`,
+  },
+  {
+    id: 354,
+    title: `354. Love`,
+    body: `Love, love love, love,
 Christians this is your call,
 Love your neighbour as yourself,
 For God is love, love.
@@ -9507,32 +10922,52 @@ Praise the Spirit, three in one,
 Lord of Lords, King of kings,
 Forevermore.
 Hallelujah, Hallelujah, hallelujah,
-Hallelujah.` },
-  { id: 355, title: `355. I see Jesus`, body: `In The Morning I see His face,
+Hallelujah.`,
+  },
+  {
+    id: 355,
+    title: `355. I see Jesus`,
+    body: `In The Morning I see His face,
 In the evening His form I trace,
 In the darkness His voice I know.
-I see Jesus everywhere I go.` },
-  { id: 356, title: `356. Christ for Me`, body: `Christ for me,
+I see Jesus everywhere I go.`,
+  },
+  {
+    id: 356,
+    title: `356. Christ for Me`,
+    body: `Christ for me,
 Yes, it’s Christ for me;
 He’s my Saviour, my Lord and King.
 I’m so happy I shout and sing.
 Christ for me, yes it’s Christ for me.
 Every day as I go on my way,
-It is Christ for me.` },
-  { id: 357, title: `357. Heavenly Sunshine`, body: `Heavenly sunshine,
+It is Christ for me.`,
+  },
+  {
+    id: 357,
+    title: `357. Heavenly Sunshine`,
+    body: `Heavenly sunshine,
 Heavenly sunshine,
 Flooding my soul with glory divine;
 Heavenly sunshine,
 Heavenly sunshine,
-Hallelujah, Jesus is mine.` },
-  { id: 358, title: `358. Goodbye Chorus`, body: `Goodbye, our God is watching o’er
+Hallelujah, Jesus is mine.`,
+  },
+  {
+    id: 358,
+    title: `358. Goodbye Chorus`,
+    body: `Goodbye, our God is watching o’er
 You,
 Goodbye, His mercy before 
 You.
 Goodbye and we’ll be praying for
 You.
-So goodbye, may God bless you.` },
-  { id: 359, title: `359. Let’s talk About Jesus`, body: `Let’s talk about Jesus
+So goodbye, may God bless you.`,
+  },
+  {
+    id: 359,
+    title: `359. Let’s talk About Jesus`,
+    body: `Let’s talk about Jesus
 The King of King is He,
 The Lord of lord supreme,
 Thru’ all eternity.
@@ -9548,16 +10983,24 @@ In the Rock of Ages,
 Rock of ages,
 Cleft for me.
 O my loving sister…
-O my loving pastor…` },
-  { id: 360, title: `360. There’s a New Day Dawning`, body: `There’s a new day dawning,
+O my loving pastor…`,
+  },
+  {
+    id: 360,
+    title: `360. There’s a New Day Dawning`,
+    body: `There’s a new day dawning,
 There’s a new day dawning,
 Then arise O children of light,
 Arise and sing!
 There’s a new day dawning,
 There’s a new day dawning,
 When the nations of the world shall worship,
-Christ the King.` },
-  { id: 361, title: `361. Way beyond the Blue`, body: `1. I’ve got a home in glory land that outshines 
+Christ the King.`,
+  },
+  {
+    id: 361,
+    title: `361. Way beyond the Blue`,
+    body: `1. I’ve got a home in glory land that outshines 
 the sun,
 I’ve got a home in glory land that outshines the 
 sun
@@ -9582,8 +11025,12 @@ We’re coming too…
 5. We girls are going to heaven,
 You boys come…
 6. Thank you for the invitation,
-We’re coming too…` },
-  { id: 362, title: `362. Footprints of Jesus`, body: `Footprints of Jesus,
+We’re coming too…`,
+  },
+  {
+    id: 362,
+    title: `362. Footprints of Jesus`,
+    body: `Footprints of Jesus,
 Leading the way,
 Footprints of Jesus,
 By night and by day,
@@ -9607,27 +11054,43 @@ He heard my cry,
 I looked to Him for mansions on high,
 He lifted my burden and now I can sing,
 Glory to God, glory to God,
-I’m a child of the King.` },
-  { id: 363, title: `363. Isn’t He`, body: `Isn’t He wonderful?
+I’m a child of the King.`,
+  },
+  {
+    id: 363,
+    title: `363. Isn’t He`,
+    body: `Isn’t He wonderful?
 Wonderful, wonderful,
 Isn’t Jesus my Lord wonderful?
 Eyes have seen,
 Ears have heard,
 It’s recorded in God’s word,
-Isn’t Jesus my Lord wonderful?` },
-  { id: 364, title: `364. We Are Standing`, body: `We are standing on Holy ground,
+Isn’t Jesus my Lord wonderful?`,
+  },
+  {
+    id: 364,
+    title: `364. We Are Standing`,
+    body: `We are standing on Holy ground,
 And I know that there are angels all around,
 Let us praise,
 Jesus Christ,
-We are standing in His presence on Holy ground.` },
-  { id: 365, title: `365. Praise Him`, body: `1. Praise Him, Praise Him,
+We are standing in His presence on Holy ground.`,
+  },
+  {
+    id: 365,
+    title: `365. Praise Him`,
+    body: `1. Praise Him, Praise Him,
 Praise Him in the morning,
 Praise Him in the noontime,
 Praise Him, Praise Him,
 Praise Him when the sun goes down.
 2. Love Him…
-3. Serve Him…` },
-  { id: 366, title: `366. Seek Ye First `, body: `1. Seek ye first the kingdom of God, 
+3. Serve Him…`,
+  },
+  {
+    id: 366,
+    title: `366. Seek Ye First `,
+    body: `1. Seek ye first the kingdom of God, 
 And His righteousness,
 And all these things shall be added unto you,
 Halelu-, halleluiah.
@@ -9644,25 +11107,41 @@ Seek and ye shall find,
 Knock and the door shall be opened unto you,
 Halelu-, halleluiah.
 Halle-lu-iah x 3
-Halelu-, halleluliah.` },
-  { id: 367, title: `365. Oh the Blood`, body: `Oh the blood of Jesus,
+Halelu-, halleluliah.`,
+  },
+  {
+    id: 367,
+    title: `365. Oh the Blood`,
+    body: `Oh the blood of Jesus,
 Oh the blood of Jesus,
 Oh the blood of Jesus, 
-It washes white as snow` },
-  { id: 368, title: `368. Open Our Eyes`, body: `Open our eyes Lord,
+It washes white as snow`,
+  },
+  {
+    id: 368,
+    title: `368. Open Our Eyes`,
+    body: `Open our eyes Lord,
 We want to see Jesus,
 To reach out and touch Him,
 And say that “We love you”,
 Open our eyes Lord,
 And help us to listen,
 Open our eyes Lord,
-We want to see Jesus.` },
-  { id: 369, title: `369. Father I Adore You`, body: `1. Father I adore you,
+We want to see Jesus.`,
+  },
+  {
+    id: 369,
+    title: `369. Father I Adore You`,
+    body: `1. Father I adore you,
 I lay my life before you,
 How I love you.
 2. Jesus I love you…
-3. Spirit I love you…` },
-  { id: 370, title: `370. ‘Tis Love that Makes Us Happy `, body: `1. ‘Tis love that makes us happy, 
+3. Spirit I love you…`,
+  },
+  {
+    id: 370,
+    title: `370. ‘Tis Love that Makes Us Happy `,
+    body: `1. ‘Tis love that makes us happy, 
 ‘Tis love that smoothes the way;
 It helps us mind,
 It makes us kind
@@ -9691,8 +11170,12 @@ And try some soul to win.
 3. And when this life is over, 
 And we are called above 
 Our song shall be eternally, 
-Of Jesus and His love.` },
-  { id: 371, title: `371. Soon and Very Soon`, body: `1. (Soon and very soon
+Of Jesus and His love.`,
+  },
+  {
+    id: 371,
+    title: `371. Soon and Very Soon`,
+    body: `1. (Soon and very soon
 We are going to see the King.) x 3
 Halleluiah, halleluiah,
 We are going to see the King.
@@ -9716,8 +11199,12 @@ Should there be any mountains we must
 climb;
 God will supply all the strength that we 
 need,
-Give us grace till we reach the other side.` },
-  { id: 372, title: `372. This Little Light of Mine`, body: `1. This little light of mine, 
+Give us grace till we reach the other side.`,
+  },
+  {
+    id: 372,
+    title: `372. This Little Light of Mine`,
+    body: `1. This little light of mine, 
 I’m gonna let it shine, 
 This little light of mine, 
 I’m gonna let it shine, 
@@ -9731,8 +11218,12 @@ I am gonna let it shine…
 3. Everywhere I go, 
 I’m gonna let it shine…
 4. All through the night, 
-I’m gonna let it shine…` },
-  { id: 373, title: `373. Morning Has Broken`, body: `1. Morning has broken 
+I’m gonna let it shine…`,
+  },
+  {
+    id: 373,
+    title: `373. Morning Has Broken`,
+    body: `1. Morning has broken 
 Like the first morning 
 Black birds has spoken like the first bird. 
 Praise for the singing! 
@@ -9753,8 +11244,12 @@ Mine is the morning
 Born of the one light Eden saw play! 
 Praise with elation, 
 Praise every morning, 
-God’s recreation of the new day!` },
-  { id: 374, title: `374. With Jesus in the Vessel`, body: `With Jesus in the vessel 
+God’s recreation of the new day!`,
+  },
+  {
+    id: 374,
+    title: `374. With Jesus in the Vessel`,
+    body: `With Jesus in the vessel 
 I can smile at the storm,
 Smile at the storm,
 Smile at the storm,
@@ -9768,8 +11263,12 @@ Sailing, sailing home,
 Sailing, sailing home.
 With Jesus in the vessel
 I can smile at the storm,
-As we are sailing home.` },
-  { id: 375, title: `375. Lift Up Jesus.`, body: `Lift up Jesus,
+As we are sailing home.`,
+  },
+  {
+    id: 375,
+    title: `375. Lift Up Jesus.`,
+    body: `Lift up Jesus,
 Lift up Jesus,
 Lift up Jesus,
 Just lift Him up.
@@ -9781,8 +11280,12 @@ The whole wide world to see.
 I’ll draw all men to Me) x 3
 So lift Him up,
 Lift Him up,
-Oh lift Him up.` },
-  { id: 376, title: `376. Adventist Youth`, body: `Adventist youth are we,
+Oh lift Him up.`,
+  },
+  {
+    id: 376,
+    title: `376. Adventist Youth`,
+    body: `Adventist youth are we,
 From every land and see,
 Together we play and work and sing in happy 
 harmony,
@@ -9790,11 +11293,19 @@ We have a faith to share,
 With others everywhere,
 A message of love from God above,
 To show the world we care
-(Adventist Youth, we are.) x 3` },
-  { id: 377, title: `377. Amen`, body: `Amen, amen,  
+(Adventist Youth, we are.) x 3`,
+  },
+  {
+    id: 377,
+    title: `377. Amen`,
+    body: `Amen, amen,  
 Amen, amen,
-Amen.` },
-  { id: 378, title: `378. Rolling Down to Jordan`, body: `Refrain 
+Amen.`,
+  },
+  {
+    id: 378,
+    title: `378. Rolling Down to Jordan`,
+    body: `Refrain 
 (Rolling down to Jordan,
 Rolling down to Jordan,
 Rolling down to Jordan,
@@ -9812,16 +11323,24 @@ Halleluiah.
 Oh brother do you want to go,
 Oh brother do you want to go
 Rolling down to Jordan,
-Halleluiah.` },
-  { id: 379, title: `379. In the Home`, body: `In the home x 3
+Halleluiah.`,
+  },
+  {
+    id: 379,
+    title: `379. In the Home`,
+    body: `In the home x 3
 We need Jesus in the home
 In the home x 3
 We need Jesus in the home.
 If we invite Him in the Home today x 2
 And commune with Him all the while
 You will see how well you’ll live x 2
-With Jesus in the home.` },
-  { id: 380, title: `380. They’ll We Are Christians`, body: `1. We are one in the spirit,
+With Jesus in the home.`,
+  },
+  {
+    id: 380,
+    title: `380. They’ll We Are Christians`,
+    body: `1. We are one in the spirit,
 We are one in the Lord;
 We are one in the spirit,
 We are one in the Lord.
@@ -9860,8 +11379,12 @@ And all praise to the Spirit,
 Who makes all men one,
 And they’ll we know we are Christian 
 By our love, by our love,
-Yes, they’ll know we are Christians by our love.` },
-  { id: 381, title: `381. Go Tell it On the Mountains`, body: `Refrain 
+Yes, they’ll know we are Christians by our love.`,
+  },
+  {
+    id: 381,
+    title: `381. Go Tell it On the Mountains`,
+    body: `Refrain 
 Go, tell it on the mountain, 
 Over the hills and everywhere: 
 Go, tell it on the mountain 
@@ -9877,8 +11400,12 @@ There shone a holy light.
 2. The shepherds feared and trembled 
 When lo! Above the earth 
 Rang out the angel chorus 
-That hailed our Saviour’s birth.` },
-  { id: 382, title: `382. Pass It On`, body: `1. It only takes a spark to get a fire going,
+That hailed our Saviour’s birth.`,
+  },
+  {
+    id: 382,
+    title: `382. Pass It On`,
+    body: `1. It only takes a spark to get a fire going,
 And soon all those around can warm up in its 
 glowing;
 That’s how it is with God’s love;
@@ -9904,8 +11431,12 @@ It matters not where you’re bound;
 I’ll shout it from the mountain-top,
 I want my world to know;
 The Lord of love has come to me,
-I want to pass it on.` },
-  { id: 383, title: `383. Every Time I`, body: `1. Upon the mountain,
+I want to pass it on.`,
+  },
+  {
+    id: 383,
+    title: `383. Every Time I`,
+    body: `1. Upon the mountain,
 When my Lord spoke,
 Out of His mouth came fire and smoke.
 Looked all around me,
@@ -9933,8 +11464,12 @@ For I am sheltered by His care.
 said,
 He healed the sick and raised the dead.
 There ain’t but one train upon His track,
-It runs to Heaven and runs right back.` },
-  { id: 384, title: `384. Heaven Came Down`, body: `1. What a wonderful, wonderful 
+It runs to Heaven and runs right back.`,
+  },
+  {
+    id: 384,
+    title: `384. Heaven Came Down`,
+    body: `1. What a wonderful, wonderful 
 day- 
 Day I will never forget 
 After I’d wondered in darkness away,
@@ -9973,8 +11508,12 @@ There in those mansions sublime,
 And it’s because of that wonderful day,
 When at the cross I believed,
 Riches eternal and blessings supernal,
-From His precious hands I received.` },
-  { id: 385, title: `385. Lord I want To Be A`, body: `1. Lord I want to be a Christian
+From His precious hands I received.`,
+  },
+  {
+    id: 385,
+    title: `385. Lord I want To Be A`,
+    body: `1. Lord I want to be a Christian
 In my heart, in my heart, 
 Lord I want to be a Christian in my heart.
 In my heart, in my heart,
@@ -9995,8 +11534,12 @@ In my heart, in my heart…
 5. Lord I feel the fire burning
 In heart…
 6. Halleluiah now is ringing 
-In my heart…` },
-  { id: 386, title: `386. At The Cross`, body: `1. Alas, and did my Saviour bleed, and did my 
+In my heart…`,
+  },
+  {
+    id: 386,
+    title: `386. At The Cross`,
+    body: `1. Alas, and did my Saviour bleed, and did my 
 Sovereign die?
 Would He devout that sacred head
 For sinners such as I.
@@ -10025,8 +11568,12 @@ creature’s sin.
 4. But drops of grief can never repay the debt of 
 love I owe
 Here, Lord, I give myself away, t’is all that I can 
-do. ` },
-  { id: 387, title: `387. Were You There`, body: `1. Were you there when they crucified my Lord?
+do. `,
+  },
+  {
+    id: 387,
+    title: `387. Were You There`,
+    body: `1. Were you there when they crucified my Lord?
 Were you there when they crucified my Lord?
 Oh’ Sometimes it causes me to tremble, tremble, 
 tremble.
@@ -10045,8 +11592,12 @@ Were you there when they nailed Him to the tree.
 tomb?
 Were you there when they laid Him in the tomb?
 Oh…
-Were you there when they laid Him in the tomb?` },
-  { id: 388, title: `388. He Keeps Me Singing`, body: `1. Here’s within my heart a melody;
+Were you there when they laid Him in the tomb?`,
+  },
+  {
+    id: 388,
+    title: `388. He Keeps Me Singing`,
+    body: `1. Here’s within my heart a melody;
 Jesus whispers sweet and low,
 “Fear not I am with thee peace be still”,
 In all of life’s ebb and flow.
@@ -10082,8 +11633,12 @@ See His footprints all the way.
 5. Soon He’s coming back to welcome me,
 Far beyond the starry sky;
 I shall wing my flight to worlds unknown,
-I shall reign with Him on high.` },
-  { id: 389, title: `389. Love Lifted Me`, body: `1. I was sinking deep in sin,
+I shall reign with Him on high.`,
+  },
+  {
+    id: 389,
+    title: `389. Love Lifted Me`,
+    body: `1. I was sinking deep in sin,
 Far from the peaceful shore,
 Very deeply stained within,
 Sinking to rise no more;
@@ -10117,8 +11672,12 @@ Out of the angry waves;
 He’s the Master of the sea,
 Billows His will obey;
 He your Saviour wants to be,
-Be saved today.` },
-  { id: 390, title: `390. Since Jesus Came`, body: `1. What a wonderful change in my life has been 
+Be saved today.`,
+  },
+  {
+    id: 390,
+    title: `390. Since Jesus Came`,
+    body: `1. What a wonderful change in my life has been 
 wrought,
 Since Jesus came into my heart!
 I have light in my soul,
@@ -10152,8 +11711,12 @@ Since Jesus came into my heart.
 4. I shall go there to dwell in that city I know,
 Since Jesus came into my heart,
 And I’m happy, so happy as onward I go,
-Since Jesus came into my heart.` },
-  { id: 391, title: `391. Surely Goodness`, body: `1. A pilgrim was I, and a wandring,
+Since Jesus came into my heart.`,
+  },
+  {
+    id: 391,
+    title: `391. Surely Goodness`,
+    body: `1. A pilgrim was I, and a wandring,
 In the cold night of sin did I roam,
 When Jesus the kind Shepherd found me,
 And now I am on my way home.
@@ -10175,8 +11738,12 @@ He guards me each step of the way.
 3. When I walk through the dark, lonesome valley
 My Saviour will walk with me there;
 And safely His great hand will lead me,
-To mansions He’s gone to prepare.` },
-  { id: 392, title: `392. I am Alone`, body: `1. I am alone and I’m afraid
+To mansions He’s gone to prepare.`,
+  },
+  {
+    id: 392,
+    title: `392. I am Alone`,
+    body: `1. I am alone and I’m afraid
 Weary and worn as my hope fades
 There’s none around to hear me cry
 On this cold ground where I now lie.
@@ -10195,8 +11762,12 @@ His arms of love are very broad
 Tears fill my eyes 
 I’m so deprived.
 I know He cares I have been there
-Come here and low come to Him now) x 2` },
-  { id: 393, title: `393. The Cross`, body: `1. I lift my eyes, and look upon mount Calvary,
+Come here and low come to Him now) x 2`,
+  },
+  {
+    id: 393,
+    title: `393. The Cross`,
+    body: `1. I lift my eyes, and look upon mount Calvary,
 And there I see a figure on a tree,
 I see the Son of God,
 He’s hanging there 
@@ -10211,8 +11782,12 @@ For all our sins He died,
 He’s now alive
 Because of you and me,
 (The cross will be) x 2
-My song.` },
-  { id: 394, title: `394. When God`, body: `1. When God dipped His pen
+My song.`,
+  },
+  {
+    id: 394,
+    title: `394. When God`,
+    body: `1. When God dipped His pen
 Of love in my heart
 And wrote my message
 He wanted me to know
@@ -10237,8 +11812,12 @@ To bring my soul a message,
 And make a brighter day;
 My heart was lost in sin,
 But in love He took me in His blood washed away 
-every stain.` },
-  { id: 395, title: `395. Because of Jesus.`, body: `. Born to the human race He came
+every stain.`,
+  },
+  {
+    id: 395,
+    title: `395. Because of Jesus.`,
+    body: `. Born to the human race He came
 To show the way He said.
 Come unto me all you that thirst.
 He had compassion and His hands reached out 
@@ -10263,8 +11842,12 @@ Just like the rain which falls,
 His grace can bring to life a broken dream,
 We shed, more tears than we can dry,
 Lose more than we can find
-But we hope, when He is on our side.` },
-  { id: 396, title: `396. For Every Leaf`, body: `1. For every leaf that falls down to the ground my 
+But we hope, when He is on our side.`,
+  },
+  {
+    id: 396,
+    title: `396. For Every Leaf`,
+    body: `1. For every leaf that falls down to the ground my 
 Father knows. He provides for all His children, 
 and everything below. I kneel in prayer to tell of 
 the things I’m going through, like a child goes to 
@@ -10289,8 +11872,12 @@ Afraid of what may come. But with His hands of
 comfort
 He brings healing to my heart,
 The storms of life cannot prevail against His 
-might hand.` },
-  { id: 397, title: `397. Hold Fast`, body: `1. Sometimes it seems you’re giving all you’ve 
+might hand.`,
+  },
+  {
+    id: 397,
+    title: `397. Hold Fast`,
+    body: `1. Sometimes it seems you’re giving all you’ve 
 got, and there’s nothing left alone, you have no 
 strength to go on. Sometimes it seems that no 
 one understands, no one is there to lend a hand, 
@@ -10319,8 +11906,12 @@ the sun is lost behind the clouds of sorrow, when
 no song can sooth the aching of the heart. When 
 you feel alone and helpless, tossed about within 
 the tempest. Jesus helps you face the trials of 
-each day.` },
-  { id: 398, title: `398. O Let Me Look Upon You.`, body: `O let me look upon you Lord.
+each day.`,
+  },
+  {
+    id: 398,
+    title: `398. O Let Me Look Upon You.`,
+    body: `O let me look upon you Lord.
 O let me see your face.
 To gaze upon your righteousness 
 And marvel at your grace.
@@ -10334,8 +11925,12 @@ Bridge:
 Every word you say is true.
 I can safely put my trust in you Knowing 
 someday you will see me through. 
-Let me look unto you.` },
-  { id: 399, title: `399. One in Jesus`, body: `1. From all nations, tongues and places, Endless 
+Let me look unto you.`,
+  },
+  {
+    id: 399,
+    title: `399. One in Jesus`,
+    body: `1. From all nations, tongues and places, Endless 
 throngs of precious souls,
 Lifting high their happy voices,
 Answer to the Saviour’s cal
@@ -10363,8 +11958,12 @@ Yield to us in Jesus’ name.
 Everyday and every hour,
 More are freed from Satan’s game
 Still we cannot leave the fight,
-Millions more still long for light.` },
-  { id: 400, title: `400. Going Home`, body: `1. There comes time when all must face, tragedy 
+Millions more still long for light.`,
+  },
+  {
+    id: 400,
+    title: `400. Going Home`,
+    body: `1. There comes time when all must face, tragedy 
 Moments in our lives, we feel bad in times like 
 theseNo one can tell. x 2
 
@@ -10378,8 +11977,12 @@ Soon we’ll be going home x 2
 2. We can rejoice in times of grief. 
 We can see our destiny can go on and strive to 
 win 
-Because of hope x 2` },
-  { id: 401, title: `401. Your Name is Worthy`, body: `Refrain
+Because of hope x 2`,
+  },
+  {
+    id: 401,
+    title: `401. Your Name is Worthy`,
+    body: `Refrain
 Jesus Your name is worthy 
 You deserve the highest praise
 And my voice to You will raise. 
@@ -10400,8 +12003,12 @@ The fact that our lives are in your hands
 We are weak and we are mortal 
 Living in a troubled land. 
 And we still depend upon
-Your saving hand.` },
-  { id: 402, title: `402. No Load Too Big`, body: `1. There is no load too big for you,
+Your saving hand.`,
+  },
+  {
+    id: 402,
+    title: `402. No Load Too Big`,
+    body: `1. There is no load too big for you,
 No tears you do not see.
 And when I feel I’m all-alone,
 You’re standing there by me.
@@ -10427,8 +12034,12 @@ I find relief in you.
 There’s nothing like defeat for you,
 You turn it inside out.
 And show the world a miracle,
-When all have given up.` },
-  { id: 403, title: `403. Show You Care`, body: `1. It’s a time when there’re many people, Groping 
+When all have given up.`,
+  },
+  {
+    id: 403,
+    title: `403. Show You Care`,
+    body: `1. It’s a time when there’re many people, Groping 
 in a world of sin
 And they don’t know what to do.
 So go out search for all those people
@@ -10448,8 +12059,12 @@ kindness all around,
 Giving love to desperate hearts
 Look around see the people pleading 
 They’re searching for the truth and life
-So go out and show you care.` },
-  { id: 404, title: `404. Will You Build`, body: `1. Will you build the temple of God with love and 
+So go out and show you care.`,
+  },
+  {
+    id: 404,
+    title: `404. Will You Build`,
+    body: `1. Will you build the temple of God with love and 
 care?
 Will you turn and point to friends with talents 
 rare,
@@ -10473,8 +12088,12 @@ Lord I come earth Bye and Bye
 2. Oh I took a Christian life above this world,
 Oh I took a serving life above all things,
 Oh I took the love and care and joy he gives,
-I rejoice in Jesus Christ who died for me.` },
-  { id: 405, title: `405. Open The Door`, body: `Refrain
+I rejoice in Jesus Christ who died for me.`,
+  },
+  {
+    id: 405,
+    title: `405. Open The Door`,
+    body: `Refrain
 Open the door, open the door,
 Jesus is knocking, open for him,
 It’s been a long time,
@@ -10506,8 +12125,12 @@ Will Jesus go weeping, please open that door.
 Bridge
 For I know that He may never return, or He may 
 never pass by your door. When you hear the cry 
-and hear the plea…….` },
-  { id: 406, title: `406 Bulinyuma`, body: `1. Natulak(o) awo nendowooza
+and hear the plea…….`,
+  },
+  {
+    id: 406,
+    title: `406 Bulinyuma`,
+    body: `1. Natulak(o) awo nendowooza
 Ku bulamu bwe Ggulu,
 Nga nebuuza nt(i) oba no buliba butya?
 Nenkubam(u) akafaananyi nga tuli wamu ne 
@@ -10533,12 +12156,20 @@ Eyang(e) erib(a) erinaany(e) eyiye.
 amalung(i) enyo,
 Bul(i) om(u) alib(a) amanyi, tuyimbe,
 Oluyimba lwa Musa, luli olw’obuwanguzi,
-Yesu nga yatuwuubisa, lulinyuma.` },
-  { id: 407, title: `407. We Give thee but Thine Own`, body: `We give thee but thine own,
+Yesu nga yatuwuubisa, lulinyuma.`,
+  },
+  {
+    id: 407,
+    title: `407. We Give thee but Thine Own`,
+    body: `We give thee but thine own,
 Whatever gift may be,
 All that we have is thine alone,
-A trust O Lord from thee. Amen` },
-  { id: 408, title: `408.  God  be  with  you  till  we  meetagain `, body: `1. God be with you till we meet again,
+A trust O Lord from thee. Amen`,
+  },
+  {
+    id: 408,
+    title: `408.  God  be  with  you  till  we  meetagain `,
+    body: `1. God be with you till we meet again,
 By His counsels guide, uphold you,
 With His sheep securely fold you,
 God be with till we meet again.
@@ -10567,8 +12198,12 @@ God be with you till we meet again
 Keep love’s banner floating o’er you,
 Smite  death’s  threat’ing  wave  before 
 you,
-God be with you till we meet again` },
-  { id: 409, title: `409.  A  New  Name  written  down  in Glory`, body: `1. I was once a sinner, but I came
+God be with you till we meet again`,
+  },
+  {
+    id: 409,
+    title: `409.  A  New  Name  written  down  in Glory`,
+    body: `1. I was once a sinner, but I came
 Pardon to receive from my Lord 
 This was freely given, and I found
 That He always kept His word.
@@ -10595,8 +12230,12 @@ That my name was written down!
 Grace”
 O the joy that came to my soul!
 Now I am forgiven, and I know
-By the blood I am made whole` },
-  { id: 410, title: `410 And can it Be`, body: `1. And can it be that I should gain
+By the blood I am made whole`,
+  },
+  {
+    id: 410,
+    title: `410 And can it Be`,
+    body: `1. And can it be that I should gain
 An interest in the Saviour’s blood!
 Died He for me? Who caused Him 
 pain!
@@ -10625,8 +12264,12 @@ Alive in Him, my living head,
 And clothed in righteousness divine,
 Bold I approach th’eternal throne,.
 And claim the crown, through Christ 
-my own.` },
-  { id: 411, title: `411 Day By Day`, body: `1. Day by day, and with each passing 
+my own.`,
+  },
+  {
+    id: 411,
+    title: `411 Day By Day`,
+    body: `1. Day by day, and with each passing 
 moment, 
 Strength I find to meet my trials here;
 Trusting in my Father’s wise 
@@ -10665,8 +12308,12 @@ meeting,
 E’er to take as from a father’s hand,
 One by one, the days, the moments 
 fleeting
-Till with Christ the Lord I stand.` },
-  { id: 412, title: `412. The lily of the valley`, body: `1. I have found a friend in Jesus,
+Till with Christ the Lord I stand.`,
+  },
+  {
+    id: 412,
+    title: `412. The lily of the valley`,
+    body: `1. I have found a friend in Jesus,
 He’s everything to me,
 He’s the fairest of ten thousand to my 
 soul;
@@ -10709,8 +12356,12 @@ From His manna He my hungry soul
 shall fill.
 Then sweeping up to glory to see His 
 blessed face,
-Where rivers of delight shall ever roll.` },
-  { id: 413, title: `413 Lead Me Gently Home Father`, body: `1.Lead me gently home Father,
+Where rivers of delight shall ever roll.`,
+  },
+  {
+    id: 413,
+    title: `413 Lead Me Gently Home Father`,
+    body: `1.Lead me gently home Father,
 Lead me gently home;
 When life’s toils are ended And
 parting days have come,
@@ -10737,8 +12388,12 @@ When life’s troubles come
 Keep my feet from wand’ring,
 Lest from Thee I roam,
 Lest I fall upon the way-side,
-Lead me gently home.` },
-  { id: 414, title: `414 The Comforter Has Come`, body: `1.  Oh, spread the tidings ’round, 
+Lead me gently home.`,
+  },
+  {
+    id: 414,
+    title: `414 The Comforter Has Come`,
+    body: `1.  Oh, spread the tidings ’round, 
 wherever man is found,
 Wherever human hearts and human 
 woes abound;
@@ -10780,8 +12435,12 @@ To wond’ring mortals tell the
 matchless grace divine—
 That I, a child of hell, should in His 
 image shine!
-The Comforter has come!` },
-  { id: 415, title: `415 What a day that will Be`, body: `1. There is coming a day,
+The Comforter has come!`,
+  },
+  {
+    id: 415,
+    title: `415 What a day that will Be`,
+    body: `1. There is coming a day,
 When no heart aches shall come,
 No more clouds in the sky,
 No more tears to dim the eye,
@@ -10806,8 +12465,12 @@ No more sickness, no pain,
 No more parting over there;
 And forever I will be,
 With the One who died for me,
-What a day, glorious day that will be.` },
-  { id: 416, title: `416 It Is No Secret`, body: `1. The chimes of time ring out the 
+What a day, glorious day that will be.`,
+  },
+  {
+    id: 416,
+    title: `416 It Is No Secret`,
+    body: `1. The chimes of time ring out the 
 news
 Another day is through
 Some one slipped and fell,
@@ -10835,8 +12498,12 @@ you may roam,
 There is no power can conquer you, 
 While God is on your side.
 Take Him at His promise, 
-Don't run away and hide.` },
-  { id: 417, title: `417 Look and Live`, body: `1. I’ve a message from the Lord, 
+Don't run away and hide.`,
+  },
+  {
+    id: 417,
+    title: `417 Look and Live`,
+    body: `1. I’ve a message from the Lord, 
 hallelujah!
 This message unto you I’ll give,
 ’Tis recorded in His word, hallelujah!
@@ -10866,8 +12533,12 @@ Look to Jesus who alone can save.
 To Jesus when He made me whole
 ’Twas believing on His name, 
 hallelujah!
-I trusted and He saved my soul.` },
-  { id: 418, title: `418 Springs of Living Water`, body: `1. I thirsted in the barren land of sin 
+I trusted and He saved my soul.`,
+  },
+  {
+    id: 418,
+    title: `418 Springs of Living Water`,
+    body: `1. I thirsted in the barren land of sin 
 and shame,
 And nothing satisfying there I found;
 But to the blessed cross of Christ one 
@@ -10898,8 +12569,12 @@ A fountain there is flowing deep and
 wide;
 The Saviour now invites you to the 
 water free,
-Where thirsting spirits can be satisfied.` },
-  { id: 419, title: `419 Its Not an Easy road`, body: `1. It’s not an easy road
+Where thirsting spirits can be satisfied.`,
+  },
+  {
+    id: 419,
+    title: `419 Its Not an Easy road`,
+    body: `1. It’s not an easy road
 We are trav’ling to heaven,
 For many are the thorns on the way;
 It’s not an easy road,
@@ -10929,8 +12604,12 @@ And weary from travel,
 Tho’ I am often bowed down with care,
 Well a better day is coming
 When home in the glory
-We’ll rest in perfect peace over there.` },
-  { id: 420, title: `420 How Beautiful Heaven Must be`, body: `1. We read of a place that's called 
+We’ll rest in perfect peace over there.`,
+  },
+  {
+    id: 420,
+    title: `420 How Beautiful Heaven Must be`,
+    body: `1. We read of a place that's called 
 heaven,
 It's made for the pure and the free;
 These truths in God's word He has 
@@ -10954,8 +12633,12 @@ How beautiful heaven must be.
 Up there by the beautiful sea;
 Sweet chords from their gold harps 
 are ringing,
-How beautiful heaven must be.` },
-  { id: 421, title: `421 How Marvelous! How wonderful`, body: `1. I stand amazed in the presence
+How beautiful heaven must be.`,
+  },
+  {
+    id: 421,
+    title: `421 How Marvelous! How wonderful`,
+    body: `1. I stand amazed in the presence
 Of Jesus the Nazarene,
 And wonder how He could love me,
 A sinner, condemned, unclean.
@@ -10989,8 +12672,12 @@ And suffered and died alone.
 5. When with the ransomed in glory
 His face I at last shall see,
 ’Twill be my joy through the ages
-To sing of His love for me.` },
-  { id: 422, title: `422 I Cannot Come to the Banquet`, body: `1. A certain man held a feast on his
+To sing of His love for me.`,
+  },
+  {
+    id: 422,
+    title: `422 I Cannot Come to the Banquet`,
+    body: `1. A certain man held a feast on his
 fine estate in town
 He laid a festive table and wore a
 wedding gown 
@@ -11036,8 +12723,12 @@ leave us behind
 He’s preparing a banquet for that
 great and glorious day
 When the Lord and Master calls us, be 
-sure you do not say` },
-  { id: 423, title: `423 Worthy, Worthy, is the Lamb`, body: `1.Worthy, worthy is the Lamb;
+sure you do not say`,
+  },
+  {
+    id: 423,
+    title: `423 Worthy, Worthy, is the Lamb`,
+    body: `1.Worthy, worthy is the Lamb;
 Worthy, worthy is the Lamb,
 Worthy, worthy is the Lamb That was 
 slain
@@ -11056,8 +12747,12 @@ Lamb.
 
 3. Thus may we each moment feel,
 Love Him, serve Him Praise Him still, 
-Till we all on Zion’s hill see the Lamb.` },
-  { id: 424, title: `424 At Calvary`, body: `1.Years I spent in vanity and pride,
+Till we all on Zion’s hill see the Lamb.`,
+  },
+  {
+    id: 424,
+    title: `424 At Calvary`,
+    body: `1.Years I spent in vanity and pride,
 Caring not my Lord was crucified,
 Knowing not it was for me He died On 
 Calvary
@@ -11084,8 +12779,12 @@ Of Calvary.
 plan, Oh! The grace that brought it 
 down to man
 Oh! The mighty gulf that God did
-span At Calvary` },
-  { id: 425, title: `425 Jesus Hold My Hand`, body: `1. As I travel thru this pilgrim land
+span At Calvary`,
+  },
+  {
+    id: 425,
+    title: `425 Jesus Hold My Hand`,
+    body: `1. As I travel thru this pilgrim land
 There is a friend who walks with me
 Leads me safely thru the sinking
 sand, it is the Christ of Calvary;
@@ -11120,8 +12819,12 @@ If I a crown of life have won;
 I have put my faith in thee dear Lord
 That I may rach the golden strand,
 There’s no other friend on whom I can 
-depend` },
-  { id: 426, title: `426 I shall Not Be Moved `, body: `1. Jesus is my Saviour, I shall not
+depend`,
+  },
+  {
+    id: 426,
+    title: `426 I shall Not Be Moved `,
+    body: `1. Jesus is my Saviour, I shall not
 be moved; In his love and favour,
 I shall not be moved
 Just like a tree that’s planted by
@@ -11148,8 +12851,12 @@ not be moved;
 He’s the one that’s leading I shall not 
 be moved;
 Just like the tree that’s planted by the 
-waters, Lord I shall not be moved.` },
-  { id: 427, title: `427 Lead Me Gently Home Father`, body: `1.Lead me gently home Father,
+waters, Lord I shall not be moved.`,
+  },
+  {
+    id: 427,
+    title: `427 Lead Me Gently Home Father`,
+    body: `1.Lead me gently home Father,
 Lead me gently home;
 When life’s toils are ended And
 parting days have come,
@@ -11175,8 +12882,12 @@ When life’s troubles come
 Keep my feet from wand’ring,
 Lest from Thee I roam,
 Lest I fall upon the wayside,
-Lead me gently home.` },
-  { id: 429, title: `429 Comforter Has Come`, body: `1. O spread the tidings round 
+Lead me gently home.`,
+  },
+  {
+    id: 429,
+    title: `429 Comforter Has Come`,
+    body: `1. O spread the tidings round 
 wherever man is found,
 Wherever human hearts and human
 woes abound;
@@ -11218,8 +12929,12 @@ To wondering mortals, tell the
 matchless grace divine
 That I a child of hell, should in His 
 image shine? 
-The Comforter has come!` },
-  { id: 430, title: `430 Down At The Cross`, body: `1. Down at the Cross where my 
+The Comforter has come!`,
+  },
+  {
+    id: 430,
+    title: `430 Down At The Cross`,
+    body: `1. Down at the Cross where my 
 Saviour
 died, 
 Down where for cleansing form sin I 
@@ -11252,8 +12967,12 @@ sweet;
 Cast thy poor soul at the Saviour’s 
 feet;
 Plunge in today and be made
-complete; Glory to His name.` },
-  { id: 431, title: `431 I Have a Song I Love to Sing`, body: `1. I have a song I love to sing, Since
+complete; Glory to His name.`,
+  },
+  {
+    id: 431,
+    title: `431 I Have a Song I Love to Sing`,
+    body: `1. I have a song I love to sing, Since
 I have been redeemed;
 Of my Redeemer, Saviour, King;
 Since I have been redeemed.
@@ -11282,8 +13001,12 @@ Since I have been redeemed.
 4. I have a home prepared for me,
 Since I have been redeemed;
 Where I shall dwell eternally,
-Since I have been redeemed.` },
-  { id: 432, title: `432 Holy Spirit Faithful Guide`, body: `1 Holy Spirit, faithful Guide, 
+Since I have been redeemed.`,
+  },
+  {
+    id: 432,
+    title: `432 Holy Spirit Faithful Guide`,
+    body: `1 Holy Spirit, faithful Guide, 
 Ever near the Christian’s side;
 Gently lead us by the hand, 
 Pilgrims in a desert land;
@@ -11309,8 +13032,12 @@ Wond'ring if our names were there;
 Wading deep the dismal flood, 
 Pleading naught but Jesus’ blood,
 Whisp'ring softly, “Wand'rer, come! 
-Follow Me, I’ll guide thee home.”` },
-  { id: 433, title: `433 No, Not One`, body: `1. There’s not a friend like the lowly
+Follow Me, I’ll guide thee home.”`,
+  },
+  {
+    id: 433,
+    title: `433 No, Not One`,
+    body: `1. There’s not a friend like the lowly
 Jesus, 
 No, not one! No, not one!
 None else could heal all soul’s
@@ -11352,8 +13079,12 @@ one!
 5. Was e’er a gift like the saviour
 given? No, not one! No not one!
 Will He refuse us a home in heaven?
-No, not one! No, not one! ` },
-  { id: 434, title: `434 I am Thinking Today of That Beautiful`, body: `1 I am thinking today of that beautiful 
+No, not one! No, not one! `,
+  },
+  {
+    id: 434,
+    title: `434 I am Thinking Today of That Beautiful`,
+    body: `1 I am thinking today of that beautiful 
 land
 I shall reach when the sun goeth 
 down;
@@ -11385,8 +13116,12 @@ Living gems at His feet to lay down;
 It would sweeten my bliss in the city of 
 gold,
 Should there be any stars in my 
-crown.` },
-  { id: 435, title: `435 Have you Been to Jesus`, body: `1. Have you been to Jesus for the 
+crown.`,
+  },
+  {
+    id: 435,
+    title: `435 Have you Been to Jesus`,
+    body: `1. Have you been to Jesus for the 
 cleansing pow’r?
 Are you washed in the blood of the 
 Lamb?
@@ -11431,8 +13166,12 @@ Lamb;
 There’s a fountain flowing for the soul 
 unclean,
 O be washed in the blood of the 
-Lamb.` },
-  { id: 436, title: `436 Are You Weary`, body: `1 Are you weary, are you
+Lamb.`,
+  },
+  {
+    id: 436,
+    title: `436 Are You Weary`,
+    body: `1 Are you weary, are you
 Heavyhearted?
 Tell it to Jesus, Tell it to Jesus;
 Are you grieving over joys departed?
@@ -11467,8 +13206,12 @@ dying?
 Tell it to Jesus, Tell it to Jesus;
 For Christ's coming kingdom are you 
 sighing?
-Tell it to Jesus alone.` },
-  { id: 437, title: `437 Angry Words, Oh, Let Them Never `, body: `1. Angry words! O let them never,
+Tell it to Jesus alone.`,
+  },
+  {
+    id: 437,
+    title: `437 Angry Words, Oh, Let Them Never `,
+    body: `1. Angry words! O let them never,
 From the tongue unbridled slip,
 May the heart’s best impulse ever,
 Check them ere they soil the lip.
@@ -11489,8 +13232,12 @@ Thus to desolate and mar.
 3. Angry words are lightly spoken,
 Bitterest thoughts are rashly stirred,
 Brightest links of life are broken,
-By a single angry word. ` },
-  { id: 438, title: `438 I Must Have the Saviour With Me`, body: `1. I must have the Savior with me,
+By a single angry word. `,
+  },
+  {
+    id: 438,
+    title: `438 I Must Have the Saviour With Me`,
+    body: `1. I must have the Savior with me,
 For I dare not go alone,
 I must feel His presence near me,
 And His arm around me thrown.
@@ -11518,8 +13265,12 @@ Thro’ the battle and the strife.
 4. I must have the Savior with me,
 And His eye the way must guide,
 Till I reach the vale of Jordan,
-Till I cross the rolling tide.` },
-  { id: 439, title: `439 Is My Name Written There`, body: `1 Lord, I care not for riches, neither 
+Till I cross the rolling tide.`,
+  },
+  {
+    id: 439,
+    title: `439 Is My Name Written There`,
+    body: `1 Lord, I care not for riches, neither 
 silver nor gold--I would make sure of heaven, I would 
 enter the fold.
 In the book of Thy kingdom with its 
@@ -11556,8 +13307,12 @@ my name’s written there.
 Yes, my name's written there,
 On the page white and fair?
 In the book of Thy kingdom,
-Yes, my name's written there?` },
-  { id: 440, title: `440 I Am the Door`, body: `1. I am the Door, Iam the Door,
+Yes, my name's written there?`,
+  },
+  {
+    id: 440,
+    title: `440 I Am the Door`,
+    body: `1. I am the Door, Iam the Door,
 By me if any man enter in, 
 He shall be saved, He shall be saved, 
 He shall be saved.
@@ -11568,8 +13323,12 @@ four,
 Millions are in, but there’s room for 
 more, 
 The door’s open wide, Come right 
-inside, and thou shalt be saved.` },
-  { id: 441, title: `441 Where We’ll Never Grow Old`, body: `1. I have heard of a land on the 
+inside, and thou shalt be saved.`,
+  },
+  {
+    id: 441,
+    title: `441 Where We’ll Never Grow Old`,
+    body: `1. I have heard of a land on the 
 faraway
 strand, ‘
 Tis a beautiful home of the soul;
@@ -11598,8 +13357,12 @@ the lifecrown is won,
 And our troubles and trials are o’er, 
 All our sorrow will end, and our voices
 will blend With the loved ones who’ve 
-gone on before.` },
-  { id: 442, title: `442 O The Way Is Long And weary`, body: `1. O the way is long and weary, 
+gone on before.`,
+  },
+  {
+    id: 442,
+    title: `442 O The Way Is Long And weary`,
+    body: `1. O the way is long and weary, 
 And our bleeding feet are sore; 
 Is it far to Canaan’s land, is it far to 
 Canan’s land? 
@@ -11631,8 +13394,12 @@ far to Canaan’s land, Is it far to
 Canaan’s land Where the cruel
 days of bondage And of fear will
 never come, Is it far, Is it farto
-Canaan’s land?` },
-  { id: 443, title: `443 O When the Saints Go Marching`, body: `1. O when the saints go marching in,
+Canaan’s land?`,
+  },
+  {
+    id: 443,
+    title: `443 O When the Saints Go Marching`,
+    body: `1. O when the saints go marching in,
 O when the saints go marching in;
 O Lord, I want to be among the
 number When the saints go
@@ -11663,8 +13430,12 @@ they sing the Saviur;s praise
 in, O when the saints go marching
 in; O Lord I want to be among the
 number when the saints go
-marching in.` },
-  { id: 444, title: `444 Mansion Over the Hilltop`, body: `1. I'm satisfied with just a cottage 
+marching in.`,
+  },
+  {
+    id: 444,
+    title: `444 Mansion Over the Hilltop`,
+    body: `1. I'm satisfied with just a cottage 
 below,
 A little silver and a little gold;
 But in that city where the ransomed 
@@ -11695,8 +13466,12 @@ lonely,
 I'm not discouraged, I'm heaven 
 bound;
 I'm just a pilgrim in search of a city,
-I want a mansion, a harp and a crown.` },
-  { id: 445, title: `445 Thanks To Calvary`, body: `1. Today I went back to the place 
+I want a mansion, a harp and a crown.`,
+  },
+  {
+    id: 445,
+    title: `445 Thanks To Calvary`,
+    body: `1. Today I went back to the place 
 where I used to go, 
 Today I saw the same old crowd I 
 knew before, 
@@ -11723,8 +13498,12 @@ the door,
 And I said, “Son, (Honey) never fear, 
 You’ve got a new Daddy! 
 Thanks to Calv’ry we don’t live here 
-anymore!”` },
-  { id: 446, title: `446 Abide With Me Tis Eventide`, body: `1. Abide with me, ’tis eventide!
+anymore!”`,
+  },
+  {
+    id: 446,
+    title: `446 Abide With Me Tis Eventide`,
+    body: `1. Abide with me, ’tis eventide!
 The day is past and gone;
 The shadows of the evening fall;
 The night is coming on!
@@ -11751,8 +13530,12 @@ And lone will be the night,
 If I cannot commune with Thee,
 Nor find in Thee my light.
 The darkness of the world, I fear,
-Would in my home abide` },
-  { id: 447, title: `447 Jesus, What a Friend for Sinners`, body: `1. Jesus! what a Friend for sinners!
+Would in my home abide`,
+  },
+  {
+    id: 447,
+    title: `447 Jesus, What a Friend for Sinners`,
+    body: `1. Jesus! what a Friend for sinners!
 Jesus! Lover of my soul;
 Friends may fail me, foes assail me,
 He, my Savior, makes me whole.
@@ -11782,8 +13565,12 @@ He, my Comfort, helps my soul.
 [or Jesus! I do now adore Him,]
 More than all in Him I find.
 He hath granted me forgiveness,
-I am His, and He is mine.` },
-  { id: 448, title: `448 All That Thrills My Soul`, body: `1. Who can cheer the heart like Jesus,
+I am His, and He is mine.`,
+  },
+  {
+    id: 448,
+    title: `448 All That Thrills My Soul`,
+    body: `1. Who can cheer the heart like Jesus,
 By His presence all divine?
 True and tender, pure and precious,
 Oh, how blest to call Him mine!
@@ -11811,8 +13598,12 @@ He is All in All to me.
 4. By the crystal flowing river
 With the ransomed I will sing,
 And forever and forever
-Praise and glorify the King` },
-  { id: 449, title: `449 Cover With His Life`, body: `1. Look upon Jesus, sinless is He;
+Praise and glorify the King`,
+  },
+  {
+    id: 449,
+    title: `449 Cover With His Life`,
+    body: `1. Look upon Jesus, sinless is He;
 Father, impute His life unto me.
 My life of scarlet, my sin and woe,
 Cover with His life, whiter than snow.
@@ -11841,8 +13632,12 @@ Gladly I wear Thy pure life alone.”
 4. Reconciled by His death for my sin,
 Justified by His life pure and clean,
 Sanctified by obeying His word,
-Glorified when returneth my Lord.` },
-  { id: 450, title: `450 Look for the Waymarks`, body: `1. Look for the waymarks as you 
+Glorified when returneth my Lord.`,
+  },
+  {
+    id: 450,
+    title: `450 Look for the Waymarks`,
+    body: `1. Look for the waymarks as you 
 journey on,
 Look for the waymarks passing one by 
 one;
@@ -11874,8 +13669,12 @@ we today?
 Weak and divided, soon to pass away;
 What will the next great, glorious 
 drama be?
-Christ and His coming, and eternity` },
-  { id: 451, title: `451 O Brother, Be Faithful`, body: `1. O brother be faithful! soon Jesus 
+Christ and His coming, and eternity`,
+  },
+  {
+    id: 451,
+    title: `451 O Brother, Be Faithful`,
+    body: `1. O brother be faithful! soon Jesus 
 will come,
 For whom we have waited so long;
 O, soon we shall enter our glorious 
@@ -11926,8 +13725,12 @@ O brother be faithful! the promise is
 sure,
 That waits for the faithful and triedTo reign with the ransomed, immortal 
 and pure,
-And ever with Jesus abide.` },
-  { id: 452, title: `452 How Firm a Foundation`, body: `1. How firm a foundation, ye saints of 
+And ever with Jesus abide.`,
+  },
+  {
+    id: 452,
+    title: `452 How Firm a Foundation`,
+    body: `1. How firm a foundation, ye saints of 
 the Lord,
 is laid for your faith in his excellent 
 word!
@@ -11972,8 +13775,12 @@ for respose,
 I will not, I will not depart to His foes;
 That soul, though all hell should 
 endeavor to shake,
-I’ll never, no never, no never forsake!”` },
-  { id: 453, title: `453 Now Praise the Hidden God of Love`, body: `1. Now praise the hidden God of love
+I’ll never, no never, no never forsake!”`,
+  },
+  {
+    id: 453,
+    title: `453 Now Praise the Hidden God of Love`,
+    body: `1. Now praise the hidden God of love
 In whom we all must live and move,
 Who shepherds us, at every stage
 Thro’ youth, maturity, and age.
@@ -11995,8 +13802,12 @@ A work to do, a place to fill.
 4. Then talk no more of wasted time,
 But Godward look, and upward climb,
 Content to sleep, when day is done,
-And rise refreshed, and travel on.` },
-  { id: 454, title: `454 Savior, Breathe an Evening Blessing`, body: `1. Savior, breathe an evening 
+And rise refreshed, and travel on.`,
+  },
+  {
+    id: 454,
+    title: `454 Savior, Breathe an Evening Blessing`,
+    body: `1. Savior, breathe an evening 
 blessing,
 Ere repose our spirits seal;
 Sin and want we come confessing;
@@ -12020,8 +13831,12 @@ We are safe if Thou art nigh.
 o’retake us,
 And our couch become our tomb,
 May the morn of glory wake us,
-Clad in light and deathless bloom.` },
-  { id: 455, title: `455 A Song of Heaven and Homeland`, body: `1. Sometimes I hear strange music,
+Clad in light and deathless bloom.`,
+  },
+  {
+    id: 455,
+    title: `455 A Song of Heaven and Homeland`,
+    body: `1. Sometimes I hear strange music,
 Like none e’er heard before,
 Come floating softly earthward
 As thro’ heav’n’s open door:
@@ -12055,8 +13870,12 @@ Of heav’nly winds and streams,
 My heart is filled with rapture,
 To think, some day to come,
 I’ll sing it with the angels
-The song of heav’n and home.` },
-  { id: 456, title: `456 Holy, Holy, Is What the AngelsSing`, body: `1. There is singing up in heaven
+The song of heav’n and home.`,
+  },
+  {
+    id: 456,
+    title: `456 Holy, Holy, Is What the AngelsSing`,
+    body: `1. There is singing up in heaven
 such as we have never known,
 Where the angels sing the praises
 of the Lamb upon the throne;
@@ -12103,9 +13922,13 @@ that the angels cannot share;
 I will sing about my Savior,
 who upon dark Calvary
 Freely pardoned my transgressions,
-died to set the sinner free.` },
-  { id: 457, title: `457 How Cheering Is the Christian's 
-Hope`, body: `1. How cheering is the Christian’s 
+died to set the sinner free.`,
+  },
+  {
+    id: 457,
+    title: `457 How Cheering Is the Christian's 
+Hope`,
+    body: `1. How cheering is the Christian’s 
 hope,
 While toiling here below!
 It bouys us up while this passing 
@@ -12130,8 +13953,12 @@ And never part again.
 4. Fly, lingering moments, fly, O, fly,
 Dear Savior, quickly come!
 We long to see Thee as Thou art,
-And reach that blissful home.` },
-  { id: 458, title: `458 By Christ Redeemed`, body: `1. By Christ redeemed, In Christ 
+And reach that blissful home.`,
+  },
+  {
+    id: 458,
+    title: `458 By Christ Redeemed`,
+    body: `1. By Christ redeemed, In Christ 
 restored,
 We keep the memory adored,
 And show the death of our dear Lord,
@@ -12154,8 +13981,12 @@ Until He come.
 4. And thus that dark betrayal night,
 With the last advent we unite
 The shame, the glory, by this rite,
-Until He come.` },
-  { id: 459, title: `459 JUST A LITTLE MORE DAYS`, body: `In the twinkling of an eye, the 
+Until He come.`,
+  },
+  {
+    id: 459,
+    title: `459 JUST A LITTLE MORE DAYS`,
+    body: `In the twinkling of an eye, the 
 mountains shall be moved,
 The forests and the rivers shall be 
 woken,
@@ -12190,8 +14021,12 @@ The cheaters and the liars shall be
 broken,
 In the midst of the cries, the faithful 
 shall be saved,
-And all of God’s creation shall obey.` },
-  { id: 460, title: `460 WAIT ON THE LORD`, body: `1.Let the world sing hosanna to the 
+And all of God’s creation shall obey.`,
+  },
+  {
+    id: 460,
+    title: `460 WAIT ON THE LORD`,
+    body: `1.Let the world sing hosanna to the 
 lord the king of kings,
 Let them all lift their voices, and shout 
 hallelujah
@@ -12237,8 +14072,12 @@ And that gave him all the courage, to
 rejoice with the lions
 So he prayed, thank you lord, for the 
 way, you’ve rescued me
-And I know that you live in my heart.` },
-  { id: 461, title: `461 BELOVED`, body: `1.Beloved, let us love one another, for 
+And I know that you live in my heart.`,
+  },
+  {
+    id: 461,
+    title: `461 BELOVED`,
+    body: `1.Beloved, let us love one another, for 
 love is of God
 And everyone who loves is born of 
 God,
@@ -12275,8 +14114,12 @@ To give to you the crown of victory,
 The day will be so joyful, for the 
 angels will come,
 And sing with you the songs that 
-David sung.` },
-  { id: 462, title: `462 WAITING, WATCHING`, body: `Down in the valley I shall sing,
+David sung.`,
+  },
+  {
+    id: 462,
+    title: `462 WAITING, WATCHING`,
+    body: `Down in the valley I shall sing,
 While am waiting for my lord to come,
 He will guide me in the way of truth
 For he bled and he died just to set me 
@@ -12304,8 +14147,12 @@ Singing rejoicing is what we do,
 Constantly searching the words of 
 truth
 Is the way to be sure that we’ll make it 
-there.` },
-  { id: 463, title: `463 In the land of the holy`, body: `1. There’s a land in a city far away,
+there.`,
+  },
+  {
+    id: 463,
+    title: `463 In the land of the holy`,
+    body: `1. There’s a land in a city far away,
 Where no death neither sorrow can 
 arise,
 It’s a land of the holy and the saved,
@@ -12336,7 +14183,8 @@ For the king and the saints shall you
 find,
 And the crown of redemption shall be 
 yours,
-When you get in this land of the lord.` }
-];
+When you get in this land of the lord.`,
+  },
+]
 
-export const HYMN_COUNT = HYMNS.length;
+export const HYMN_COUNT = HYMNS.length

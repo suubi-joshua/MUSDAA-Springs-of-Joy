@@ -3,20 +3,16 @@
  * Reusable search input with clear button
  */
 
-import React from 'react';
-import {
-  View,
-  TextInput,
-  TouchableOpacity,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../theme';
+import React from 'react'
+import { View, TextInput, TouchableOpacity } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
+import { colors } from '../theme'
 
 interface Props {
-  placeholder?: string;
-  value: string;
-  onChangeText: (text: string) => void;
-  onClear?: () => void;
+  placeholder?: string
+  value: string
+  onChangeText: (text: string) => void
+  onClear?: () => void
 }
 
 const SearchBar: React.FC<Props> = ({
@@ -27,12 +23,7 @@ const SearchBar: React.FC<Props> = ({
 }) => {
   return (
     <View className="flex-row items-center bg-white rounded-2xl mx-4 mt-4 mb-3 px-4 h-12 shadow-md">
-      <Ionicons
-        name="search"
-        size={22}
-        color={colors.grey}
-        style={{ marginRight: 8 }}
-      />
+      <Ionicons name="search" size={22} color={colors.grey} style={{ marginRight: 8 }} />
 
       <TextInput
         className="flex-1 text-base text-gray-900"
@@ -45,19 +36,12 @@ const SearchBar: React.FC<Props> = ({
       />
 
       {value !== '' && (
-        <TouchableOpacity
-          className="p-2 ml-2"
-          onPress={onClear}
-        >
-          <Ionicons
-            name="close-circle"
-            size={22}
-            color={colors.grey}
-          />
+        <TouchableOpacity className="p-2 ml-2" onPress={onClear}>
+          <Ionicons name="close-circle" size={22} color={colors.grey} />
         </TouchableOpacity>
       )}
     </View>
-  );
-};
+  )
+}
 
-export default SearchBar;
+export default SearchBar

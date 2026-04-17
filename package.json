@@ -20,7 +20,7 @@
   "dependencies": {
     "@expo/webpack-config": "^18.0.0",
     "@react-native-async-storage/async-storage": "~2.2.0",
-    "@react-native-community/slider": "^5.2.0",
+    "@react-native-community/slider": "5.0.1",
     "@react-navigation/bottom-tabs": "^7.15.9",
     "@react-navigation/native": "^7.2.2",
     "@react-navigation/stack": "^7.8.10",
@@ -67,6 +67,15 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "react-native-sqlite-storage"
+        ]
+      }
+    }
   },
   "private": true
 }

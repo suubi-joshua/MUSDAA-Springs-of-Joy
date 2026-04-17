@@ -3,24 +3,20 @@
  * Reusable component for displaying a hymn in a list
  */
 
-import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../theme';
-import { Hymn } from '../types';
+import React from 'react'
+import { View, Text, TouchableOpacity } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
+import { colors } from '../theme'
+import { Hymn } from '../types'
 
 interface Props {
-  hymn: Hymn;
-  onPress: () => void;
+  hymn: Hymn
+  onPress: () => void
 }
 
 const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
   // Extract first number from hymn ID for badge
-  const hymnetNumber = hymn.id.toString();
+  const hymnetNumber = hymn.id.toString()
 
   return (
     <TouchableOpacity
@@ -29,34 +25,21 @@ const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
       activeOpacity={0.7}
     >
       <View className="w-14 h-14 rounded-full bg-brand-green justify-center items-center mr-5">
-        <Text className="text-xl font-extrabold text-white">
-          {hymnetNumber}
-        </Text>
+        <Text className="text-xl font-extrabold text-white">{hymnetNumber}</Text>
       </View>
 
       <View className="flex-1 pr-4">
-        <Text
-          className="text-xl font-extrabold text-gray-900 mb-1"
-          numberOfLines={2}
-        >
+        <Text className="text-xl font-extrabold text-gray-900 mb-1" numberOfLines={2}>
           {hymn.title}
         </Text>
-        <Text
-          className="text-base text-gray-700"
-          numberOfLines={1}
-        >
+        <Text className="text-base text-gray-700" numberOfLines={1}>
           {hymn.body.split('\n')[0]}
         </Text>
       </View>
 
-      <Ionicons
-        name="chevron-forward"
-        size={22}
-        color={colors.grey}
-        style={{ marginLeft: 8 }}
-      />
+      <Ionicons name="chevron-forward" size={22} color={colors.grey} style={{ marginLeft: 8 }} />
     </TouchableOpacity>
-  );
-};
+  )
+}
 
-export default HymnListItem;
+export default HymnListItem
