@@ -37,7 +37,7 @@ const SettingsScreen = ({ navigation }: any) => {
     <ScrollView
       className="flex-1"
       style={{ backgroundColor: darkMode ? colors.darkBg : colors.lightGrey }}
-      contentContainerStyle={{ paddingBottom: 48, paddingHorizontal: 20, paddingTop: 24 }}
+      contentContainerStyle={{ paddingBottom: 48, paddingHorizontal: 20, paddingTop: 60 }}
     >
       {/* Display Settings */}
       <View
@@ -150,7 +150,7 @@ const SettingsScreen = ({ navigation }: any) => {
           className="text-base text-center leading-relaxed"
           style={{ color: secondaryTextColor }}
         >
-          Songs of Joy is locally stored on your device. No data is sent to external servers.
+          Springs of Joy is locally stored on your device. No data is sent to external servers.
         </Text>
       </View>
     </ScrollView>
