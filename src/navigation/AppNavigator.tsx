@@ -5,7 +5,7 @@
 
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
 
@@ -40,33 +40,25 @@ function HomeStackNavigator() {
   const { mode } = useThemeMode()
   const isDark = mode === 'dark'
   const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
-  const headerTint = colors.white
 
   return (
     <HomeStack.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: headerBg,
-        },
-        headerTintColor: headerTint,
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
+        headerStyle: { backgroundColor: headerBg },
+        headerTintColor: colors.white,
+        headerTitleStyle: { fontWeight: 'bold' },
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <HomeStack.Screen
         name="HomeScreen"
         component={HomeScreen}
-        options={{
-          title: 'Springs of Joy',
-        }}
+        options={{ title: 'Springs of Joy' }}
       />
       <HomeStack.Screen
         name="HymnDetail"
         component={HymnDetailScreen}
-        options={({ route }) => ({
-          title: route.params?.title || 'Hymn',
-        })}
+        options={{ title: 'Hymn' }}
       />
     </HomeStack.Navigator>
   )
@@ -79,33 +71,25 @@ function SearchStackNavigator() {
   const { mode } = useThemeMode()
   const isDark = mode === 'dark'
   const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
-  const headerTint = colors.white
 
   return (
     <SearchStack.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: headerBg,
-        },
-        headerTintColor: headerTint,
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
+        headerStyle: { backgroundColor: headerBg },
+        headerTintColor: colors.white,
+        headerTitleStyle: { fontWeight: 'bold' },
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <SearchStack.Screen
         name="SearchScreen"
         component={SearchScreen}
-        options={{
-          title: 'Search Hymns',
-        }}
+        options={{ title: 'Search Hymns' }}
       />
       <SearchStack.Screen
         name="HymnDetail"
         component={HymnDetailScreen}
-        options={({ route }) => ({
-          title: route.params?.title || 'Hymn',
-        })}
+        options={{ title: 'Hymn' }}
       />
     </SearchStack.Navigator>
   )
@@ -118,36 +102,46 @@ function BookmarksStackNavigator() {
   const { mode } = useThemeMode()
   const isDark = mode === 'dark'
   const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
-  const headerTint = colors.white
 
   return (
     <BookmarksStack.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: headerBg,
-        },
-        headerTintColor: headerTint,
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
+        headerStyle: { backgroundColor: headerBg },
+        headerTintColor: colors.white,
+        headerTitleStyle: { fontWeight: 'bold' },
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <BookmarksStack.Screen
         name="BookmarksScreen"
         component={BookmarksScreen}
-        options={{
-          title: 'My Bookmarks',
-        }}
+        options={{ title: 'My Bookmarks' }}
       />
       <BookmarksStack.Screen
         name="HymnDetail"
         component={HymnDetailScreen}
-        options={({ route }) => ({
-          title: route.params?.title || 'Hymn',
-        })}
+        options={{ title: 'Hymn' }}
       />
     </BookmarksStack.Navigator>
   )
+}
+
+/**
+ * Get tab icon
+ */
+function getTabIcon(routeName: string, focused: boolean): string {
+  switch (routeName) {
+    case 'HomeTab':
+      return focused ? 'home' : 'home-outline'
+    case 'SearchTab':
+      return focused ? 'search' : 'search-outline'
+    case 'BookmarksTab':
+      return focused ? 'bookmark' : 'bookmark-outline'
+    case 'SettingsTab':
+      return focused ? 'settings' : 'settings-outline'
+    default:
+      return 'help-outline'
+  }
 }
 
 /**
@@ -156,79 +150,76 @@ function BookmarksStackNavigator() {
 function MainTabsNavigator() {
   const { mode } = useThemeMode()
   const isDark = mode === 'dark'
+
   const tabBg = isDark ? colors.darkSecondaryBg : colors.white
   const tabBorder = isDark ? colors.darkBg : colors.lightGrey
-  const activeTint = colors.primary
-  const inactiveTint = colors.grey
 
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
+      screenOptions={{
         headerShown: false,
-        tabBarIcon: ({ focused, color, size }) => {
-          let iconName
-
-          if (route.name === 'HomeTab') {
-            iconName = focused ? 'home' : 'home-outline'
-          } else if (route.name === 'SearchTab') {
-            iconName = focused ? 'search' : 'search-outline'
-          } else if (route.name === 'BookmarksTab') {
-            iconName = focused ? 'bookmark' : 'bookmark-outline'
-          } else if (route.name === 'SettingsTab') {
-            iconName = focused ? 'settings' : 'settings-outline'
-          }
-
-          return <Ionicons name={iconName as any} size={size} color={color} />
-        },
-        tabBarActiveTintColor: activeTint,
-        tabBarInactiveTintColor: inactiveTint,
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.grey,
         tabBarStyle: {
           backgroundColor: tabBg,
           borderTopColor: tabBorder,
           borderTopWidth: 1,
         },
-      })}
+      }}
     >
       <Tab.Screen
         name="HomeTab"
         component={HomeStackNavigator}
-        options={{
+        options={({ route }) => ({
           title: 'Home',
-        }}
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={getTabIcon(route.name, focused) as any} size={size} color={color} />
+          ),
+        })}
       />
       <Tab.Screen
         name="SearchTab"
         component={SearchStackNavigator}
-        options={{
+        options={({ route }) => ({
           title: 'Search',
-        }}
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={getTabIcon(route.name, focused) as any} size={size} color={color} />
+          ),
+        })}
       />
       <Tab.Screen
         name="BookmarksTab"
         component={BookmarksStackNavigator}
-        options={{
+        options={({ route }) => ({
           title: 'Bookmarks',
-        }}
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={getTabIcon(route.name, focused) as any} size={size} color={color} />
+          ),
+        })}
       />
       <Tab.Screen
         name="SettingsTab"
         component={SettingsScreen}
-        options={{
+        options={({ route }) => ({
           title: 'Settings',
-        }}
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={getTabIcon(route.name, focused) as any} size={size} color={color} />
+          ),
+        })}
       />
     </Tab.Navigator>
   )
 }
 
 /**
- * Root Navigator with Splash Screen
+ * Root Navigator
  */
-export function RootNavigator() {
+function RootNavigator() {
   return (
     <RootStack.Navigator
       screenOptions={{
         headerShown: false,
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <RootStack.Screen name="Splash" component={SplashScreen} />
@@ -241,7 +232,7 @@ export function RootNavigator() {
 /**
  * Navigation Container with theme
  */
-export function AppNavigator() {
+function AppNavigator() {
   const { mode } = useThemeMode()
 
   return (

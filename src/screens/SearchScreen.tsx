@@ -5,6 +5,7 @@
 
 import React from 'react'
 import { View, FlatList, Text, ActivityIndicator } from 'react-native'
+import { useFocusEffect } from '@react-navigation/native'
 import { colors } from '../theme'
 import { useSearch } from '../hooks/useSearch'
 import SearchBar from '../components/SearchBar'
@@ -16,6 +17,12 @@ const SearchScreen = ({ navigation }: any) => {
   const { mode } = useThemeMode()
   const isDark = mode === 'dark'
   const { query, results, loading, handleSearch, clearSearch } = useSearch()
+
+  useFocusEffect(
+    React.useCallback(() => {
+      clearSearch()
+    }, [])
+  )
 
   const handleSelectHymn = (hymn: Hymn) => {
     navigation.navigate('HymnDetail', {

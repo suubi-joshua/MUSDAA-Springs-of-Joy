@@ -16,6 +16,12 @@ jest.mock('@react-navigation/native', () => {
     useNavigation: () => ({
       navigate: jest.fn(),
       setOptions: jest.fn(),
+      getParent: () => ({
+        setOptions: jest.fn(),
+      }),
+    }),
+    useFocusEffect: jest.fn(callback => {
+      callback()
     }),
   }
 })
@@ -31,6 +37,9 @@ const mockRoute = {
 const mockNavigation = {
   setOptions: jest.fn(),
   navigate: jest.fn(),
+  getParent: () => ({
+    setOptions: jest.fn(),
+  }),
 }
 
 describe('HymnDetailScreen Header', () => {
