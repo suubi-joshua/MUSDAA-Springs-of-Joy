@@ -74,10 +74,11 @@ const HymnDetailScreen = ({ route, navigation }: any) => {
   }
 
   useEffect(() => {
+    const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
     // Header layout with protected, wrapping title and action icons.
     navigation.setOptions({
       headerStyle: {
-        backgroundColor: colors.primary,
+        backgroundColor: headerBg,
         height: 96,
       },
       headerTitleContainerStyle: {

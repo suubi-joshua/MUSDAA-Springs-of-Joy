@@ -37,13 +37,18 @@ const Tab = createBottomTabNavigator()
  * Home Stack Navigator
  */
 function HomeStackNavigator() {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+  const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
+  const headerTint = colors.white
+
   return (
     <HomeStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: colors.primary,
+          backgroundColor: headerBg,
         },
-        headerTintColor: colors.white,
+        headerTintColor: headerTint,
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -71,13 +76,18 @@ function HomeStackNavigator() {
  * Search Stack Navigator
  */
 function SearchStackNavigator() {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+  const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
+  const headerTint = colors.white
+
   return (
     <SearchStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: colors.primary,
+          backgroundColor: headerBg,
         },
-        headerTintColor: colors.white,
+        headerTintColor: headerTint,
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -105,13 +115,18 @@ function SearchStackNavigator() {
  * Bookmarks Stack Navigator
  */
 function BookmarksStackNavigator() {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+  const headerBg = isDark ? colors.darkSecondaryBg : colors.primary
+  const headerTint = colors.white
+
   return (
     <BookmarksStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: colors.primary,
+          backgroundColor: headerBg,
         },
-        headerTintColor: colors.white,
+        headerTintColor: headerTint,
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -139,6 +154,13 @@ function BookmarksStackNavigator() {
  * Main Tab Navigator
  */
 function MainTabsNavigator() {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+  const tabBg = isDark ? colors.darkSecondaryBg : colors.white
+  const tabBorder = isDark ? colors.darkBg : colors.lightGrey
+  const activeTint = colors.primary
+  const inactiveTint = colors.grey
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -158,11 +180,11 @@ function MainTabsNavigator() {
 
           return <Ionicons name={iconName as any} size={size} color={color} />
         },
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.grey,
+        tabBarActiveTintColor: activeTint,
+        tabBarInactiveTintColor: inactiveTint,
         tabBarStyle: {
-          backgroundColor: colors.white,
-          borderTopColor: colors.lightGrey,
+          backgroundColor: tabBg,
+          borderTopColor: tabBorder,
           borderTopWidth: 1,
         },
       })}
