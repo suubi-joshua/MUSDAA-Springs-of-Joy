@@ -8,6 +8,7 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { colors } from '../theme'
 import { Hymn } from '../types'
+import { useThemeMode } from '../theme/ThemeContext'
 
 interface Props {
   hymn: Hymn
@@ -15,12 +16,19 @@ interface Props {
 }
 
 const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
-  // Extract first number from hymn ID for badge
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+
   const hymnetNumber = hymn.id.toString()
+
+  const cardBg = isDark ? colors.darkSecondaryBg : colors.white
+  const titleColor = isDark ? colors.darkText : colors.black
+  const previewColor = isDark ? colors.darkText : colors.grey
 
   return (
     <TouchableOpacity
-      className="flex-row items-center bg-white rounded-3xl mb-5 px-5 py-5 shadow-lg"
+      className="flex-row items-center rounded-3xl mb-5 px-5 py-5 shadow-lg"
+      style={{ backgroundColor: cardBg }}
       onPress={onPress}
       activeOpacity={0.7}
       testID="hymn-item"
@@ -33,13 +41,19 @@ const HymnListItem: React.FC<Props> = ({ hymn, onPress }) => {
 
       <View className="flex-1 pr-4">
         <Text
-          className="text-xl font-extrabold text-gray-900 mb-1"
+          className="text-xl font-extrabold mb-1"
           numberOfLines={2}
+          style={{ color: titleColor }}
           testID="hymn-title"
         >
           {hymn.title}
         </Text>
-        <Text className="text-base text-gray-700" numberOfLines={1} testID="hymn-preview">
+        <Text
+          className="text-base"
+          numberOfLines={1}
+          style={{ color: previewColor }}
+          testID="hymn-preview"
+        >
           {hymn.body.split('\n')[0]}
         </Text>
       </View>

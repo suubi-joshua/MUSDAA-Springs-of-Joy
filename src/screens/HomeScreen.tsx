@@ -9,8 +9,11 @@ import { useHymns } from '../hooks/useHymns'
 import HymnListItem from '../components/HymnListItem'
 import { Hymn } from '../types'
 import { colors } from '../theme'
+import { useThemeMode } from '../theme/ThemeContext'
 
 const HomeScreen = ({ navigation }: any) => {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
   const { hymns, totalCount, loading, error, loadMore } = useHymns()
   const [isLoadingMore, setIsLoadingMore] = useState(false)
 
@@ -48,16 +51,18 @@ const HomeScreen = ({ navigation }: any) => {
     )
   }
 
+  const bgColor = isDark ? colors.darkBg : colors.lightGrey
+
   if (loading) {
     return (
-      <View className="flex-1 justify-center items-center bg-white">
+      <View className="flex-1 justify-center items-center" style={{ backgroundColor: bgColor }}>
         <ActivityIndicator size="large" color={colors.primary} />
       </View>
     )
   }
 
   return (
-    <View className="flex-1 bg-gray-50">
+    <View className="flex-1" style={{ backgroundColor: bgColor }}>
       <FlatList
         data={hymns}
         renderItem={({ item }) => (

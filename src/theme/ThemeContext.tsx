@@ -17,6 +17,7 @@ const ThemeContext = createContext<ThemeContextValue>({
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState<ThemeMode>('light')
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
     const load = async () => {
@@ -31,9 +32,27 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       } catch {
         // ignore
       }
+      setIsLoaded(true)
     }
     load()
   }, [])
+
+  useEffect(() => {
+    if (!isLoaded) return
+    const save = async () => {
+      try {
+        const saved = await AsyncStorage.getItem('appSettings')
+        const existing = saved ? JSON.parse(saved) : {}
+        await AsyncStorage.setItem(
+          'appSettings',
+          JSON.stringify({ ...existing, darkMode: mode === 'dark' })
+        )
+      } catch {
+        // ignore
+      }
+    }
+    save()
+  }, [mode, isLoaded])
 
   const toggleDarkMode = () => {
     setMode(prev => (prev === 'light' ? 'dark' : 'light'))

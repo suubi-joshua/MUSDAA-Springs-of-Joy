@@ -220,3 +220,31 @@ export async function clearDatabase(): Promise<void> {
   await database.execAsync('DELETE FROM hymns; DELETE FROM bookmarks;')
   console.log('✓ Database cleared')
 }
+
+/**
+ * Get previous hymn (by ID)
+ */
+export async function getPreviousHymn(currentId: number): Promise<Hymn | null> {
+  const database = await getDatabase()
+
+  const result = await database.getFirstAsync<Hymn>(
+    'SELECT id, title, body FROM hymns WHERE id < ? ORDER BY id DESC LIMIT 1',
+    [currentId]
+  )
+
+  return result || null
+}
+
+/**
+ * Get next hymn (by ID)
+ */
+export async function getNextHymn(currentId: number): Promise<Hymn | null> {
+  const database = await getDatabase()
+
+  const result = await database.getFirstAsync<Hymn>(
+    'SELECT id, title, body FROM hymns WHERE id > ? ORDER BY id ASC LIMIT 1',
+    [currentId]
+  )
+
+  return result || null
+}

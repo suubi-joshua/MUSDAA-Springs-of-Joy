@@ -10,43 +10,165 @@ exports[`HymnDetailScreen Snapshot matches snapshot for header alignment 1`] = `
   }
   testID="hymn-detail"
 >
-  <RCTScrollView
-    className="flex-1"
-    contentContainerStyle={
+  <View
+    collapsable={false}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    style={
       {
-        "padding": 24,
-        "paddingBottom": 64,
+        "flex": 1,
+        "transform": [
+          {
+            "translateX": 0,
+          },
+        ],
       }
     }
-    showsVerticalScrollIndicator={true}
-    testID="hymn-scroll"
   >
-    <View>
-      <Text
-        className="text-brand-green font-extrabold mb-5 text-center"
-        style={
+    <RCTScrollView
+      className="flex-1"
+      contentContainerStyle={
+        {
+          "padding": 24,
+          "paddingBottom": 100,
+        }
+      }
+      onScroll={[Function]}
+      scrollEventThrottle={16}
+      showsVerticalScrollIndicator={true}
+      testID="hymn-scroll"
+    >
+      <View>
+        <Text
+          className="text-brand-green font-extrabold mb-5 text-center"
+          style={
+            {
+              "fontSize": 16,
+            }
+          }
+          testID="hymn-title"
+        >
+          Test Hymn Title
+        </Text>
+        <Text
+          className="text-left mt-3"
+          style={
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 28,
+            }
+          }
+          testID="hymn-body"
+        >
+          Test hymn body content
+        </Text>
+      </View>
+    </RCTScrollView>
+  </View>
+  <View
+    style={
+      {
+        "bottom": 24,
+        "position": "absolute",
+        "right": 24,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateY": 100,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        accessibilityState={
           {
-            "fontSize": 16,
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
           }
         }
-        testID="hymn-title"
-      >
-        Test Hymn Title
-      </Text>
-      <Text
-        className="text-left mt-3"
-        style={
+        accessibilityValue={
           {
-            "color": "#000000",
-            "fontSize": 16,
-            "lineHeight": 28,
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
-        testID="hymn-body"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#53B175",
+            "borderRadius": 28,
+            "elevation": 8,
+            "height": 56,
+            "justifyContent": "center",
+            "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 4.65,
+            "width": 56,
+          }
+        }
       >
-        Test hymn body content
-      </Text>
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 24,
+              },
+              undefined,
+              {
+                "fontFamily": "ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
     </View>
-  </RCTScrollView>
+  </View>
 </View>
 `;

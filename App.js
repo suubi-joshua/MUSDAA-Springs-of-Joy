@@ -4,12 +4,24 @@ import { StatusBar } from 'expo-status-bar'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import AppNavigator from './src/navigation/AppNavigator'
 import { colors } from './src/theme'
-import { ThemeProvider } from './src/theme/ThemeContext'
+import { ThemeProvider, useThemeMode } from './src/theme/ThemeContext'
 import { initDatabase, seedIfEmpty } from './src/db/database'
+
+function AppContent() {
+  const { mode } = useThemeMode()
+  const isDark = mode === 'dark'
+  const statusBarBg = isDark ? colors.darkSecondaryBg : colors.primary
+
+  return (
+    <>
+      <StatusBar barStyle="light-content" backgroundColor={statusBarBg} />
+      <AppNavigator />
+    </>
+  )
+}
 
 export default function App() {
   useEffect(() => {
-    // Initialize database on app startup
     const initializeData = async () => {
       try {
         await initDatabase()
@@ -25,8 +37,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <ThemeProvider>
-        <StatusBar barStyle="light-content" backgroundColor={colors.primary} />
-        <AppNavigator />
+        <AppContent />
       </ThemeProvider>
     </SafeAreaProvider>
   )
