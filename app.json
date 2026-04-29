@@ -4,6 +4,7 @@
     "slug": "springs-of-joy",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/StartupImage.png",
@@ -19,7 +20,11 @@
     },
     "android": {
       "backgroundColor": "#53B175",
-      "package": "com.musdaa.springsofjoyhymnal"
+      "package": "com.musdaa.springsofjoyhymnal",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#53B175"
+      }
     },
     "web": {
       "favicon": "./assets/Logo-Components.png"
