@@ -10,7 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#53B175"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.musdaa.springsoffoy"
@@ -21,6 +23,11 @@
     },
     "web": {
       "favicon": "./assets/Logo-Components.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5b60beaa-61fe-47b9-b28d-2a7ff09e2d41"
+      }
     }
   }
 }
